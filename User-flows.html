@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P01 - Style Guide Template</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+    <script src="https://use.typekit.net/rpj7hny.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  </head>
+
+  <body>
+    <div class="grid-row">
+
+      <!-- 
+        Here we hav added the class 'grid-row' to our nav tag to allow it to act as a grid of it's own
+      -->
+      <nav class="grid-col-2of10">
+    
+        <img id="logo" src="img/brand-logo.png">
+
+        <ul>
+            <li><a href="Style_guide.html">STYLE GUIDE</a>
+
+              <li class="sub_nav">
+                <a href="#visual_elements">Visual Elements</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#interactive_elements">Interactive Elements</a>
+              </li>
+              <li class="sub_nav"> 
+                <a href="#text_elements">Text Elements</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#combined_elements">Combined Elements</a>
+              </li>
+
+            <li class="selected"><a href="User-flows.html">USER FLOWS</a>
+
+              <li class="sub_nav">
+                <a href="#4k_display">4K Display</a>
+              </li>
+              <li class="sub_nav"> 
+                <a href="#mobile_device">Mobile Device</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#smart_watch">Smart Watch</a>
+              </li>
+
+            <li><a href="Citations.html">CITATIONS</a>
+          </ul>
+
+      </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <div class="grid-col-8of10 mainContent">
+      
+      <!-- 4K Display SECTION // -->  
+      <h2 id="4k_display">For 4K Display</h2>
+      <h3>Browse & purchase the product</h3>
+      <img src="img/user-flow_4k_1.png">
+
+      <h3>View upcoming workshop</h3>
+      <img src="img/user-flow_4k_2.png">
+
+      <h3>Team info & Contact & Feedback form</h3>
+      <img src="img/user-flow_4k_3.png">
+
+      <!-- Mobile Display SECTION // -->  
+      <h2 id="mobile_device">For Mobile Devices</h2>
+      <h3>Browse & purchase the product</h3>
+      <img src="img/user-flow_mobile_1.png">
+
+      <!-- Smart Watch SECTION // -->   
+      <h2 id="smart_watch">For Smart Watch</h2>
+      <h3>Way to show cart in watch</h3>
+      <p>Apple watch has the unique interaction, which allow me to hide the cart on the screen first. If user want to see the cart, they will need to long press the screen.</p>
+      <img src="img/user-flow_watch_1.png">
+
+      <h3>Browse but can't buy products</h3>
+      <p>Due to the fact that you can not type in the apple watch, you can browse and design the bike. However, when you need to fill in and pay for the bike, you will need to move into desktop or mobile to finish the payment.</p>
+      <img src="img/user-flow_watch_2.png">
+
+    </div>
+
+    </div>
+
+  </body>
+</html>
+
