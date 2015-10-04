@@ -30,7 +30,7 @@ nav {
   margin-bottom: 1em;
   padding-bottom: 1em;
 /*  border: 0.15em solid #333;*/
-  font-family: "bebas-neue",serif;
+  font-family: "museo-slab",serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -322,27 +322,27 @@ input[type="submit"]:hover, button:hover {
   TEXT ELEMENTS -------------------
 */
 h1{
-  font-family: "bebas-neue",sans-serif;
+  font-family: "museo-sans",sans-serif;
   font-style: italic;
   font-weight: 900;
   font-size: 3.5rem;
 }
 
 h2{
-  font-family: "bebas-neue",sans-serif;
+  font-family: "museo-sans",sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 2.5rem;
 }
 
 h3{
-  font-family: "bebas-neue",sans-serif;
+  font-family: "museo-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 p{
-font-family: "calluna",serif;
+font-family: "museo-slab",serif;
 font-style: normal;
 font-weight: 300;
 }
