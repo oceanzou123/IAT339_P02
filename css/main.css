@@ -5,7 +5,8 @@
 body {
   padding: 2rem;
   font:16pt;
-  font-family: 'Cutive Mono';
+  font-family: 'Open Sans';
+  font-weight: 300;
 }
 
 section:not([id]) {
@@ -28,7 +29,8 @@ section h3 {
 
 section p {
   margin-top: 0;
-  font-family: 'Cutive Mono';
+  font-family: 'Open Sans';
+  font-weight: 300;
 
 }
 
@@ -350,10 +352,10 @@ h3{
 }
 
 p{
-font-family: "Cutive Mono", sans-serif;
+font-family: "Open Sans", sans-serif;
 font-style: normal;
 font-weight: 300;
-}*/
+}
 
 
 /* 
