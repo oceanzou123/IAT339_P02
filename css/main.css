@@ -5,6 +5,7 @@
 body {
   padding: 2rem;
   font:16pt;
+  font-family: 'Montserrat';
 }
 
 section:not([id]) {
@@ -16,10 +17,13 @@ section:not([id]) {
 section h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
+  font-family: "museo_sans500";
+
 }
 
 section h3 {
   margin-bottom: 0;
+  font-family: "museo_sans500";
 }
 
 section p {
@@ -30,7 +34,7 @@ nav {
   margin-bottom: 1em;
   padding-bottom: 1em;
 /*  border: 0.15em solid #333;*/
-  font-family: "p22-underground",serif;
+  font-family: "museo_sans500";
   font-style: normal;
   font-weight: 500;
 }
