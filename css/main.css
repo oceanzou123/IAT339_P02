@@ -5,7 +5,7 @@
 body {
   padding: 2rem;
   font:16pt;
-  font-family: 'Montserrat';
+  font-family: 'montserrat_light';
 }
 
 section:not([id]) {
@@ -28,8 +28,8 @@ section h3 {
 
 section p {
   margin-top: 0;
-  font-family: 'Montserrat';
-  
+  font-family: 'montserrat_light';
+
 }
 
 nav {
@@ -327,28 +327,30 @@ input[type="submit"]:hover, button:hover {
 /* 
   TEXT ELEMENTS -------------------
 */
-/*h1{
-  font-family: "p22-underground",sans-serif;
+
+
+h1{
+  font-family: "museo_sans500",sans-serif;
   font-style: italic;
   font-weight: 900;
   font-size: 3.5rem;
 }
 
 h2{
-  font-family: "p22-underground",sans-serif;
+  font-family: "museo_sans500",sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 2.5rem;
 }
 
 h3{
-  font-family: "p22-underground",sans-serif;
+  font-family: "museo_sans500",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 p{
-font-family: "museo-slab",serif;
+font-family: "montserrat_light", sans-serif;
 font-style: normal;
 font-weight: 300;
 }*/
