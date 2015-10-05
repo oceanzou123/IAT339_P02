@@ -29,15 +29,16 @@ section h3 {
 section p {
   margin-top: 0;
   font-family: 'Montserrat';
+  
 }
 
 nav {
   margin-bottom: 1em;
   padding-bottom: 1em;
 /*  border: 0.15em solid #333;*/
-  font-family: "museo_sans500";
+/*  font-family: "museo_sans500";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500;*/
 }
 
 nav>ul{
@@ -326,7 +327,7 @@ input[type="submit"]:hover, button:hover {
 /* 
   TEXT ELEMENTS -------------------
 */
-h1{
+/*h1{
   font-family: "p22-underground",sans-serif;
   font-style: italic;
   font-weight: 900;
@@ -350,7 +351,7 @@ p{
 font-family: "museo-slab",serif;
 font-style: normal;
 font-weight: 300;
-}
+}*/
 
 
 /* 
