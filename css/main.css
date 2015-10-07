@@ -108,32 +108,32 @@ a:active, a:hover {
 }
 
 /* Styling for the typeface */
-.P22_Underground{
-  font-family: "p22-underground",sans-serif;
+.museo_sans500{
+  font-family: "museo_sans500",sans-serif;
   font-style: normal;
   font-weight: 500;
   margin-top: 0;
 }
 
-.P22_Underground h3{
+.museo_sans500 h3{
 font-size: 3rem;
 }
 
-.P22_Underground p{
+.museo_sans500 p{
 font-size: 1rem;
 }
 
-.mueseo_slab{
-  font-family: "museo-slab",serif;
+.open_sans{
+  font-family: "Open Sans",serif;
   font-style: normal;
   font-weight: 300;
 }
 
-.mueseo_slab h3{
+.open_sans h3{
   font-size: 3rem;
 }
 
-.mueseo_slab p{
+.open_sans p{
   font-size: 1rem;
 }
 
