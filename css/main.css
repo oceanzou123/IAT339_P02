@@ -85,7 +85,7 @@ cite {
 }
 
 .mainContent{
-  margin-top: 8.5%;
+  margin-left: 20%;
 }
 
 a {
@@ -98,13 +98,19 @@ a:active, a:hover {
   text-decoration: none;
 }
 
+#nav-menu {
+  position: fixed;
+  display: inline-block;
+}
+
 /* 
   VISUAL ELEMENTS -------------------
 */
 
 /* Styling for the logo */
 #logo {
-  width: 100%;
+  padding-top: 10em;
+  width: 50%;
 }
 
 /* Styling for the typeface */
