@@ -19,6 +19,11 @@
 
     <!-- import font Open Sans -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+    <!-- add the js for clipboard -->
+    <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
   </head>
 
   <body>
@@ -130,7 +135,7 @@
 
             <!-- organe -->
             <div class="row">
-              <div class="box palette-block palette-orange" data-clipboard-text="#D15627">
+              <div class="box palette-block palette-orange" id="palette-block" data-clipboard-text="#D15627">
                 <section>
                   <div class="palette-button"></div>
                   <small>Interaction</small>
@@ -370,75 +375,69 @@
             </nav>
           </div>
         </section>
-
-              <section>
-
-
+        
         <!-- Product Listing -->
+        <section>
+        <h2>PRODUCTS</h2>
 
-      <section>
-      <h2>PRODUCTS</h2>
+        <section class="grid-row">
 
-      <section class="grid-row">
-
-      <!-- Product 1 - The Breakwater -->
-      <div class="grid-col-3of10">
-        <div id="product-container">
-          <img class="bottom" id="product" src="img/bike-thebreakwater2.png" />
-          <img class="top" id="product" src="img/bike-thebreakwater1.png" />
-        </div>
-
-
-          <div id="caption">
-            <div class="product-caption"><h3>THE BREAKWATER</h3></div>
-            <div class="product-caption">$399.00</div>
+        <!-- Product 1 - The Breakwater -->
+        <div class="grid-col-3of10">
+          <div id="product-container">
+            <img class="bottom" id="product" src="img/bike-thebreakwater2.png" />
+            <img class="top" id="product" src="img/bike-thebreakwater1.png" />
           </div>
 
-      </div>
 
-      <!-- Product 2 - Loifer -->
-      <div class="grid-col-3of10">
-        <div id="product-container">
-            <img id="product" class="bottom" src="img/bike-theloifer2.png" />
-            <img id="product" class="top" src="img/bike-theloifer1.png" />
+            <div id="caption">
+              <div class="product-caption"><h3>THE BREAKWATER</h3></div>
+              <div class="product-caption">$399.00</div>
+            </div>
+
         </div>
 
-        <div id="caption">
-          <div class="product-caption"><h3>LOIFER</h3></div>
-          <div class="product-caption">$275.00</div>
-        </div>
-      </section>
+        <!-- Product 2 - Loifer -->
+        <div class="grid-col-3of10">
+          <div id="product-container">
+              <img id="product" class="bottom" src="img/bike-theloifer2.png" />
+              <img id="product" class="top" src="img/bike-theloifer1.png" />
+          </div>
+
+          <div id="caption">
+            <div class="product-caption"><h3>LOIFER</h3></div>
+            <div class="product-caption">$275.00</div>
+          </div>
+        </section>
 
 
-      <h3>Sample code:</h3>
+        <h3>Sample code:</h3>
 
-        <code>&lt;figure class="product-img"&gt;
-          <br>&nbsp;&lt;img src="img/light-pink.jpg" alt="A photo of a light pink square"&gt;
-            <br>&nbsp;&lt;figcaption&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-title">LIGHT PINK&lt;/div&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NF 471 // VENICE COLLECTION&lt;/div&gt;
-            <br>&nbsp;&nbsp;&lt;/figcaption&gt;
-          <br>&lt;/figure&gt;
+          <code>&lt;figure class="product-img"&gt;
+            <br>&nbsp;&lt;img src="img/light-pink.jpg" alt="A photo of a light pink square"&gt;
+              <br>&nbsp;&lt;figcaption&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-title">LIGHT PINK&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NF 471 // VENICE COLLECTION&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+            <br>&lt;/figure&gt;
 
-              &lt;figure class="product-img"&gt;
-          <br>&nbsp;&lt;img src="img/pink.jpg" alt="A photo of a pink square"&gt;
-            <br>&nbsp;&lt;figcaption&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NX8217 // VENICE COLLECTION&lt;/div&gt;
-            <br>&nbsp;&nbsp;&lt;/figcaption&gt;
-          <br>&lt;/figure&gt;
+                &lt;figure class="product-img"&gt;
+            <br>&nbsp;&lt;img src="img/pink.jpg" alt="A photo of a pink square"&gt;
+              <br>&nbsp;&lt;figcaption&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NX8217 // VENICE COLLECTION&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+            <br>&lt;/figure&gt;
 
-              &lt;figure class="product-img"&gt;
-          <br>&nbsp;&lt;img src="img/purple.jpg" alt="A photo of a purple square"&gt;
-            <br>&nbsp;&lt;figcaption&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
-              <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NP 2095 // VENICE COLLECTION&lt;/div&gt;
-            <br>&nbsp;&nbsp;&lt;/figcaption&gt;
-          <br>&lt;/figure&gt;
-        </code>
-        
-
-      </section>
+                &lt;figure class="product-img"&gt;
+            <br>&nbsp;&lt;img src="img/purple.jpg" alt="A photo of a purple square"&gt;
+              <br>&nbsp;&lt;figcaption&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NP 2095 // VENICE COLLECTION&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+            <br>&lt;/figure&gt;
+          </code>
+        </section>
 
         <!-- Default grid section -->
         <section class="grid-row">
