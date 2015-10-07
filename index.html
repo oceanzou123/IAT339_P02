@@ -21,8 +21,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
 
     <!-- add the js for clipboard -->
-    <script type="text/javascript" src="js/ZeroClipboard.js"></script>
-   <script type="text/javascript" src="js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
   </head>
 
@@ -128,7 +128,7 @@
         <!-- Default color section -->
         <section>
           <h2>Color</h2>
-            
+
             <h3>Color Choices Rationale</h3>
             <br>
             <p>In this website, I want to try to make the design consitent and simple. The color platter actually comes from the logo. As you can see below, each color serves for purposes and the combination of them create a visual contrast for the reader. You can click to copy the color for each element below:</p>
@@ -136,38 +136,38 @@
             <!-- organe -->
             <div class="row">
               <div class="box palette-block palette-orange" id="palette-block" data-clipboard-text="#D15627">
-                <section>
+                <section onclick="copyToClipboard('color1')">
                   <div class="palette-button"></div>
                   <small>Interaction</small>
                   <small>Dark Orange</small>
-                  <span>D15627</span>
+                  <span id="color1">D15627</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-black" data-clipboard-text="#2b2b2b">
-                <section>
+                <section onclick="copyToClipboard('color2')">
                   <div class="palette-button"></div>
                   <small>Text-Heading</small>
                   <small>Light Black</small>
-                  <span>2b2b2b</span>
+                  <span id="color2">2b2b2b</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-grey" data-clipboard-text="#545454">
-                <section>
+                <section onclick="copyToClipboard('color3')">
                   <div class="palette-button"></div>
                   <small>Text-body</small>
                   <small>Grey</small>
-                  <span>545454</span>
+                  <span id="color3">545454</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-light-grey" data-clipboard-text="#f7f7f7">
-                <section>
+                <section onclick="copyToClipboard('color4')">
                   <div class="palette-button"></div>
                   <small>Background</small>
                   <small>Light Grey</small>
-                  <span>f7f7f7</span>
+                  <span id="color4">f7f7f7</span>
                 </section>
               </div>
             </div>  
