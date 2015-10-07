@@ -85,7 +85,7 @@ cite {
 }
 
 .mainContent{
-  margin-left: 20%;
+  margin-top: 8.5%;
 }
 
 a {
@@ -98,48 +98,42 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-#nav-menu {
-  position: fixed;
-  display: inline-block;
-}
-
 /* 
   VISUAL ELEMENTS -------------------
 */
 
 /* Styling for the logo */
 #logo {
-  padding-top: 10em;
-  width: 50%;
+  width: 100%;
 }
 
 /* Styling for the typeface */
-.museo_sans500{
-  font-family: "museo_sans500",sans-serif;
+.P22_Underground{
+  font-family: "p22-underground",sans-serif;
   font-style: normal;
   font-weight: 500;
   margin-top: 0;
 }
 
-.museo_sans500 h3{
+.P22_Underground h3{
 font-size: 3rem;
 }
 
-.museo_sans500 p{
+.P22_Underground p{
 font-size: 1rem;
 }
 
-.open_sans{
-  font-family: "Open Sans",serif;
+.mueseo_slab{
+  font-family: "museo-slab",serif;
   font-style: normal;
   font-weight: 300;
 }
 
-.open_sans h3{
+.mueseo_slab h3{
   font-size: 3rem;
 }
 
-.open_sans p{
+.mueseo_slab p{
   font-size: 1rem;
 }
 
@@ -406,9 +400,9 @@ font-weight: 300;
 #product-container {
   position: relative;
   width: 100%;
-  height: 9.2em;
+  height: 15.2em;
   display: inline-block;
-  padding: 0em 0em 0em 0em;
+  padding: 0em 2em 0em 2em;
   overflow: hidden;
 }
 
