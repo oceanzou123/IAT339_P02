@@ -19,6 +19,11 @@
 
     <!-- import font Open Sans -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+    <!-- add the js for clipboard -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
   </head>
 
   <body>
@@ -27,9 +32,9 @@
       <!-- 
         Here we hav added the class 'grid-row' to our nav tag to allow it to act as a grid of it's own
       -->
-      <nav class="grid-col-2of10">
+      <nav class="grid-col-2of10" id="nav-menu">
     
-        <img id="logo" src="img/brand-logo.png">
+        <img id="logo" src="img/brand-logo@2x.png">
 
         <ul>
           <li class="selected"><a href="Style_guide.html">STYLE GUIDE</a>
@@ -47,7 +52,7 @@
                 <a href="#combined_elements">Combined Elements</a>
               </li>
            
-            <li><a href="User-flows.html">USER FLOWS</a>
+      <!--       <li><a href="User-flows.html">USER FLOWS</a>
 
               <li class="sub_nav">
                 <a href="#4k_display">4K Display</a>
@@ -57,7 +62,7 @@
               </li>
               <li class="sub_nav">
                 <a href="#smart_watch">Smart Watch</a>
-              </li>
+              </li> -->
 
             <li><a href="Citations.html">CITATIONS</a>
           </ul>
@@ -104,15 +109,15 @@
           <code>&lt;script&gt;try{Typekit.load({ async: true });}catch(e){}&lt;/script&gt;</code>
           
           <h3>Rendered element:</h3>  
-          <div class="grid-col-5of10 P22_Underground">
-            <h3>P22 Underground</h3>
+          <div class="grid-col-5of10 museo_sans500">
+            <h3>Mueseo Sans</h3>
             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
             <br>a b c d e f g h i j k l m n o p q r s t u v w x y z
             <br>0 1 2 3 4 5 6 7 8 9</p>
           </div>
 
-          <div class="grid-col-5of10 mueseo_slab">
-            <h3>Mueseo Slab</h3>
+          <div class="grid-col-5of10 open_sans">
+            <h3>Open Sans</h3>
             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
             <br>a b c d e f g h i j k l m n o p q r s t u v w x y z
             <br>0 1 2 3 4 5 6 7 8 9</p>
@@ -123,46 +128,46 @@
         <!-- Default color section -->
         <section>
           <h2>Color</h2>
-            
+
             <h3>Color Choices Rationale</h3>
             <br>
             <p>In this website, I want to try to make the design consitent and simple. The color platter actually comes from the logo. As you can see below, each color serves for purposes and the combination of them create a visual contrast for the reader. You can click to copy the color for each element below:</p>
 
             <!-- organe -->
             <div class="row">
-              <div class="box palette-block palette-orange" data-clipboard-text="#D15627">
-                <section>
+              <div class="box palette-block palette-orange" id="palette-block" data-clipboard-text="#D15627">
+                <section onclick="copyToClipboard('color1')">
                   <div class="palette-button"></div>
                   <small>Interaction</small>
                   <small>Dark Orange</small>
-                  <span>D15627</span>
+                  <span id="color1">D15627</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-black" data-clipboard-text="#2b2b2b">
-                <section>
+                <section onclick="copyToClipboard('color2')">
                   <div class="palette-button"></div>
                   <small>Text-Heading</small>
                   <small>Light Black</small>
-                  <span>2b2b2b</span>
+                  <span id="color2">2b2b2b</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-grey" data-clipboard-text="#545454">
-                <section>
+                <section onclick="copyToClipboard('color3')">
                   <div class="palette-button"></div>
                   <small>Text-body</small>
                   <small>Grey</small>
-                  <span>545454</span>
+                  <span id="color3">545454</span>
                 </section>
               </div>
 
               <div class="box palette-block palette-light-grey" data-clipboard-text="#f7f7f7">
-                <section>
+                <section onclick="copyToClipboard('color4')">
                   <div class="palette-button"></div>
                   <small>Background</small>
                   <small>Light Grey</small>
-                  <span>f7f7f7</span>
+                  <span id="color4">f7f7f7</span>
                 </section>
               </div>
             </div>  
@@ -370,14 +375,18 @@
             </nav>
           </div>
         </section>
-
-              <section>
-
-
+        
         <!-- Product Listing -->
+        <section class="grid-row">
+        <h2>PRODUCTS</h2>
 
-      <section>
-      <h2>PRODUCTS</h2>
+        <!-- Product 1 - The Breakwater -->
+        <div class="grid-col-3of10">
+          <div id="product-container">
+            <img class="bottom" id="product" src="img/bike-thebreakwater2.png" />
+            <img class="top" id="product" src="img/bike-thebreakwater1.png" />
+          </div>
+
 
 
       <h3>Sample code:</h3>
@@ -408,10 +417,9 @@
             <img class="top" id="product" src="img/bike-thebreakwater1.png" alt="The Breakwater Bike" />
           </div>
 
-
           <div id="caption">
-            <div class="product-caption"><h3>THE BREAKWATER</h3></div>
-            <div class="product-caption">$399.00</div>
+            <div class="product-caption"><h3>LOIFER</h3></div>
+            <div class="product-caption">$275.00</div>
           </div>
 
         </div>
