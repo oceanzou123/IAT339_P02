@@ -647,6 +647,7 @@ font-size: 1rem;
 
   .mainContent{
     margin-left: 0em;
+    padding: 2em;
     padding-top: 4em;
   }
 
@@ -661,5 +662,9 @@ font-size: 1rem;
   #menu-icon {
     display: block;
     float: left;
+  }
+
+  .product-content {
+    margin-top: 0%;
   }
 }
