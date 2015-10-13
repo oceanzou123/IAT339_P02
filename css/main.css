@@ -1,10 +1,25 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+/* Table of Content
+==================================================
+  #1 Basic
+  #2 Navigation
+  #3 Typography
+  #4
+  #5
+  #6
+  #7
+  #8
+  #9
+  #10
+  #11 */
+
+
+/* #Basics
+================================================== */
 body {
   padding: 2rem;
   font:16pt;
+  font-family: 'Open Sans';
+  font-weight: 300;
 }
 
 section:not([id]) {
@@ -13,357 +28,286 @@ section:not([id]) {
   border-bottom: 0.15em solid #333;
 }
 
-section h2 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
 
-section h3 {
-  margin-bottom: 0;
-}
+/* #Navigation
+================================================== */
+  #logo {
+    padding-top: 10em;
+    width: 50%;
+  }
 
-section p {
-  margin-top: 0;
-}
+  nav {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
 
-nav {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-/*  border: 0.15em solid #333;*/
-  font-family: "museo-slab",serif;
-  font-style: normal;
-  font-weight: 500;
-}
+  }
 
-nav>ul{
- list-style: none; 
- padding-left: 0;
-}
+  nav>ul{
+   list-style: none; 
+   padding-left: 0;
+  }
 
-nav>ul>li{
-  margin-top: 10%;
-}
+  nav>ul>li{
+    margin-top: 10%;
+  }
 
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+  }
 
+  a {
+    color: #545454;
+    text-decoration: none; 
+  }
 
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0.75em;
-  display: block;
-}
+  a:active, a:hover {
+    color: #D15627; 
+    text-decoration: none;
+  }
 
-ul.citations {
-  margin-left: 0.25em;
-  padding-left: 0.25em;
-}
+  .mainContent{
+    margin-left: 20%;
+  }
 
-ul.citations li {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  padding-bottom: 1em;
-}
+  #nav-menu {
+    position: fixed;
+    display: inline-block;
+  }
 
-ul.citations li strong {
-  font-weight: normal;
-  font-style: italic;
-}
+  /* Styling for the navigation */
+  .sub_nav{
+    font-size: 0.9em;
+    margin-left: 3%;
+    padding-bottom: 0; 
+    margin-top: 1em;
+  }
 
-cite {
-  font-style: normal;
-}
+/* #Typography
+================================================== */
 
-.mainContent{
-  margin-top: 8.5%;
-}
+  h1{
+    font-family: "museo_sans500",sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
 
-a {
-  color: #545454;
-  text-decoration: none; 
-}
+  h2{
+    font-family: "museo_sans500",sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
 
-a:active, a:hover {
-  color: #D15627; 
-  text-decoration: none;
-}
+  h3{
+    font-family: "museo_sans500",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
 
-/* 
-  VISUAL ELEMENTS -------------------
-*/
-
-/* Styling for the logo */
-#logo{
-  width: 100%;
-}
-
-/* Styling for the typeface */
-.P22_Underground{
-  font-family: "p22-underground",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  margin-top: 0;
-}
-
-.P22_Underground h3{
-font-size: 3rem;
-}
-
-.P22_Underground p{
-font-size: 1rem;
-}
-
-.mueseo_slab{
-  font-family: "museo-slab",serif;
+  p{
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
-}
+  }
 
-.mueseo_slab h3{
-  font-size: 3rem;
-}
-
-.mueseo_slab p{
-  font-size: 1rem;
-}
-
-/* Styling for the color */
-.box{
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 1em;
-  /*border: 0.15em solid #333;*/}
-
-.palette-block section {
-  background-color: white;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.25rem;
-  overflow: hidden;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
-  border: none;}
-  .palette-block section div.palette-button {
-    border-radius: 3px 3px 0 0;
-    min-height: 100px;
-    text-align: center;
+/* #Product Listing
+================================================== */
+  .product-container{
     position: relative;
-    cursor: pointer;
+    width: 100%;
+  }
+
+  .product-container img{
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .product-container img.top:hover {
+   opacity:1;
+
+   -webkit-transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -o-transition: opacity 1s ease-in-out;
+   transition: opacity 1s ease-in-out;
+  }
+
+  .bottom{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .top{
+    opacity: 0;
+  }
+
+  .caption{
+    text-align: center;
+  }
+
+
+/* #Color Clipboard
+================================================== */
+/*  .box{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+  }
+
+  .palette-block section {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.25rem;
     overflow: hidden;
-    transition: all 0.4s ease-in-out; }
-    .palette-block section div.palette-button::after {
-      content: "copy";
-      position: absolute;
-      font-size: 0.75em;
-      color: white;
-      background-color: rgba(30, 30, 30, 0.25);
-      padding: 0.25rem 5%;
-      width: 100%;
-      left: 0;
-      bottom: -50px;
-      opacity: 0.1;
-      margin: 0;
-      transition: all 0.4s ease-in-out;
-      font-weight: 400;
-      letter-spacing: 0.0075em;
-      -webkit-font-smoothing: antialiased;
-      text-transform: uppercase;
-      letter-spacing: 0.25em; }
-.palette-block.zeroclipboard-is-hover, .palette-block:hover {
-  cursor: pointer; }
-  .palette-block.zeroclipboard-is-hover .palette-button:after, .palette-block:hover .palette-button:after {
-    opacity: 1;
-    bottom: 0; }
-.palette-block.zeroclipboard-is-active .palette-button, .palette-block:active .palette-button {
-  background-color: white !important; }
-  .palette-block.zeroclipboard-is-active .palette-button::after, .palette-block:active .palette-button::after {
-    font-family: "FontAwesome";
-    content: "";
-    color: #66b6ab;
-    background: #ecedf3; }
-.palette-block small,
-.palette-block span {
-  display: block;
-  margin: 0.5rem 0.5rem 0.25rem;
-  line-height: 0.8;
-  color: #999999;
-  font-weight: 400;
-  letter-spacing: 0.0075em;
-  -webkit-font-smoothing: antialiased; }
-.palette-block small {
-  font-size: 13.7136px; }
-  .palette-block small:nth-child(3) {
-    color: #bbbcc7;
-    letter-spacing: 0.05em;
-    font-size: 10px;
-    line-height: 0.67;
-    margin: 0 0.5rem; }
-.palette-block span {
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-size: 13.7136px;
-  display: inline-block;
-  font-weight: bold;
-  letter-spacing: 0; }
-  .palette-block span::before {
-    content: "#"; }
-.palette-block.palette-orange div {
-  background-color: #D15627; }
-.palette-block.palette-grey div {
-  background-color: #515151; }
-.palette-block.palette-light-grey div {
-  background-color: #f7f7f7; }
-.palette-block.palette-black div {
-  background-color: #2b2b2b; }
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    border: none;}
+    .palette-block section div.palette-button {
+      border-radius: 3px 3px 0 0;
+      min-height: 100px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out; }
+      .palette-block section div.palette-button::after {
+        content: "copy";
+        position: absolute;
+        font-size: 0.75em;
+        color: white;
+        background-color: rgba(30, 30, 30, 0.25);
+        padding: 0.25rem 5%;
+        width: 100%;
+        left: 0;
+        bottom: -50px;
+        opacity: 0.1;
+        margin: 0;
+        transition: all 0.4s ease-in-out;
+        font-weight: 400;
+        letter-spacing: 0.0075em;
+        -webkit-font-smoothing: antialiased;
+        text-transform: uppercase;
+        letter-spacing: 0.25em; }
+  .palette-block.zeroclipboard-is-hover, .palette-block:hover {
+    cursor: pointer; }
+    .palette-block.zeroclipboard-is-hover .palette-button:after, .palette-block:hover .palette-button:after {
+      opacity: 1;
+      bottom: 0; }
+  .palette-block.zeroclipboard-is-active .palette-button, .palette-block:active .palette-button {
+    background-color: white !important; }
+    .palette-block.zeroclipboard-is-active .palette-button::after, .palette-block:active .palette-button::after {
+      font-family: "FontAwesome";
+      content: "";
+      color: #66b6ab;
+      background: #ecedf3; }
+  .palette-block small,
+  .palette-block span {
+    display: block;
+    margin: 0.5rem 0.5rem 0.25rem;
+    line-height: 0.8;
+    color: #999999;
+    font-weight: 400;
+    letter-spacing: 0.0075em;
+    -webkit-font-smoothing: antialiased; }
+  .palette-block small {
+    font-size: 13.7136px; }
+    .palette-block small:nth-child(3) {
+      color: #bbbcc7;
+      letter-spacing: 0.05em;
+      font-size: 10px;
+      line-height: 0.67;
+      margin: 0 0.5rem; }
+  .palette-block span {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 13.7136px;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 0; }
+    .palette-block span::before {
+      content: "#"; }
+  .palette-block.palette-orange div {
+    background-color: #D15627; }
+  .palette-block.palette-grey div {
+    background-color: #515151; }
+  .palette-block.palette-light-grey div {
+    background-color: #f7f7f7; }
+  .palette-block.palette-black div {
+    background-color: #2b2b2b; }*/
 
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
-.button-nav {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.button-nav:hover, .button-nav:focus {
-  background-color: #D15627;
-  color: #fff;
-}
-
-/* Styling for the in-text link*/
-.selected{
-  color: #D15627; 
-  text-decoration: underline;
-}
-
-/* Styling for the form*/
-  .contact-form {
+/* #Form
+================================================== */
+/* .contact-form {
     max-width: 1208px;
     max-width: 75.5rem;
     margin: 0 auto;
   }
-#contact, label, input[name="submit"] {
-  position: relative;
-}
-label > span, input, textarea, button {
-  box-sizing: border-box;
-}
-label {
-  display: block;
-}
-label > span {
-  display: none;
-}
-input, textarea, button {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-}
-input[type="text"], input[type="email"], textarea {
-  margin: 0 0 1em;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-textarea {
-  height: 6em;
-}
-input[type="submit"], button {
-  background: #D15627;
-  color: #fff;
-}
-input[type="submit"]:hover, button:hover {
-  background: #ED805F;
-}
-@media screen and (min-width: 30em) {
-
+  #contact, label, input[name="submit"] {
+    position: relative;
+  }
+  label > span, input, textarea, button {
+    box-sizing: border-box;
+  }
+  label {
+    display: block;
+  }
   label > span {
-    vertical-align: top;
-    display: inline-block;
-    width: 2%;
-    padding: 0.5em;
-    border: 1px solid transparent;
-    text-align: right;
+    display: none;
   }
   input, textarea, button {
-    width: 73.6263%;
-    line-height: 1.5;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
   }
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
   textarea {
-    height: 10em;
+    height: 6em;
   }
   input[type="submit"], button {
-    margin-left: 2%;
+    background: #D15627;
+    color: #fff;
   }
-}
-@media screen and (min-width: 48em) {
-/*  .contact-form {
-    text-align: justify;
-    line-height: 0;
-  }*/
-  .contact-form:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  } 
-}
+  input[type="submit"]:hover, button:hover {
+    background: #ED805F;
+  }
+  @media screen and (min-width: 30em) {
 
-/* 
-  TEXT ELEMENTS -------------------
+    label > span {
+      vertical-align: top;
+      display: inline-block;
+      width: 2%;
+      padding: 0.5em;
+      border: 1px solid transparent;
+      text-align: right;
+    }
+    input, textarea, button {
+      width: 73.6263%;
+      line-height: 1.5;
+    }
+    textarea {
+      height: 10em;
+    }
+    input[type="submit"], button {
+      margin-left: 2%;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    .contact-form:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    } 
+  }
 */
-h1{
-  font-family: "museo-sans",sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 3.5rem;
-}
-
-h2{
-  font-family: "museo-sans",sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 2.5rem;
-}
-
-h3{
-  font-family: "museo-sans",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-p{
-font-family: "museo-slab",serif;
-font-style: normal;
-font-weight: 300;
-}
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
-
-/* Styling for the navigation */
-.sub_nav{
-  font-size: 0.9em;
-  margin-left: 3%;
-  padding-bottom: 0; 
-  margin-top: 1em;
-}
-
-/* Styling for the grid */
-.gridBBB{
-  background-color: #D15627;
-  border: 0.1em solid #fff;
-  color: #fff;
-  text-align: center;
-}
+/* #Grid
+================================================== */
