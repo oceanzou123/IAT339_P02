@@ -415,13 +415,24 @@ nav a:hover, nav a:focus {
   margin: auto;
 }
 
+#nav-menu-background {
+    background-color: #FFF;
+    height: 100%;
+    padding: 0 2em;
+    width: 20em;
+    position: fixed;
+    border-right: 0.1em;
+    border-color: #EFEFEF;
+    border-right-style: solid;
+  }
+
 
 
 /* ---------------- MAIN CONTENT ---------------- */
 
 .mainContent{
   margin-left: 20em;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 
@@ -442,7 +453,7 @@ body {
 section:not([id]) {
   margin: 2% 0;
   padding: 5% 0;
-  border-bottom: 0.1em solid #545454;
+  border-bottom: 0.1em solid #EFEFEF;
 }
 
 section h2 {
@@ -558,9 +569,6 @@ font-size: 1rem;
   margin-top: 20%;
 }
 
-.product-img {
-  margin-top: 0%;
-}
 
 /* ---------------- BROWSER RESIZE ---------------- */
 
@@ -584,8 +592,8 @@ font-size: 1rem;
     margin-top: 10%;
   }
 
-  .product-img {
-    margin-top: 5%;
+  #nav-menu-background {
+    width: 18em;
   }
 }
 
@@ -612,11 +620,14 @@ font-size: 1rem;
   }
 
   #nav-menu-background {
-    background-color: #FFF;
     height: 4em;
     padding: 0;
     width: 100%;
     position: fixed;
+    border-right-style: none;
+    border-bottom: 0.1em;
+    border-bottom-style: solid;
+    border-color: #EFEFEF;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"; /* IE8
     /* This works in IE 8 & 9 too */
     /* ... but also 5, 6, 7 */
