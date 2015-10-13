@@ -281,7 +281,7 @@ input[type="submit"]:hover, button:hover {
   Here we are defining our default column widths with the intention
   of keeping it 'mobile first'
 */
-.grid-col-2of10, .grid-col-3of10, .grid-col-5of10, .grid-col-8of10{
+.grid-col-2of10, .grid-col-3of10, .grid-col-4of10, .grid-col-5of10, .grid-col-6of10, .grid-col-8of10{
   width: 100%;
 }
 
@@ -304,7 +304,7 @@ input[type="submit"]:hover, button:hover {
 
   Think of this as saying, when display width > 30em, apply this
 */
-@media (min-width: 30em) {
+@media (min-width: 65em) {
 
   .grid-col-2of10{
     width: 20%;
@@ -312,6 +312,10 @@ input[type="submit"]:hover, button:hover {
 
   .grid-col-3of10 {
     width: 30%;
+  }
+
+  .grid-col-4of10 {
+    width: 40%;
   }
 }
 
@@ -323,10 +327,14 @@ input[type="submit"]:hover, button:hover {
 
   Think of this as saying, when display width > 50em, apply this
 */
-@media (min-width: 50em) {
+@media (min-width: 65em) {
 
   .grid-col-8of10 {
     width: 80%;
+  }
+
+  .grid-col-6of10 {
+    width: 60%;
   }
 
   .grid-col-5of10 {
@@ -432,9 +440,9 @@ body {
 }
 
 section:not([id]) {
-  margin: 1em 0;
-  padding: 1em 0;
-  border-bottom: 0.15em solid #333;
+  margin: 2% 0;
+  padding: 5% 0;
+  border-bottom: 0.1em solid #545454;
 }
 
 section h2 {
@@ -458,9 +466,10 @@ section p {
 
 h1{
   font-family: "museo_sans500",sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 3.5rem;
+  font-style: none;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
 }
 
 h2{
@@ -480,6 +489,7 @@ p{
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
+  line-height: 1.5em;
 }
 
 ul.citations {
@@ -544,10 +554,17 @@ font-size: 1rem;
   font-size: 1rem;
 }
 
+.product-content {
+  margin-top: 20%;
+}
+
+.product-img {
+  margin-top: 0%;
+}
 
 /* ---------------- BROWSER RESIZE ---------------- */
 
-@media (max-width: 80em) {
+@media (max-width: 90em) {
 
   #nav-menu {
     padding-left: 3em;
@@ -561,6 +578,14 @@ font-size: 1rem;
 
   .mainContent{
     margin-left: 18em;
+  }
+
+  .product-content {
+    margin-top: 10%;
+  }
+
+  .product-img {
+    margin-top: 5%;
   }
 }
 
