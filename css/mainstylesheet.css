@@ -1,88 +1,4 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
-
-
-
-
-
-section code {
-  background-color: #EEE;
-  padding: 0.5em 0.75em;
-  display: block;
-}
-
-ul.citations {
-  margin-left: 0.25em;
-  padding-left: 0.25em;
-}
-
-ul.citations li {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  padding-bottom: 1em;
-}
-
-ul.citations li strong {
-  font-weight: normal;
-  font-style: italic;
-}
-
-cite {
-  font-style: normal;
-}
-
-
-
-a {
-  color: #545454;
-  text-decoration: none; 
-}
-
-a:active, a:hover {
-  color: #D15627; 
-  text-decoration: none;
-}
-
-
-
-/* 
-  VISUAL ELEMENTS -------------------
-*/
-
-
-
-/* Styling for the typeface */
-.museo_sans500{
-  font-family: "museo_sans500",sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  margin-top: 0;
-}
-
-.museo_sans500 h3{
-font-size: 3rem;
-}
-
-.museo_sans500 p{
-font-size: 1rem;
-}
-
-.open_sans{
-  font-family: "Open Sans",serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-.open_sans h3{
-  font-size: 3rem;
-}
-
-.open_sans p{
-  font-size: 1rem;
-}
+/* -------------------  VISUAL ELEMENTS ------------------ */
 
 /* Styling for the color */
 .box{
@@ -198,7 +114,7 @@ font-size: 1rem;
 /* Styling for the in-text link*/
 .selected{
   color: #D15627; 
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Styling for the form*/
@@ -451,7 +367,7 @@ header {
   display: inline-block;
   padding-left: 4em;
   width: 22em;
-
+  letter-spacing: 0.1em;
 }
 
 /* Styling for nav menu */
@@ -565,6 +481,67 @@ p{
   font-weight: 300;
 }
 
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+
+a {
+  color: #545454;
+  text-decoration: none; 
+}
+
+a:active, a:hover {
+  color: #D15627; 
+  text-decoration: none;
+}
+
+/* Styling for the typeface */
+.museo_sans500{
+  font-family: "museo_sans500",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.museo_sans500 h3{
+font-size: 3rem;
+}
+
+.museo_sans500 p{
+font-size: 1rem;
+}
+
+.open_sans{
+  font-family: "Open Sans",serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.open_sans h3{
+  font-size: 3rem;
+}
+
+.open_sans p{
+  font-size: 1rem;
+}
 
 
 /* ---------------- BROWSER RESIZE ---------------- */
