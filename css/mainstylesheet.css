@@ -368,6 +368,7 @@ header {
   padding-left: 4em;
   width: 22em;
   letter-spacing: 0.1em;
+  font-size: 0.9em;
 }
 
 /* Styling for nav menu */
@@ -549,8 +550,8 @@ font-size: 1rem;
 @media (max-width: 80em) {
 
   #nav-menu {
-    padding-left: 2em;
-    width: 20em;
+    padding-left: 3em;
+    width: 21em;
   }
 
   #logo {
@@ -560,7 +561,7 @@ font-size: 1rem;
   }
 
   .mainContent{
-    margin-left: 20em;
+    margin-left: 21em;
   }
 }
 
