@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solacycle Home Page</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/mainstylesheet.css" rel="stylesheet">
+
+    <!-- import the icon from font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- import font Museo Sans -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- import font Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+    <!-- add the js for clipboard -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+  <body>
+    <!-- NAVIGATION MENU -->
+    <header>
+      <div id="nav-menu-background">
+      </div>
+      <nav id="nav-menu">
+        <div class="button-main button-no-margin" id="menu-icon">MENU</div>
+    
+        <img id="logo" src="img/brand-logo@2x.png">
+
+        <ul>
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <a href="ShopBikes.html"><li class="selected">SHOP BIKES</li></a>
+            <div class="sub-nav">
+              <li><a href="TheBreakwater.html">The Breakwater</a></li>
+              <a href="TheFawnler.html"><li class="selected">The Fawnler</li></a>
+              <li><a href="TheLoifer.html">The Loifer</a></li>
+            </div>
+          <li><a href="BuildBikes.html">BUILD BIKES</a></li>
+          <li><a href="Workshops.html">WORKSHOPS</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a href="Cart.html">CART</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <div class="mainContent">
+      <section>
+        <div class="grid-row">
+          <!-- PRODUCT - THEBREAKWATER -->
+          <!-- Text -->
+          <div class="grid-col-4of10">
+            <div class="product-content">
+              <h1>The Breakwater</h1>
+              <h3>$399.00</h3>
+              <p>The result of this vision is the single speed SC-01, a high quality, maintenance-free bicycle. Lightweight, stable and responsive, it is a pleasure to ride, and with its elegant and timeless design, it is a pleasure to the eye. It is made to last, with a titanium frame, fork and handlebar, Gates belt transmission, Brooks leather saddle and grips, and other high quality components. The SC-01 will be your urban affairs partner for many decades, without asking anything in return... well, maybe just a little bit of love.</p>
+              <div class="grid-col-3of10">
+                <h3>Comfort</h3>
+                <div class="bike-stats the-fawnler-comfort"></div>
+              </div>
+              <div class="grid-col-3of10">
+                <h3>Speed</h3>
+                <div class="bike-stats the-fawnler-speed"></div>
+              </div>
+              <div class="grid-col-3of10">
+                <h3>Performance</h3>
+                <div class="bike-stats the-fawnler-performance"></div>
+              </div>
+              <a href="Cart.html"><div class="button-main button-duplicate">Add to cart</div></a>
+              <a href="BuildBikes.html"><div class="button-main">Customize</div></a>
+            </div>
+          </div>
+
+          <!-- Picture -->
+          <div class="grid-col-6of10">
+              <div class="product-images">
+                <img id="image1" src="img/bike1.png" />
+                <img id="image2" src="img/bike2.png" />
+                <img id="image3" src="img/bike3.png" />
+                <img id="image4" src="img/bike4.png" />
+              </div>
+              <table>
+                <tr class="thumbnail-photos">
+                  <td><a href="#image1"><img src="img/bike1.png"></a></td>
+                  <td><a href="#image2"><img src="img/bike2.png"></a></td>
+                  <td><a href="#image3"><img src="img/bike3.png"></a></td>
+                  <td><a href="#image4"><img src="img/bike4.png"></a></td>
+                </tr>
+              </table>
+          </div>
+        </div>
+      </section>
+        
+      <section class="contact-form lastitem">
+        <h2>Leave a Review!</h2>
+        <form id="contact" name="contact" accept-charset="utf-8">
+          <label><input name="name" type="text" placeholder="Name"/></label>
+          <label><input name="email" type="email" placeholder="Email"/></label>
+          <label><textarea name="message" placeholder="Message"></textarea></label>
+          <input name="submit" type="submit" class="button-form" value="Send"/>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
