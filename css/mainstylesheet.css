@@ -546,6 +546,7 @@ a:active, a:hover {
     height: 30em;
     border: 0; 
     border-style: none;
+    padding: 2em;
   }
 
 
@@ -564,8 +565,6 @@ a:active, a:hover {
 
   /*Contain Everything in photo*/
   .cart_details{
-    width:100%;
-    float:left;
     border-bottom:2px solid #aaa;
   }
 
@@ -591,18 +590,16 @@ a:active, a:hover {
 
   /*The title of each element*/
   .price{
-    width:15%;
     float:left;
-    margin-left:5%;
+    margin-left:7.5%;
     position:relative;
     height:20em;
   }
 
   /*Styling for the Quality*/
   .qty{
-    width:15%;
     float:left;
-    margin-left:5%;
+    margin-left:7.5%;
     position:relative;
     height:20em;
   }
@@ -624,200 +621,72 @@ a:active, a:hover {
 
   /*Styling for the Price*/
   .total{
-    width:15%;
     float:left;
-    margin-left:5%;
+    margin-left:7.5%;
     position:relative;
     height:20em;
   }
 
   /*Remove Button*/
   .remove{
-    text-align:center;
-    position:relative;
+    position:relative;  
     height:20em;
+    margin-left: 7.5%;
     color:grey;
   }
 
   .remove i{
     width: auto;
-    height: 20em;
     transition:all 0.5s ease;
   }
 
   .remove i:hover{
     color:#D15627;
   }
-  
-  /*Remove Button*/
-  .checkout{
-    width:45%;
-    float:right;
-    margin-top: 2em;
+
+  .subtotal {
+    margin-left: 2%;
+  }
+
+  .checkout h2 {
     text-align: center;
+    float: right;
   }
 
-  .subtotal h2{
-    width:15%;
-    /*float:left;*/
-
+  .sumprice{
+    margin-left: 2em;
   }
 
-  .subtotal .finalprice{
-    width:15%;
-    float:left;
-    font-size:20px;
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .complete{
-    width:7em;
-    float:right;
-    font-size:1.2em;
+  .compelete{
+    float: right;
     text-align: center;
-    margin-top:1.7em;
+    margin-right: 2.7em;
   }
 
-@media (max-width:600px){
-  .center{
-  position:initial;
-  margin:auto;
-  text-align:center;
-}
-.cart_details{
-  position:initial;
-  min-height:100px;
-  float:none;
-  border-bottom:0;
-}
-.item{
-  width:100%;
-  float:left;
-  maz-height:200px;
-  border-bottom:1px solid #ccc;
-}
-.item img{
-  display:block;
-  margin:0 auto;
-  max-width:90%;
-}
-.product_details{
-  width:60%;
-  margin-bottom:1em;
-}
-.product_details span{
-  margin-right:10px;
-}
-.cart_details h3{
-  border-bottom:2px solid #aaa;
-  padding-bottom: 2em;
-}
-.price{
-  width:30%;
-  float:left;
-  margin-left:0;
-  position:initial;
-  height:auto;
-}
-.qty{
-  width:30%;
-  float:left;
-  margin-left:5%;
-  position:initial;
-  height:auto;
-}
-.total{
-  width:30%;
-  height:auto;
-  margin-left:5%;
-  position:initial;
-}
-.remove{
-  margin-top:10px;
-  border-top:1px solid #ccc;
-  width:100%;
-  height:auto;
-  padding-top:5px;
-  border-bottom:5px solid #ccc;
-}
-.remove h3{
-  display:block;
-  border:0;
-  float:left;
-  margin-top:0;
-  color:#000;
-}
-.remove i{
-  float:right;
-  font-size:20px;
-  margin-right:10%;
-}
-.complete_cart{
-  width:100%;
-  float:left;
-}
-.update{
-  width:100%;
-  float:none;
-  display:none;
-  margin-right:0%;
-}
-.mobile{
-  display:block;
-}
-.update .coupon{
-  width:100%;
-  float:left;
-  border-bottom:1px solid #ccc;
-  padding-bottom:15px;
-  padding-top:15px;
-  border-top:1px solid #ccc;
-  margin-top:20px;
-}
-.update .coupon h2{
-  width:50%;
-  float:left;
-  font-size:18px;
-}
-.update .coupon input{
-  width:48%;
-  margin-left:1%;
-  float:left;
-  margin-top:10px;
-  border:1px solid #ccc;
-  border-radius:3px;
-  height:30px;
-}
-.shipping{
-  width:100%;
-  float:left;
-}
-.update .coupon .button{
-  width:100%;
-  margin-left:0;
-}
-.checkout{
-  width:100%;
-  float:left;
-}
-.subtotal h2{
-  width:50%;
-}
-.subtotal .finalprice{
-  width:50%;
-  float:right;
-  text-align:right;
-}
-.subtotal .refresh{
-  display:none;
-}
-.complete{
-  width:100%;
-  float:left;
-  font-size:30px;
-  margin-top:20px;
-}
-  
-}
+  /*Cart Form Mobile End*/
+  @media (max-width:600px){
+
+    .center{
+      position:initial;
+      margin:auto;
+      text-align:center;
+    }
+
+    .price, .qty, .total, .remove {
+      height: auto;
+      margin-left:0;
+    }
+
+    .compelete{
+      margin-right: 0;
+    }
+
+    .cart_details {
+      border-bottom: none;
+    }
+
+    .checkout{
+      margin-top: 3em;
+    }
+  }
 
