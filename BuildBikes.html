@@ -1,44 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8" />
     <title>Solacycle Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS
+  ================================================== -->
+    <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/mainstylesheet.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
 
-    <!-- import the icon from font awesome -->
+    <!-- Font Awesome
+  ================================================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!-- import font Museo Sans -->
+    <!-- Font
+  ================================================== -->
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-
-    <!-- import font Open Sans -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
 
-    <!-- add the js for clipboard -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Favicons
+  ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
 
-  </head>
-  <body>
-    <!-- NAVIGATION MENU -->
+</head>
+<body>
+    <!-- Navigation
+  ================================================== -->    
     <header>
-      <div id="nav-menu-background">
-      </div>
+      <div id="nav-menu-background"></div>
+
       <nav id="nav-menu">
         <div class="button-main button-no-margin" id="menu-icon">MENU</div>
-    
-        <a href="Home.html"><img id="logo" src="img/brand-logo@2x.png"></a>
-
+        <a href="Home.html"><img id="logo" src="img/brand-logo@2x.png" href="Home.html"></a>
         <ul>
           <li><a href="Home.html">HOME</a></li>
           <li><a href="AboutUs.html">ABOUT US</a></li>
           <li><a href="ShopBikes.html">SHOP BIKES</a></li>
-          <a href="BuildBikes.html"><li class="selected">BUILD BIKES</li></a>
+          <li><a href="BuildBikes.html" class="selected">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
           <li><a href="ContactUs.html">CONTACT US</a></li>
           <li><a href="Cart.html">CART</a></li>
@@ -47,20 +64,18 @@
 
     </header>
 
-
-
-    <!-- MAIN CONTENT SECTION -->
+    <!-- BIKE DETAILS PAGE
+  ================================================== -->   
     <div class="mainContent">
       <section>
         <div class="grid-row">
-          <!-- PRODUCT - THEBREAKWATER -->
-          <!-- Text -->
+          <!-- Middle Colum Bike Details -->
           <div class="grid-col-4of10">
             <div class="product-content">
               <h1>Build your own bike</h1>
               <p>Use the sections below to select which parts you would like on your cool new bike. Have fun!</p>
 
-
+              <!-- Seats -->
               <div class="grid-col-10of10">
                 <h2>Seats</h2>
                 <p>What would you like to sit on?</p>
@@ -74,6 +89,7 @@
                 </table>
               </div>
 
+              <!-- Handlebars -->
               <div class="grid-col-10of10">
                 <h2>Handlebars</h2>
                 <p>What kind of grip would you like?</p>
@@ -87,6 +103,7 @@
                 </table>
               </div>
 
+              <!-- Color -->
               <div class="grid-col-10of10">
                 <h2>Color</h2>
                 <p>Which color suits you?</p>
@@ -100,6 +117,7 @@
                 </table>
               </div>
 
+              <!-- Bikes Summary -->
               <div class="grid-col-10of10">
                 <h2>Your overall bike status</h2>
               </div>
@@ -128,6 +146,7 @@
                 <h3>$399.99</h3>
               </div>
 
+              <!-- Add to cart -->
               <a href="Cart.html"><div class="button-main">Add to cart</div></a>
             </div>
           </div>
@@ -144,5 +163,13 @@
         </div>
       </section>
     </div>
-  </body>
+
+  <!-- JS
+  ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="javascripts/main.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
 </html>
