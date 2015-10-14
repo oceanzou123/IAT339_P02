@@ -12,24 +12,124 @@
   #10
   #11 */
 
-/* #Base
+/* #Buttons
+================================================== */
+.button-main {
+  display: inline-block;
+  border: 0.1em;
+  border-style: solid;
+  border-color: #545454;
+  padding: 0.5em;
+  margin: 2em 0;
+  text-decoration: none;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+}
+
+.button-main:hover, .button-main:focus {
+  border-color: #D15627;
+  color: #D15627;
+}
+
+.button-duplicate {
+  margin: 0em 2em 1em 0;
+}
+
+.button-no-margin {
+  margin-top: 0;
+}
+
+/* #Contact Form
+================================================== */
+#contact, label, input[name="submit"] {
+  position: relative;
+}
+label, input, textarea, .button-form {
+  box-sizing: border-box;
+}
+label {
+  display: block;
+}
+
+input, textarea, .button-form {
+  width: 75%;
+  padding: 0.5em;
+  border: none;
+  line-height: 1.5em;
+}
+
+textarea {
+    height: 10em;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="submit"], .button-form {
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  border-style: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background: #D15627;
+  color: #fff;
+}
+
+input[type="submit"]:hover, .button-form:hover {
+  background-color: #ED805F;
+}
+
+
+
+/* #Product Listing
 ================================================== */
 
-body {
-  padding: 0rem;
-  font:16pt;
-  font-family: 'Open Sans';
-  font-weight: 300;
+/* Styling for product lists */
+.caption {
+  position: relative;
+  padding: 0em 2em 0em 2em;
+  margin: 0 auto;
+  width: 20em;
 }
 
-section:not([id]) {
-  margin: 1em 0;
-  padding: 1em 0;
-  border-bottom: 0.15em solid #333;
+.product-caption {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-style: normal;
+  margin: 0 auto;
+}
+
+/* Animation for pictures */
+
+.product-container {
+  position: relative;
+  width: 20em;
+  height: 12em;
+  padding: 0em 2em 0em 2em;
+  margin: 0 auto;
+}
+
+.product-container img {
+  position:absolute;
+  left:0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.product-container img.top:hover {
+  opacity:0;
 }
 
 
-/* #Navigation
+/* #Navigation Menu
 ================================================== */
 
   header {
@@ -37,10 +137,22 @@ section:not([id]) {
     position: fixed;
   }
 
-  #logo {
-    padding-top: 10em;
-    padding-bottom: 4em;
-    width: 13em;
+  /* Styling for the sub navigation */
+  .sub-nav{
+    font-size: 0.9em;
+    margin-left: 7%;
+    padding-bottom: 0; 
+    margin-top: 1em;
+  }
+
+  /* Nav menu fixed */
+  #nav-menu {
+    position: fixed;
+    display: inline-block;
+    padding-left: 4em;
+    width: 20em;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
   }
 
   /* Styling for nav menu */
@@ -54,7 +166,7 @@ section:not([id]) {
     padding-left: 0;
   }
 
-  nav>ul>li{
+  li, .selected {
     margin-top: 1.5em;
   }
 
@@ -62,40 +174,17 @@ section:not([id]) {
     text-decoration: none;
   }
 
-  a {
-    color: #545454;
-    text-decoration: none; 
-  }
-
-  a:active, a:hover {
-    color: #D15627; 
-    text-decoration: none;
-  }
-
-  .selected{
-    color: #D15627; 
-    text-decoration: none;
-  }
-
-  /* Nav menu fixed */
-  #nav-menu {
-    position: fixed;
-    display: inline-block;
-    padding-left: 4em;
-    width: 20em;
-    letter-spacing: 0.1em;
-    font-size: 0.9em;
+  /* Styling for the logo */
+  #logo {
+    padding-top: 10em;
+    padding-bottom: 3em;
+    width: 13em;
   }
 
   /* Styling for menu icon */
-/*  #menu-icon {
-      display: none;
-      border: 0.1em;
-      border-style: solid;
-      border-color: #545454;
-      padding: 0.5em;
-      margin: auto;
-    }
+  #menu-icon {
+    display: none;
+  }
 
   #nav-menu-background {
       background-color: #FFF;
@@ -106,50 +195,629 @@ section:not([id]) {
       border-right: 0.1em;
       border-color: #EFEFEF;
       border-right-style: solid;
-    }*/
+  }
+
+
 
 /* #Main Content
 ================================================== */
 
-/*  .mainContent{
-    margin-left: 20em;
-    padding: 2rem;
-  }*/
-
-  img {
-    max-width: 100%;
-    display: block;
-  }
+.mainContent{
+  margin-left: 20em;
+  padding: 0 4rem 0 4rem;
+}
 
 
 /* #Typography
 ================================================== */
 
-  h1{
-    font-family: "museo_sans500",sans-serif;
-    font-style: italic;
-    font-weight: 900;
-    font-size: 3.5rem;
-  }
+img {
+  max-width: 100%;
+  display: inline-block;
+}
 
-  h2{
-    font-family: "museo_sans500",sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 2.5rem;
-  }
+body {
+  padding: 0rem;
+  font:16pt;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
 
-  h3{
-    font-family: "museo_sans500",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-  }
+section {
+  padding: 5% 0;
+  border-bottom: 0.1em solid #EFEFEF;
+}
 
-  p{
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-  }
 
-/* #4
+h1{
+  font-family: "museo_sans500",sans-serif;
+  font-style: none;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+h2{
+  font-family: "museo_sans500",sans-serif;
+  font-style: none;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h3{
+  font-family: "museo_sans500",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: #545454;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+a {
+  color: #545454;
+  text-decoration: none; 
+}
+
+a:active, a:hover {
+  color: #D15627; 
+  text-decoration: none;
+}
+
+.product-content {
+  margin-top: 20%;
+}
+
+.lastitem {
+  border-style: none;
+}
+
+.margin-top-extra {
+  padding-top: 2em;
+}
+
+.padding-left-extra {
+  padding-left: 4em;
+}
+
+/* Styling for the in-text link*/
+.selected {
+  color: #D15627; 
+  text-decoration: none;
+}
+
+
+
+/* #Bike Stats
 ================================================== */
+
+  .bike-stats {
+    display: block;
+    height: 0.25em;
+    width: 2em;
+    background-color: #D15627;
+    margin-bottom: 2em;
+  }
+
+  /* Stats for The Breakwater bike */
+  .the-breakwater-comfort {
+    width: 20%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.30;
+  }
+
+  .the-breakwater-speed {
+    width: 70%;
+  }
+
+  .the-breakwater-performance {
+    width: 60%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
+
+
+  /* Stats for The Fawnler bike */
+  .the-fawnler-comfort {
+    width: 70%;
+  }
+
+  .the-fawnler-speed {
+    width: 20%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.30;
+  }
+
+  .the-fawnler-performance {
+    width: 30%; 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
+
+
+  /* Stats for The Loifer bike */
+  .the-loifer-comfort {
+    width: 60%;
+  }
+
+  .the-loifer-speed {
+    width: 60%;
+  }
+
+  .the-loifer-performance {
+    width: 60%;
+  }
+
+
+  table {
+    border-style: none;
+    text-align: center; 
+    width: 70%;
+    margin: 0 auto;
+  }
+
+/* #Photo Gallery for Product Image
+================================================== */
+  .product-images {
+    width: 80%;
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .product-images img {
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFF;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .product-images img:target {
+    left: 0;
+    z-index: 9;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .product-images img:first-child {
+    left: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  .thumbnail-photos a {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
+
+  .thumbnail-photos a:hover {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  /* Styling for the custom parts on buildbikes page */
+  .custom-parts {
+    margin: 0;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+
+/* #Browser Resize
+================================================== */
+
+  @media (max-width: 90em) {
+
+    #nav-menu {
+      padding-left: 3em;
+      width: 18em;
+    }
+
+    #logo {
+      padding-top: 8em;
+      padding-bottom: 2em;
+    }
+
+    .mainContent{
+      margin-left: 18em;
+    }
+
+    .product-content {
+      margin-top: 10%;
+    }
+
+    #nav-menu-background {
+      width: 18em;
+    }
+
+    #product-images {
+      height: 20em;
+    }
+  }
+
+
+  @media (max-width: 65em) {
+
+    #nav-menu {
+      position: relative;
+      display: block;
+      text-align: center;
+      height: 4em;
+      padding: 1em;
+      width: 100%;
+      margin: auto;
+      vertical-align: middle;
+      z-index: 99999;
+      }
+
+    #logo {
+      margin: auto;
+      padding: 0em;
+      margin-top: 0.5em;
+      width: auto;
+      height: 1.5rem;
+      z-index: 99999;
+    }
+
+    #nav-menu-background {
+      height: 4em;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      border-right-style: none;
+      border-bottom: 0.1em;
+      border-bottom-style: solid;
+      border-color: #EFEFEF;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+      filter: alpha(opacity=99);
+      opacity: 0.99;
+      z-index: 99999;
+    }
+
+
+    li, .selected {
+      margin-top: 2em;
+    }
+
+    .mainContent{
+      margin-left: 0em;
+      padding: 2em;
+      padding-top: 4em;
+    }
+
+    img {
+      margin: auto;
+    }
+
+    #nav-menu ul {
+      display: none;
+    }
+
+    #menu-icon {
+      display: block;
+      float: left;
+    }
+
+    .product-content {
+      margin-top: 0%;
+    }
+
+    input, textarea, .button-form {
+    width: 100%;
+    }
+
+    .padding-left-extra {
+      padding: 2em 0em 0em 0em;
+    }
+
+    .bike-stats {
+      margin-bottom: 1em;
+    }
+  }
+
+/* #Map
+================================================== */
+  .map {
+    width: 100%;
+    height: 30em;
+    border: 0; 
+    border-style: none;
+  }
+
+
+/* #Cart
+================================================== */
+
+  /*spacing and alignment for each element*/
+  .center{
+    height:10%;
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    text-align:center;
+  }
+
+
+  /*Contain Everything in photo*/
+  .cart_details{
+    width:100%;
+    float:left;
+    border-bottom:2px solid #aaa;
+  }
+
+  /*Text Under the image*/
+  .product_details{
+    display:block;
+    margin:0 auto;
+    margin-bottom:1.5em;
+    text-align: center;
+  }
+
+  .product_image img{
+    max-height:100%;
+    width: auto;
+    height: auto;
+  }
+
+  /*The title of each element*/
+  .cart_details h3{
+    border-bottom:2px solid #aaa;
+    padding-bottom: 1em;
+  }
+
+  /*The title of each element*/
+  .price{
+    width:15%;
+    float:left;
+    margin-left:5%;
+    position:relative;
+    height:20em;
+  }
+
+  /*Styling for the Quality*/
+  .qty{
+    width:15%;
+    float:left;
+    margin-left:5%;
+    position:relative;
+    height:20em;
+  }
+
+  /*Styling for the Quality*/
+  .qty input{
+    width:3em;
+    height:2em;
+    border:1px solid #ccc;
+    display:block;
+    margin:0 auto;
+    border-radius:4px;
+  }
+
+  /*Hover Effect for Input*/
+  .qty input:hover{
+    border:1px solid #D15627;
+  }
+
+  /*Styling for the Price*/
+  .total{
+    width:15%;
+    float:left;
+    margin-left:5%;
+    position:relative;
+    height:20em;
+  }
+
+  /*Remove Button*/
+  .remove{
+    text-align:center;
+    position:relative;
+    height:20em;
+    color:grey;
+  }
+
+  .remove i{
+    width: auto;
+    height: 20em;
+    transition:all 0.5s ease;
+  }
+
+  .remove i:hover{
+    color:#D15627;
+  }
+  
+  /*Remove Button*/
+  .checkout{
+    width:45%;
+    float:right;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .subtotal h2{
+    width:15%;
+    /*float:left;*/
+
+  }
+
+  .subtotal .finalprice{
+    width:15%;
+    float:left;
+    font-size:20px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .complete{
+    width:7em;
+    float:right;
+    font-size:1.2em;
+    text-align: center;
+    margin-top:1.7em;
+  }
+
+@media (max-width:600px){
+  .center{
+  position:initial;
+  margin:auto;
+  text-align:center;
+}
+.cart_details{
+  position:initial;
+  min-height:100px;
+  float:none;
+  border-bottom:0;
+}
+.item{
+  width:100%;
+  float:left;
+  maz-height:200px;
+  border-bottom:1px solid #ccc;
+}
+.item img{
+  display:block;
+  margin:0 auto;
+  max-width:90%;
+}
+.product_details{
+  width:60%;
+  margin-bottom:1em;
+}
+.product_details span{
+  margin-right:10px;
+}
+.cart_details h3{
+  border-bottom:2px solid #aaa;
+  padding-bottom: 2em;
+}
+.price{
+  width:30%;
+  float:left;
+  margin-left:0;
+  position:initial;
+  height:auto;
+}
+.qty{
+  width:30%;
+  float:left;
+  margin-left:5%;
+  position:initial;
+  height:auto;
+}
+.total{
+  width:30%;
+  height:auto;
+  margin-left:5%;
+  position:initial;
+}
+.remove{
+  margin-top:10px;
+  border-top:1px solid #ccc;
+  width:100%;
+  height:auto;
+  padding-top:5px;
+  border-bottom:5px solid #ccc;
+}
+.remove h3{
+  display:block;
+  border:0;
+  float:left;
+  margin-top:0;
+  color:#000;
+}
+.remove i{
+  float:right;
+  font-size:20px;
+  margin-right:10%;
+}
+.complete_cart{
+  width:100%;
+  float:left;
+}
+.update{
+  width:100%;
+  float:none;
+  display:none;
+  margin-right:0%;
+}
+.mobile{
+  display:block;
+}
+.update .coupon{
+  width:100%;
+  float:left;
+  border-bottom:1px solid #ccc;
+  padding-bottom:15px;
+  padding-top:15px;
+  border-top:1px solid #ccc;
+  margin-top:20px;
+}
+.update .coupon h2{
+  width:50%;
+  float:left;
+  font-size:18px;
+}
+.update .coupon input{
+  width:48%;
+  margin-left:1%;
+  float:left;
+  margin-top:10px;
+  border:1px solid #ccc;
+  border-radius:3px;
+  height:30px;
+}
+.shipping{
+  width:100%;
+  float:left;
+}
+.update .coupon .button{
+  width:100%;
+  margin-left:0;
+}
+.checkout{
+  width:100%;
+  float:left;
+}
+.subtotal h2{
+  width:50%;
+}
+.subtotal .finalprice{
+  width:50%;
+  float:right;
+  text-align:right;
+}
+.subtotal .refresh{
+  display:none;
+}
+.complete{
+  width:100%;
+  float:left;
+  font-size:30px;
+  margin-top:20px;
+}
+  
+}
+

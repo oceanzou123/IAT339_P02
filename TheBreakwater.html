@@ -49,12 +49,20 @@
       <div id="nav-menu-background"></div>
 
       <nav id="nav-menu">
+        <!-- Phone Menu Button -->
         <div class="button-main button-no-margin" id="menu-icon">MENU</div>
+        <!-- Logo -->
         <a href="Home.html"><img id="logo" src="img/brand-logo@2x.png" href="Home.html"></a>
+        <!-- Text -->
         <ul>
-          <li><a href="Home.html" class="selected">HOME</a></li>
+          <li><a href="Home.html">HOME</a></li>
           <li><a href="AboutUs.html">ABOUT US</a></li>
-          <li><a href="ShopBikes.html">SHOP BIKES</a></li>
+          <li><a href="ShopBikes.html" class="selected">SHOP BIKES</a></li>
+            <div class="sub-nav">
+              <li><a href="TheBreakwater.html">The Breakwater</a></li>
+              <li><a href="TheBreakwater.html">The Fawnler</a></li>
+              <li><a href="TheBreakwater.html">The Loifer</a></li>
+            </div>
           <li><a href="BuildBikes.html">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
           <li><a href="ContactUs.html">CONTACT US</a></li>
@@ -64,26 +72,72 @@
 
     </header>
 
-    <!-- PRODUCT - THEBREAKWATER
+    <!-- PRODUCT - THEBREAKWATER 
   ================================================== -->   
     <div class="mainContent">
-      <section class="lastitem">
+      <section>
         <div class="grid-row">
-          
-          <!-- Text -->
+
+          <!-- Descripition -->
           <div class="grid-col-4of10">
             <div class="product-content">
               <h1>The Breakwater</h1>
-              <p>The result of this vision is the single speed SC-01, a high quality, maintenance-free bicycle. Lightweight, stable and responsive, it is a pleasure to ride, and with its elegant and timeless design, it is a pleasure to the eye. It is made to last, with a titanium frame, fork and handlebar, Gates belt transmission, Brooks leather saddle and grips, and other high quality components. The SC-01 will be your urban affairs partner for many decades, without asking anything in return... well, maybe just a little bit of love.</p>
+              <h3>$399.00</h3>
+                <p>
+                The result of this vision is the single speed SC-01, a high quality, maintenance-free bicycle. Lightweight, stable and responsive, it is a pleasure to ride, and with its elegant and timeless design, it is a pleasure to the eye. It is made to last, with a titanium frame, fork and handlebar, Gates belt transmission, Brooks leather saddle and grips, and other high quality components. The SC-01 will be your urban affairs partner for many decades, without asking anything in return... well, maybe just a little bit of love.
+                </p>
+              <div class="grid-col-3of10">
+                <h3>Comfort</h3>
+                <div class="bike-stats the-breakwater-comfort"></div>
+              </div>
+
+              <div class="grid-col-3of10">
+                <h3>Speed</h3>
+                <div class="bike-stats the-breakwater-speed"></div>
+              </div>
+
+              <div class="grid-col-3of10">
+                <h3>Performance</h3>
+                <div class="bike-stats the-breakwater-performance"></div>
+              </div>
+
+              <!-- Cart Button -->
+              <a href="Cart.html"><div class="button-main button-duplicate">Add to cart</div></a>
+              <!-- Build Button -->
+              <a href="BuildBikes.html"><div class="button-main">Customize</div></a>
             </div>
           </div>
 
-          <!-- Picture -->
+          <!-- Thumbmail -->
           <div class="grid-col-6of10">
-            <img src="img/bike1.png">
+              <div class="product-images">
+                <img id="image1" src="img/bike1.png" />
+                <img id="image2" src="img/bike2.png" />
+                <img id="image3" src="img/bike3.png" />
+                <img id="image4" src="img/bike4.png" />
+              </div>
+              <table>
+                <tr class="thumbnail-photos">
+                  <td><a href="#image1"><img src="img/bike1.png"></a></td>
+                  <td><a href="#image2"><img src="img/bike2.png"></a></td>
+                  <td><a href="#image3"><img src="img/bike3.png"></a></td>
+                  <td><a href="#image4"><img src="img/bike4.png"></a></td>
+                </tr>
+              </table>
           </div>
-
+          
         </div>
+      </section>
+      
+      <!-- Feedback Form -->
+      <section class="contact-form lastitem">
+        <h2>Leave a Review!</h2>
+        <form id="contact" name="contact" accept-charset="utf-8">
+          <label><input name="name" type="text" placeholder="Name"/></label>
+          <label><input name="email" type="email" placeholder="Email"/></label>
+          <label><textarea name="message" placeholder="Message"></textarea></label>
+          <input name="submit" type="submit" class="button-form" value="Send"/>
+        </form>
       </section>
     </div>
 
