@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P01 - Style Guide Template</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+    <!-- import the icon from font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- import font Museo Sans -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- import font Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+    <!-- add the js for clipboard -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <div class="grid-row">
+
+      <!-- 
+        Here we hav added the class 'grid-row' to our nav tag to allow it to act as a grid of it's own
+      -->
+      <nav class="grid-col-2of10" id="nav-menu">
+    
+        <img id="logo" src="img/brand-logo@2x.png">
+
+        <ul>
+          <li class="selected"><a href="Style_guide.html">STYLE GUIDE</a>
+
+              <li class="sub_nav">
+                <a href="#visual_elements">Visual Elements</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#interactive_elements">Interactive Elements</a>
+              </li>
+              <li class="sub_nav"> 
+                <a href="#text_elements">Text Elements</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#combined_elements">Combined Elements</a>
+              </li>
+           
+      <!--       <li><a href="User-flows.html">USER FLOWS</a>
+
+              <li class="sub_nav">
+                <a href="#4k_display">4K Display</a>
+              </li>
+              <li class="sub_nav"> 
+                <a href="#mobile_device">Mobile Device</a>
+              </li>
+              <li class="sub_nav">
+                <a href="#smart_watch">Smart Watch</a>
+              </li> -->
+
+            <li><a href="Citations.html">CITATIONS</a>
+          </ul>
+
+      </nav>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <div class="grid-col-8of10 mainContent">
+
+      <!-- VISUAL ELEMENTS SECTION // -->
+      <section id="text_elements">
+
+        <!-- Default logo styling section -->
+        <section>
+          <h2>Logo</h2>
+
+          <h3>CSS selector:</h3>
+          <br>
+          <p>#logo</p>
+
+          <h3>Sample code:</h3>
+          <br>
+          <code>&lt;img href="img/brand-logo.png" id="logo"/&gt;</code>
+          <code>&lt;img href="img/brand-logo@2x.png" id="logo"/&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <img src="img/brand-logo@2x.png"><p>the logo with @2x will be render when the website is displayed in retina screens</p> 
+          <img src="img/brand-logo.png"> <p> this is the logo to be display in normal screen
+        </section>
+
+        <!-- Default typeface section -->
+        <section class="grid-row">
+          <h2>Typeface</h2>
+
+          <h3>Typekit</h3>
+          <br>
+          <p>Typekit is a service which allows designers and developers to use high-quality fonts in their work through a subscription plan to their font library. In this project, I am using the font from typekit.Below shows the simple way about how to import the font. </p>
+
+          <h3>Embeded Code from Typekit:</h3>
+          <br>
+          <code>&lt;script src="https://use.typekit.net/rpj7hny.js"/&gt;</code>
+          <code>&lt;script&gt;try{Typekit.load({ async: true });}catch(e){}&lt;/script&gt;</code>
+          
+          <h3>Rendered element:</h3>  
+          <div class="grid-col-5of10 museo_sans500">
+            <h3>Mueseo Sans</h3>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            <br>a b c d e f g h i j k l m n o p q r s t u v w x y z
+            <br>0 1 2 3 4 5 6 7 8 9</p>
+          </div>
+
+          <div class="grid-col-5of10 open_sans">
+            <h3>Open Sans</h3>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            <br>a b c d e f g h i j k l m n o p q r s t u v w x y z
+            <br>0 1 2 3 4 5 6 7 8 9</p>
+          </div>  
+
+        </section>
+
+        <!-- Default color section -->
+        <section>
+          <h2>Color</h2>
+
+            <h3>Color Choices Rationale</h3>
+            <br>
+            <p>In this website, I want to try to make the design consitent and simple. The color platter actually comes from the logo. As you can see below, each color serves for purposes and the combination of them create a visual contrast for the reader. You can click to copy the color for each element below:</p>
+
+            <!-- organe -->
+            <div class="row">
+              <div class="box palette-block palette-orange" id="palette-block" data-clipboard-text="#D15627">
+                <section onclick="copyToClipboard('color1')">
+                  <div class="palette-button"></div>
+                  <small>Interaction</small>
+                  <small>Dark Orange</small>
+                  <span id="color1">D15627</span>
+                </section>
+              </div>
+
+              <div class="box palette-block palette-black" data-clipboard-text="#2b2b2b">
+                <section onclick="copyToClipboard('color2')">
+                  <div class="palette-button"></div>
+                  <small>Text-Heading</small>
+                  <small>Light Black</small>
+                  <span id="color2">2b2b2b</span>
+                </section>
+              </div>
+
+              <div class="box palette-block palette-grey" data-clipboard-text="#545454">
+                <section onclick="copyToClipboard('color3')">
+                  <div class="palette-button"></div>
+                  <small>Text-body</small>
+                  <small>Grey</small>
+                  <span id="color3">545454</span>
+                </section>
+              </div>
+
+              <div class="box palette-block palette-light-grey" data-clipboard-text="#f7f7f7">
+                <section onclick="copyToClipboard('color4')">
+                  <div class="palette-button"></div>
+                  <small>Background</small>
+                  <small>Light Grey</small>
+                  <span id="color4">f7f7f7</span>
+                </section>
+              </div>
+            </div>  
+        </section>
+
+        <!-- Default icon section -->
+        <section>
+          <h2>Icon</h2>
+
+          <h3>Fontawesome</h3>
+          <br>
+          <p>Typekit is iconic font and CSS toolkit in the internet. In this project, I am using some of the icon font from this website.Below shows the simple way about how to import the font. </p>
+
+          <h3>Sample code:</h3>
+          <br>
+          <code>&lt;i class="fa fa-camera-retro"/&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <i class="fa fa-shopping-cart fa-2x box"></i>
+          <i class="fa fa-map fa-2x box"></i>
+          <i class="fa fa-envelope fa-2x box"></i>
+          <i class="fa fa-phone fa-2x box"></i>
+          <i class="fa fa-facebook fa-2x box"></i>
+          <i class="fa fa-twitter fa-2x box"></i>
+          <i class="fa fa-instagram fa-2x box"></i>
+          <i class="fa fa-flickr fa-2x box"></i>
+
+        </section>
+
+      </section>
+      <!-- // VISUAL ELEMENTS SECTION -->
+
+
+      <!--  INTERACTIVE ELEMENTS SECTION -->
+      <section id="interactive_elements">
+        
+        <!-- Default Button styling section -->
+        <section>
+
+          <h2>Button</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.button-nav</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <a class="button-nav" href="#">Default Button</a>
+
+        </section>
+
+        <!-- Default in-text link styling section -->
+        <section>
+          <h2>In-text link</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.selected</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a href="#" class="selected"&gt;Default In-text Link&lt;/a&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <p>OOD is the abbreviation of object oriented design, Which brings out our value for the customization.As a group of bike lovers, we believe every cycler should have their own unique bike. <a class="selected" href="#">OOD Bicycle Company</a> was formed with this simple premise: to build the most beautiful, practical and customizable bikes for city riding. Each bike is designed by its rider and then built by hand in Vancouver, Canada. Either in person or online, we'll walk you through every step of designing a bicycle that fits your needs and your personality.</p>
+        </section>
+
+       <section class="contact-form">
+          <h2>Form</h2>
+
+            <h3>CSS selector:</h3>
+            <p>.contact-form</p>
+
+            <h3>Sample code:</h3>
+            <code>&lt;section id="contact-form"&gt;Default Form&lt;/form&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <br>
+            <form id="contact" name="contact" accept-charset="utf-8">
+              <label><span></span><input name="name" type="text" placeholder="Name"/></label>
+              <label><span></span><input name="email" type="email" placeholder="Email"/></label>
+              <label><span></span><textarea name="message" placeholder="Message"></textarea></label>
+              <input name="submit" type="submit" value="Send"/>
+            </form>
+        </section> 
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+
+        <section>
+          <h2>Headings</h2>
+
+          <h3>Sample code:</h3>
+          <code>&lt;h1&gt;Your Content&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Your Content&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Your Content&lt;/h3&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3 style="font-style: italic">Heading 3</h3>
+        </section>
+
+        <section>
+          <h2>Paragraphs</h2>
+
+          <h3>Sample code:</h3>
+          <code>&lt;p&gt;Your Content&lt;/p&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <p>OOD is the abbreviation of object oriented design, Which brings out our value for the customization.As a group of bike lovers, we believe every cycler should have their own unique bike. OOD Bicycle Company</a> was formed with this simple premise: to build the most beautiful, practical and customizable bikes for city riding. Each bike is designed by its rider and then built by hand in Vancouver, Canada. Either in person or online, we'll walk you through every step of designing a bicycle that fits your needs and your personality.</p>
+        </section>
+
+        <section>
+          <h2>Bulleted Lists</h2>
+          <h3>Sample code:</h3>
+          <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <ul>
+            <li>List One</li>
+            <li>List Two</li> 
+            <li>List Three</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Numbered Lists</h2>
+          <h3>Sample code:</h3>
+          <code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+          <ol>
+            <li>List One</li>
+            <li>List Two</li> 
+            <li>List Three</li>
+          </ol>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+
+        <section>
+          <h2>Main Navigation</h2>
+
+          <h3>Sample code:</h3>
+          <code>&lt;nav&gt; &lt;/nav&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+
+          <div class="grid-row">
+
+      <!-- 
+        Here we hav added the class 'grid-row' to our nav tag to allow it to act as a grid of it's own
+      -->
+          <nav class="grid-col-2of10">
+        
+            <img id="logo" src="img/brand-logo.png">
+
+            <ul>
+              <li class="selected"><a href="Style_guide.html">STYLE GUIDE</a>
+
+                  <li class="sub_nav">
+                    <a href="#visual_elements">Visual Elements</a>
+                  </li>
+                  <li class="sub_nav">
+                    <a href="#interactive_elements">Interactive Elements</a>
+                  </li>
+                  <li class="sub_nav"> 
+                    <a href="#text_elements">Text Elements</a>
+                  </li>
+                  <li class="sub_nav">
+                    <a href="#combined_elements">Combined Elements</a>
+                  </li>
+               
+                <li><a href="User-flows.html">USER FLOWS</a>
+
+                  <li class="sub_nav">
+                    <a href="#4k_display">4K Display</a>
+                  </li>
+                  <li class="sub_nav"> 
+                    <a href="#mobile_device">Mobile Device</a>
+                  </li>
+                  <li class="sub_nav">
+                    <a href="#smart_watch">Smart Watch</a>
+                  </li>
+
+                <li><a href="Citations.html">CITATIONS</a>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        
+        <!-- Product Listing -->
+        <section class="grid-row" id="noline">
+          <h2>PRODUCTS</h2>
+
+          <!-- Product 1 - The Breakwater -->
+          <div class="grid-col-3of10">
+            <div class="product-container">
+              <img class="bottom" src="img/bike-thebreakwater2.png" />
+              <img class="top" src="img/bike-thebreakwater1.png" />
+            </div>
+
+
+              <div class="caption">
+                <div class="product-caption"><h3>THE BREAKWATER</h3></div>
+                <div class="product-caption">$399.00</div>
+              </div>
+
+          </div>
+
+          <!-- Product 2 - Loifer -->
+          <div class="grid-col-3of10">
+            <div class="product-container">
+                <img class="bottom" src="img/bike-theloifer2.png" />
+                <img class="top" src="img/bike-theloifer1.png" />
+            </div>
+
+            <div class="caption">
+              <div class="product-caption"><h3>LOIFER</h3></div>
+              <div class="product-caption">$275.00</div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="grid-row">
+          <h3>Sample code:</h3>
+          <br>
+            <code>&lt;figure class="product-img"&gt;
+              <br>&nbsp;&lt;img src="img/light-pink.jpg" alt="A photo of a light pink square"&gt;
+                <br>&nbsp;&lt;figcaption&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-title">LIGHT PINK&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NF 471 // VENICE COLLECTION&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+              <br>&lt;/figure&gt;
+
+                  &lt;figure class="product-img"&gt;
+              <br>&nbsp;&lt;img src="img/pink.jpg" alt="A photo of a pink square"&gt;
+                <br>&nbsp;&lt;figcaption&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NX8217 // VENICE COLLECTION&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+              <br>&lt;/figure&gt;
+
+                  &lt;figure class="product-img"&gt;
+              <br>&nbsp;&lt;img src="img/purple.jpg" alt="A photo of a purple square"&gt;
+                <br>&nbsp;&lt;figcaption&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-title">PINK&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="caption-normal"&gt;NP 2095 // VENICE COLLECTION&lt;/div&gt;
+                <br>&nbsp;&nbsp;&lt;/figcaption&gt;
+              <br>&lt;/figure&gt;
+            </code>
+        </section>
+
+        <!-- Default grid section -->
+        <section class="grid-row">
+          <h2>Grid</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.grid-col-</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class="grid-col-2of10"&gt;Some Content&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+      
+          <div class="grid-col-2of10">
+             <p class="gridBBB">1</p>
+          </div>
+
+          <div class="grid-col-8of10">
+             <p class="gridBBB">2</p>
+          </div>
+
+          <div class="grid-col-5of10">
+             <p class="gridBBB">3</p>
+          </div>
+
+          <div class="grid-col-5of10">
+             <p class="gridBBB">4</p>
+          </div>
+
+          <div class="grid-col-8of10">
+             <p class="gridBBB">5</p>
+          </div>
+
+          <div class="grid-col-2of10">
+             <p class="gridBBB">6</p>
+          </div>
+
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+    </div>
+
+    </div>
+
+  </body>
+</html>
