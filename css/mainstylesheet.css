@@ -12,6 +12,7 @@
   #10
   #11 */
 
+
 /* #Buttons
 ================================================== */
 .button-main {
@@ -690,3 +691,84 @@ a:active, a:hover {
     }
   }
 
+/* #Progress Bar
+================================================== */
+
+  .progressbar_container{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+  .progressbar_title{
+    font-size:1.5em;
+    font-style:italic;
+  }
+
+  .progressbar{
+      display: block;
+      margin: 0 auto;  /*margin-left/margin-right=auto*/
+  }
+
+
+
+
+/*============================================
+ Shopping Cart & Checkout
+ =============================================*/
+
+.shipping {
+  margin: 10px auto;
+  width: 33%;
+}
+
+
+.payment {
+  width: 50%;
+  padding: 20px 25px 60px 25px;
+  float: left;
+}
+
+.shipping label, .payment label{
+  float: left;
+  width: 100%;  
+}
+
+
+.shipping input, .shipping select, .payment input, .payment select{
+  width: 100%;
+  
+  outline: none;
+  color: #b2b2b2;
+  background-color: rgb(211,211,211); /* fallback */
+  background-color: rgba(211,211,211,0.1);
+  border: 1px dotted #b2b2b2;
+    
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+}
+
+.shipping input, .payment input{
+  padding: 0.3em;
+}
+
+.shipping select, .payment select{
+  padding: 0.24em;
+}
+
+.shipping input:hover, .shipping select:hover, .payment input:hover, .payment select:hover {
+  color: #000000;
+  background-color: rgb(255,255,255); /* fallback */
+  background-color: rgba(211,211,211,1);
+}
+
+.shipping input:focus, .shipping select:focus, .payment input:focus, .payment select:focus{
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.shipping span, .payment span {
+  color: #BC0D5D;
+}
