@@ -316,6 +316,10 @@ a:active, a:hover {
   text-decoration: none;
 }
 
+.extra-button-padding {
+  padding-right: 0.5em;
+  padding-bottom: 1em;
+}
 
 
 /* #Bike Stats
