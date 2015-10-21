@@ -80,29 +80,47 @@
           </div>
 
           <!-- content container-->
-          <div class="cart">
+          <div class="grid-row cart">
             <!-- shipping address -->     
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
               <label for="firstname">First Name<span>*</span></label>  
               <input name=firstname type=text />
             </div>
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
               <label for="lastname">Last Name<span>*</span></label>  
               <input name=lastname type=text />
             </div>
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
+              <label for="phone">Phone<span>*</span></label>  
+              <input name=phone type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="email">Email</label>  
+              <input name=email type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
               <label for="address1">Address1<span>*</span></label>  
               <input name=address1 type=text />
             </div>
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
               <label for="address2">Address2</label>  
               <input name=address2 type=text />
             </div>
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
               <label for="city">City<span>*</span></label>  
               <input name=city type=text />
             </div>
-            <div class="shipping">
+            <div class="grid-col-4of10 shipping">
+              <label for="postalcode">Postal Code<span>*</span></label>  
+              <input name=postalcode type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+            <label for="country">Country<span>*</span></label>
+            <select name="country">
+              <option value=canada>Canada</option>
+            </select>
+            </div>
+            <div class="grid-col-4of10 shipping">
               <label for="province">Province<span>*</span></label>  
               <select name="country">
                 <option value=bc>BC</option>
@@ -120,34 +138,17 @@
                 <option value=yl>YT</option>
               </select>
             </div>
-            <div class="shipping">
-              <label for="postalcode">Postal Code<span>*</span></label>  
-              <input name=postalcode type=text />
-            </div>
-            <div class="shipping">
-            <label for="country">Country<span>*</span></label>
-            <select name="country">
-              <option value=canada>Canada</option>
-            </select>
-            </div>
-            <div class="shipping">
-              <label for="phone">Phone<span>*</span></label>  
-              <input name=phone type=text />
-            </div>
-            <div class="shipping">
-              <label for="email">Email</label>  
-              <input name=email type=text />
-            </div>
-            <div class="shipping">
+
+            <div class="grid-col-10of10 shipping requireBox">
               <label><span>*</span> Required</label>
             </div>
             <!-- end of shipping address -->
 
-          <div class="checkout grid-row ">
-            <div class="button-main button-no-margin grid-col-2of10"> 
-               <a href="payment.html">Continue</a>
-            </div>      
-          </div>
+            <div class="grid-row">
+              <div class="button-main continue_button button-no-margin grid-col-2of10"> 
+                 <a href="payment.html">Continue</a>
+              </div>      
+            </div>
 
       </div>
     </section>
@@ -157,7 +158,7 @@
   <!-- JS
   ================================================== -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="javascripts/main.js"></script>
+  <script src="js/main.js"></script>
 
 <!-- End Document
 ================================================== -->

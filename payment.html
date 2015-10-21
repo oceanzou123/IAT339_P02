@@ -80,10 +80,37 @@
 
           <!-- Product Image-->
           <div class="grid-row">
-          </div>
+        
+            <!-- payment options -->      
+            <div class="grid-col-4of10 payment">
+              <label for="cardtype">Card Type<span>*</span></label>  
+              <select name="country">
+                <option value=null>Select your card type</option>
+                <option value=visa>VISA</option>
+                <option value=master>Mastercard</option>          
+                <option value=amex>American Express</option>
+              </select>
+            </div>
+            <div class="grid-col-4of10 payment">
+              <label for="expirydate">Expiry Date<span>*</span></label>  
+              <input name=expirydate type=text placeholder="MM/YY" />     
+            </div>      
+            <div class="grid-col-4of10 payment">
+              <label for="cardnumber">Card Number<span>*</span></label>  
+              <input name=firstname type=text placeholder="Please put your credit card number here..."/>        
+            </div>
+            <div class="grid-col-4of10 payment">     
+              <label for="csv">Card Security Value Number<span>*</span></label>  
+              <input name=firstname type=text placeholder="888" />
+            </div>        
+            <div class="grid-col-4of10 payment">
+              <label><span>*</span> Required</label>
+            </div>
+            <!-- end of payment options -->
+          </div>   
 
-          <div class="checkout grid-row ">
-            <div class="button-main button-no-margin grid-col-2of10 compelete"> 
+          <div class="grid-row">
+            <div class="button-main continue_button button-no-margin grid-col-2of10"> 
                <a href="confirmation.html">Order</a>
             </div>      
           </div>
