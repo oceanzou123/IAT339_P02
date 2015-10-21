@@ -34,12 +34,8 @@
 */
 .grid-col-1of10, .grid-col-2of10, .grid-col-3of10, 
 .grid-col-4of10, .grid-col-5of10, .grid-col-6of10, 
-<<<<<<< HEAD
 .grid-col-7of10, .grid-col-8of10, .grid-col-9of10,
 .grid-col-10of10 {
-=======
-.grid-col-7of10, .grid-col-8of10, .grid-col-9of10 {
->>>>>>> origin/ocean
   width: 100%;
 }
 
