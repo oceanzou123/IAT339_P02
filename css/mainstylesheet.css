@@ -22,6 +22,7 @@
   padding: 0.5em;
   margin: 2em 0;
   text-decoration: none;
+  text-align: center;
   -webkit-transition: border-color 0.5s ease-out;
   transition: border-color 0.5s ease-out;
 }
@@ -253,6 +254,29 @@ h3{
   color: #545454;
 }
 
+h4{
+  font-family: "museo_sans500",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  color: #D15627;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+h5{
+  font-family: "museo_sans500",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
 p{
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -366,6 +390,10 @@ a:active, a:hover {
     margin: 0 auto;
   }
 
+  td {
+    padding: 1em;
+  }
+
 /* #Photo Gallery for Product Image
 ================================================== */
   .product-images {
@@ -373,10 +401,12 @@ a:active, a:hover {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    padding: 2em;
   }
 
   .product-images img {
-    max-width: 100%;
+    width: 100%;
+    padding: 2em;
     position: absolute;
     z-index: 1;
     background-color: #FFF;
@@ -413,10 +443,14 @@ a:active, a:hover {
     opacity: 0.65;
   }
 
-  .thumbnail-photos a:hover {
+  .thumbnail-photos a:hover, 
+  .thumbnail-photos a:focus, 
+  .thumbnail-photos a:active,
+  .thumbnail-photos a:target {
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
+    color: #D15627;
   }
 
   /* Styling for the custom parts on buildbikes page */
@@ -425,6 +459,37 @@ a:active, a:hover {
     margin-bottom: 2em;
     width: 100%;
   }
+
+
+
+
+/* #Custom bike
+================================================== */
+.custombikes {
+  width: 100%;
+}
+
+.custom-progressbar {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  opacity: 0.40;
+}
+
+.step-selected {
+  color: #D15627;
+}
+
+.custom-button {
+  margin: 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
 
 
 /* #Browser Resize
@@ -537,6 +602,37 @@ a:active, a:hover {
     .bike-stats {
       margin-bottom: 1em;
     }
+
+    .custom-button {
+      margin: 0;
+      width: 100%;
+    }
+
+    .align-right {
+      text-align: center;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+    }
+
+    #order1 {
+      order: 2;
+    }
+
+    #order2 {
+      order: 1;
+    }
+
+    #order3 {
+      order: 3;
+    }
+
+    .custom-button {
+      margin: 1em 0;
+    }
   }
 
 /* #Map
@@ -546,7 +642,11 @@ a:active, a:hover {
     height: 30em;
     border: 0; 
     border-style: none;
-    padding: 2em;
+  }
+
+  .extra-padding {
+    padding-left: 3rem;
+    padding-top: 1rem;
   }
 
 

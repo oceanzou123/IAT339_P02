@@ -49,20 +49,12 @@
       <div id="nav-menu-background"></div>
 
       <nav id="nav-menu">
-        <!-- Phone Menu Button -->
         <div class="button-main button-no-margin" id="menu-icon">MENU</div>
-        <!-- Logo -->
         <a href="About.html"><img id="logo" src="img/brand-logo@2x.png" href="About.html"></a>
-        <!-- Text -->
         <ul>
           <li><a href="About.html">ABOUT</a></li>
-          <li><a href="ShopBikes.html" class="selected">SHOP BIKES</a></li>
-            <div class="sub-nav">
-              <li><a href="TheBreakwater.html">The Breakwater</a></li>
-              <li><a href="TheFawnler.html" class="selected">The Fawnler</a></li>
-              <li><a href="TheLoifer.html">The Loifer</a></li>
-            </div>
-          <li><a href="BuildBikes.html">BUILD BIKES</a></li>
+          <li><a href="ShopBikes.html">SHOP BIKES</a></li>
+          <li><a href="BuildBikes.html" class="selected">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
           <li><a href="ContactUs.html">CONTACT US</a></li>
           <li><a href="Cart.html">CART</a></li>
@@ -71,72 +63,98 @@
 
     </header>
 
-    <!-- PRODUCT - THEFAWNLER
+    <!-- BIKE DETAILS PAGE
   ================================================== -->   
     <div class="mainContent">
-      <section>
+      <section class="lastitem">
         <div class="grid-row product-content">
-
-          <!-- Description -->
+          <!-- Middle Column Bike Details -->
           <div class="grid-col-4of10">
-            <h1>The Fawnler</h1>
-            <h4>for the casual bike rider</h4>
-            <h3>$350.00</h3>
-            <p>The Fawnler is a lofty riding bike with 5 speeds. Thicker 1050C wheels and higher bars allow a comfortable biking experience. Designed to be easily fitted with mudguards, racks or baskets. A must have for casual bike cruising!</p>
-            <p>Gears: AZTEC LIFTS 5 speed with Acera shift lever</p>
-            <p>Weight: 12.2kg (540mm)</p>
+            <h1>Build your own bike</h1>
+            <p>Follow the 4 step process and select which parts you would like on your cool new bike. Have fun!</p>
 
+            <!-- Header for bike steps -->
+            <table class="custombikes">
+              <tr>
+                <td class="custom-progressbar">
+                  <a href="BuildBikes.html">
+                    <img src="img/icon-step1-frame.png">
+                    <h5>frames</h5>
+                  </a>
+                </td>
+                <td>
+                  <img src="img/icon-step2-seat.png">
+                  <h5 class="step-selected">seats</h5>
+                </td>
+                <td class="custom-progressbar">
+                  <img src="img/icon-step3-handles.png">
+                  <h5>handles</h5>
+                </td>
+                <td class="custom-progressbar">
+                  <img src="img/icon-step4-tires.png">
+                  <h5>tires</h5>
+                </td>
+              </tr>
+            </table>
+            
+            <!-- Seats -->
             <div class="grid-col-10of10">
-              <h3>Comfort</h3>
-              <div class="bike-stats the-fawnler-comfort"></div>
-            </div>
-
-            <div class="grid-col-10of10">
-              <h3>Speed</h3>
-              <div class="bike-stats the-fawnler-speed"></div>
-            </div>
-
-            <div class="grid-col-10of10">
-              <h3>Performance</h3>
-              <div class="bike-stats the-fawnler-performance"></div>
-            </div>
-
-            <!-- Cart Button -->
-            <a href="Cart.html"><div class="button-main button-duplicate">Add to cart</div></a>
-            <!-- Build Button -->
-            <a href="BuildBikes-Frames.html"><div class="button-main">Customize</div></a>
-          </div>
-
-          <!-- Thumbmail -->
-          <div class="grid-col-6of10">
-              <div class="product-images">
-                <img id="image1" src="img/bike-thefawnler1.png" />
-                <img id="image2" src="img/bike-thefawnler2.png" />
-                <img id="image3" src="img/bike-thefawnler3.png" />
-                <img id="image4" src="img/bike-thefawnler4.png" />
-              </div>
-              <table>
+              <h2>Seats</h2>
+              <p>What would you like to sit on?</p>
+              <table class="custom-parts">
                 <tr class="thumbnail-photos">
-                  <td><a href="#image1"><img src="img/bike-thefawnler1.png"></a></td>
-                  <td><a href="#image2"><img src="img/bike-thefawnler2.png"></a></td>
-                  <td><a href="#image3"><img src="img/bike-thefawnler3.png"></a></td>
-                  <td><a href="#image4"><img src="img/bike-thefawnler4.png"></a></td>
+                  <td>
+                    <a href="#seat1">
+                      <img src="img/bike-blackseat-thumbnail.jpg">
+                      <h5>$15.00</h5>
+                      <h5>black saddle leather</h5>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#seat2">
+                      <img src="img/bike-brownseat-thumbnail.jpg">
+                      <h5>$25.00</h5>
+                      <h5>sand brown leather</h5>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#seat3">
+                      <img src="img/bike-sanguineseat-thumbnail.jpg">
+                      <h5>$40.00</h5>
+                      <h5>sanguine fine leather</h5>
+                    </a>
+                  </td>
                 </tr>
               </table>
+            </div>
+
+            <div class="wrapper">
+              <!-- Back -->
+              <div class="grid-col-2of10" id="order1">
+                <a href="BuildBikes-Frames.html"><div class="button-main custom-button">Back</div></a>
+              </div>
+
+              <!-- Price -->
+              <div class="grid-col-6of10 margin-top-extra align-center" id="order2">
+                <h3>Total Price: $200.00</h3>
+              </div>
+
+              <!-- Proceed -->
+              <div class="grid-col-2of10 align-right" id="order3">
+                <a href="BuildBikes-Handles.html"><div class="button-main custom-button">Next</div></a>
+              </div>
+            </div>
           </div>
-          
+
+          <!-- Picture -->
+          <div class="grid-col-6of10">
+              <div class="product-images">
+                <img id="seat1" src="img/bike-blackseat.jpg" />
+                <img id="seat2" src="img/bike-default.jpg" />
+                <img id="seat3" src="img/bike-sanguineseat.jpg" />
+              </div>
+          </div>
         </div>
-      </section>
-      
-      <!-- Feedback Form -->
-      <section class="contact-form lastitem">
-        <h2>Leave a Review!</h2>
-        <form id="contact" name="contact" accept-charset="utf-8">
-          <label><input name="name" type="text" placeholder="Name"/></label>
-          <label><input name="email" type="email" placeholder="Email"/></label>
-          <label><textarea name="message" placeholder="Message"></textarea></label>
-          <input name="submit" type="submit" class="button-form" value="Send"/>
-        </form>
       </section>
     </div>
 
