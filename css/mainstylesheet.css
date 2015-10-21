@@ -12,6 +12,7 @@
   #10
   #11 */
 
+
 /* #Buttons
 ================================================== */
 .button-main {
@@ -277,6 +278,7 @@ h5{
   letter-spacing: 0.1em;
 }
 
+
 p{
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -398,6 +400,7 @@ a:active, a:hover {
     padding: 1em;
   }
 
+
 /* #Photo Gallery for Product Image
 ================================================== */
   .product-images {
@@ -411,6 +414,7 @@ a:active, a:hover {
   .product-images img {
     width: 100%;
     padding: 2em;
+
     position: absolute;
     z-index: 1;
     background-color: #FFF;
@@ -447,6 +451,7 @@ a:active, a:hover {
     opacity: 0.65;
   }
 
+<<<<<<< HEAD
   .thumbnail-photos a:hover, 
   .thumbnail-photos a:focus, 
   .thumbnail-photos a:active,
@@ -463,8 +468,6 @@ a:active, a:hover {
     margin-bottom: 2em;
     width: 100%;
   }
-
-
 
 
 /* #Custom bike
@@ -637,6 +640,7 @@ a:active, a:hover {
     .custom-button {
       margin: 1em 0;
     }
+
   }
 
 /* #Map
@@ -753,7 +757,7 @@ a:active, a:hover {
   }
 
   .checkout h2 {
-    text-align: center;
+    /*text-align: center;*/
     float: right;
   }
 
@@ -764,7 +768,7 @@ a:active, a:hover {
   .compelete{
     float: right;
     text-align: center;
-    margin-right: 2.7em;
+    /*margin-right: 2.7em;*/
   }
 
   /*Cart Form Mobile End*/
@@ -781,8 +785,9 @@ a:active, a:hover {
       margin-left:0;
     }
 
-    .compelete{
+    .compelete, .checkout h2 {
       margin-right: 0;
+      float: none;
     }
 
     .cart_details {
@@ -792,5 +797,119 @@ a:active, a:hover {
     .checkout{
       margin-top: 3em;
     }
+
+  }
+
+
+
+/* #Progress Bar
+================================================== */
+
+  .progressbar_container{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+  .progressbar_title{
+    font-size:1.5em;
+    font-style:italic;
+  }
+
+  .progressbar{
+      display: block;
+      margin: 0 auto;  /*margin-left/margin-right=auto*/
+  }
+
+
+
+
+/*============================================
+ Shopping Cart & Checkout
+ =============================================*/
+
+  .shipping {
+    /*margin: 10px auto;*/
+    /*width: 33%;*/
+    margin-left: 7%;
+  }
+
+
+  .payment {  
+    width: 50%;
+    padding: 20px 25px 60px 25px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 2%; 
+  }
+
+  .shipping label, .payment label{
+    float: left;
+    width: 100%;  
+  }
+
+
+  .shipping input, .shipping select, .payment input, .payment select{
+    width: 100%;
+    
+    outline: none;
+    color: #b2b2b2;
+    background-color: rgb(211,211,211); /* fallback */
+    background-color: rgba(211,211,211,0.1);
+    border: 1px solid #b2b2b2;
+      
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+  }
+
+  .shipping input, .payment input{
+    padding: 0.3em;
+  }
+
+  .shipping select, .payment select{
+    padding: 0.24em;
+  }
+
+  .shipping select{
+    border-radius: 1;
+  }
+
+  .shipping input:hover, .shipping select:hover, .payment input:hover, .payment select:hover {
+    color: #000000;
+    background-color: rgb(255,255,255); /* fallback */
+    background-color: rgba(211,211,211,1);
+  }
+
+  .shipping input:focus, .shipping select:focus, .payment input:focus, .payment select:focus{
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  .shipping span, .payment span {
+    color: #BC0D5D;
+  }
+  .requireBox{
+    margin-top: 2%;
+  }
+
+  .continue_button{
+    margin-right: 6%;
+    margin-top: 5%;
+    float: right;
+    text-align: center;
+  }
+
+  .orderbutton{
+    margin-right: 12%;
+  }
+
+  /*Cart Form Mobile End*/
+  @media (max-width:600px){
+    .shipping, .payment, .orderbutton, .continue_button {
+      margin-left: 0;
+    }
+
   }
 
