@@ -1,47 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8" />
     <title>Solacycle Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS
+  ================================================== -->
+    <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/mainstylesheet.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
 
-    <!-- import the icon from font awesome -->
+    <!-- Font Awesome
+  ================================================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!-- import font Museo Sans -->
+    <!-- Font
+  ================================================== -->
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-
-    <!-- import font Open Sans -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
 
-    <!-- add the js for clipboard -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Favicons
+  ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
 
-  </head>
-  <body>
-    <!-- NAVIGATION MENU -->
+</head>
+<body>
+    <!-- Navigation
+  ================================================== -->    
     <header>
-      <div id="nav-menu-background">
-      </div>
+      <div id="nav-menu-background"></div>
+
       <nav id="nav-menu">
+        <!-- Phone Menu Button -->
         <div class="button-main button-no-margin" id="menu-icon">MENU</div>
-    
         <!-- Logo -->
         <a href="About.html"><img id="logo" src="img/brand-logo@2x.png" href="About.html"></a>
-
+        <!-- Text -->
         <ul>
           <li><a href="About.html">ABOUT</a></li>
-          <a href="ShopBikes.html"><li class="selected">SHOP BIKES</li></a>
+          <li><a href="ShopBikes.html" class="selected">SHOP BIKES</a></li>
             <div class="sub-nav">
               <li><a href="TheBreakwater.html">The Breakwater</a></li>
               <li><a href="TheFawnler.html">The Fawnler</a></li>
-              <a href="TheLoifer.html"><li class="selected">The Loifer</li></a>
+              <li><a href="TheLoifer.html" class="selected">The Loifer</a></li>
             </div>
           <li><a href="BuildBikes.html">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
@@ -52,53 +71,63 @@
 
     </header>
 
-
-    <!-- MAIN CONTENT SECTION -->
+    <!-- PRODUCT - THELOIFER 
+  ================================================== -->   
     <div class="mainContent">
       <section>
         <div class="grid-row product-content">
-          <!-- PRODUCT - THEBREAKWATER -->
-          <!-- Text -->
+
+          <!-- Description -->
           <div class="grid-col-4of10">
-            <h1>The Breakwater</h1>
-            <h3>$399.00</h3>
-            <p>The result of this vision is the single speed SC-01, a high quality, maintenance-free bicycle. Lightweight, stable and responsive, it is a pleasure to ride, and with its elegant and timeless design, it is a pleasure to the eye. It is made to last, with a titanium frame, fork and handlebar, Gates belt transmission, Brooks leather saddle and grips, and other high quality components. The SC-01 will be your urban affairs partner for many decades, without asking anything in return... well, maybe just a little bit of love.</p>
-            <div class="grid-col-3of10">
+            <h1>The Loifer</h1>
+            <h4>for the biker beginners</h4>
+            <h3>$295.00</h3>
+            <p>The Loifer is both fast and comfortable with 6 gears. Smaller 650C wheels and soft grip handlebars make your biking experience smooth. Designed to be easily fitted with mudguards, racks, baskets, or sports containers attachments. An all-around bike for beginners!</p>
+            <p>Gears: MIUZAKI LITE speed with Rapidfire shift lever</p>
+            <p>Weight: 11.5kg (540mm)</p>
+
+            <div class="grid-col-10of10">
               <h3>Comfort</h3>
               <div class="bike-stats the-loifer-comfort"></div>
             </div>
-            <div class="grid-col-3of10">
+
+            <div class="grid-col-10of10">
               <h3>Speed</h3>
               <div class="bike-stats the-loifer-speed"></div>
             </div>
-            <div class="grid-col-3of10">
+
+            <div class="grid-col-10of10">
               <h3>Performance</h3>
               <div class="bike-stats the-loifer-performance"></div>
             </div>
+
+            <!-- Cart Button -->
             <a href="Cart.html"><div class="button-main button-duplicate">Add to cart</div></a>
-            <a href="BuildBikes.html"><div class="button-main">Customize</div></a>
+            <!-- Build Button -->
+            <a href="BuildBikes-Frames.html"><div class="button-main">Customize</div></a>
           </div>
 
-          <!-- Picture -->
+          <!-- Thumbmail -->
           <div class="grid-col-6of10">
               <div class="product-images">
-                <img id="image1" src="img/bike1.png" />
-                <img id="image2" src="img/bike2.png" />
-                <img id="image3" src="img/bike3.png" />
-                <img id="image4" src="img/bike4.png" />
+                <img id="image1" src="img/bike-theloifer1.jpg" />
+                <img id="image2" src="img/bike-theloifer2.jpg" />
+                <img id="image3" src="img/bike-theloifer3.jpg" />
+                <img id="image4" src="img/bike-theloifer4.jpg" />
               </div>
               <table>
                 <tr class="thumbnail-photos">
-                  <td><a href="#image1"><img src="img/bike1.png"></a></td>
-                  <td><a href="#image2"><img src="img/bike2.png"></a></td>
-                  <td><a href="#image3"><img src="img/bike3.png"></a></td>
-                  <td><a href="#image4"><img src="img/bike4.png"></a></td>
+                  <td><a href="#image1"><img src="img/bike-theloifer1.jpg"></a></td>
+                  <td><a href="#image2"><img src="img/bike-theloifer2.jpg"></a></td>
+                  <td><a href="#image3"><img src="img/bike-theloifer3.jpg"></a></td>
+                  <td><a href="#image4"><img src="img/bike-theloifer4.jpg"></a></td>
                 </tr>
               </table>
           </div>
         </div>
       </section>
-        
+      
+      <!-- Feedback Form -->
       <section class="contact-form lastitem">
         <h2>Leave a Review!</h2>
         <form id="contact" name="contact" accept-charset="utf-8">
@@ -109,5 +138,13 @@
         </form>
       </section>
     </div>
-  </body>
+
+  <!-- JS
+  ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="javascripts/main.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
 </html>
