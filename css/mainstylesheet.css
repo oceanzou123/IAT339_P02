@@ -904,6 +904,26 @@ a:active, a:hover {
     margin-right: 12%;
   }
 
+  .conf_msg{
+    margin-top: 5%;
+  }
+
+  .confirmation{
+    margin-top: 15em;
+  }
+
+  .review{
+    margin-top: 5em;
+    padding: 2em;
+  }
+
+  .review ul{
+    border: 1px solid grey;
+    padding: 2em;
+    list-style-type: none;
+  }
+
+
   /*Cart Form Mobile End*/
   @media (max-width:600px){
     .shipping, .payment, .orderbutton, .continue_button {
@@ -911,4 +931,81 @@ a:active, a:hover {
     }
 
   }
+
+/*============================================
+ Event Page
+ =============================================*/
+ 
+  .event {
+    padding-top: 70px;
+  }
+   
+  .event-banner {
+    max-width: 100%;
+  }
+
+  .m-event-banner{
+    display:none;
+  }
+
+  .event-container {
+/*    width: 70%;*/
+    /*padding: 0 1em 30px;*/
+    /*border-left: 1px dotted rgba(88,88,77,0.5);*/
+  }
+
+  .event-content {
+    width: 100%;
+/*    padding: 0;
+    float: left;*/
+    /*outline: 2px dotted #ffffff;*/
+  }
+
+  .event-content h3{
+    font-size: 1.5em;
+  }
+
+  .event-content h4{
+    font-size: 1em;
+  }
+
+  .event-sidebar {
+    padding-left: 1em;
+  }
+
+  .event-sidebar span {
+    color: #ffba00;
+  }
+
+  .event-sidebar h3 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.2em;
+   /* color: #fff;*/
+  }
+
+  .event-sidebar ul {
+    list-style: none;
+    padding: 0 0 0 0em;
+    text-align: left;
+  }
+
+  .event-sidebar ul li {
+    display: list-item;
+    margin-bottom: 10%;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #b2b2b2;
+  }
+
+  #workshop_subtitle{
+    color: grey;
+    font-style: italic;
+  }
+
+
+ 
 
