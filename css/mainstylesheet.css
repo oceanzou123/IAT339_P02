@@ -37,6 +37,17 @@
 
 @media (max-width: 65em) {
 
+/*  product listing page, change the order of product image appear in mobile*/
+  .parent{
+  display:flex;
+  flex-flow: column;
+  }
+  .a{
+    order:2;
+  }
+  .b{order:1;
+  }
+
   .menu-trigger {
     display:block;
   }
