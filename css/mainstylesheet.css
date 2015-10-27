@@ -1,3 +1,4 @@
+
 /* Table of Content
 ==================================================
   #1 Basic
@@ -12,6 +13,81 @@
   #10
   #11 */
 
+/* Change from ocean
+==================================================*/
+.background{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.mainContent section h1:first-child{
+  margin-top: 4.3rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #333;
+  margin: 1em 0;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:hover, .button:focus {
+  background-color: #D15627;
+  color: #fff;
+}
+
+.button_build{
+  margin-left: 1rem;
+} 
+
+.menu-trigger {
+    display:none;
+    color:black;
+}
+
+
+
+@media (max-width: 65em) {
+
+  .menu-trigger {
+    display:block;
+  }
+
+  .background,.nav-menu{
+    position: static;
+  }
+
+  .mainContent section h1:first-child{
+    margin-top: 0;
+  }
+
+  .mainContent section h1{
+    font-size: 1.2rem;
+    /*text-align: center;*/
+  }
+
+  header{
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  #logo_web {
+    display: none;
+  }
+
+  #logo_mobile{
+    width: 13em;
+  }
+}
+
+  
 /* #Buttons
 ================================================== */
 .button-main {
@@ -133,11 +209,11 @@ input[type="submit"]:hover, .button-form:hover {
 /* #Navigation Menu
 ================================================== */
 
-  header {
+/*  header {
     width: 100%;
     position: fixed;
   }
-
+*/
   /* Styling for the sub navigation */
   .sub-nav{
     font-size: 0.9em;
@@ -154,6 +230,15 @@ input[type="submit"]:hover, .button-form:hover {
     width: 20em;
     letter-spacing: 0.1em;
     font-size: 0.9em;
+
+    background-color: #FFF;
+    height: 100%;
+/*      padding: 0 2em;
+      width: 20em;
+      position: fixed;
+      border-right: 0.1em;
+      border-color: #EFEFEF;
+      border-right-style: solid;*/
   }
 
   /* Styling for nav menu */
@@ -176,9 +261,9 @@ input[type="submit"]:hover, .button-form:hover {
   }
 
   /* Styling for the logo */
-  #logo {
-    padding-top: 10em;
-    padding-bottom: 3em;
+  #logo_web {
+    padding-top: 6em;
+    padding-bottom: 2em;
     width: 13em;
   }
 
@@ -187,7 +272,7 @@ input[type="submit"]:hover, .button-form:hover {
     display: none;
   }
 
-  #nav-menu-background {
+/*  #nav-menu-background {
       background-color: #FFF;
       height: 100%;
       padding: 0 2em;
@@ -196,7 +281,7 @@ input[type="submit"]:hover, .button-form:hover {
       border-right: 0.1em;
       border-color: #EFEFEF;
       border-right-style: solid;
-  }
+  }*/
 
 
 
@@ -277,6 +362,7 @@ h5{
   letter-spacing: 0.1em;
 }
 
+
 p{
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -294,9 +380,9 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-.product-content {
-  padding-top: 5em;
-}
+/*.product-content {
+  padding-top: 5rem;
+}*/
 
 .lastitem {
   border-style: none;
@@ -398,6 +484,7 @@ a:active, a:hover {
     padding: 1em;
   }
 
+
 /* #Photo Gallery for Product Image
 ================================================== */
   .product-images {
@@ -411,6 +498,7 @@ a:active, a:hover {
   .product-images img {
     width: 100%;
     padding: 2em;
+
     position: absolute;
     z-index: 1;
     background-color: #FFF;
@@ -465,8 +553,6 @@ a:active, a:hover {
   }
 
 
-
-
 /* #Custom bike
 ================================================== */
 .custombikes {
@@ -503,7 +589,7 @@ a:active, a:hover {
 
     #nav-menu {
       padding-left: 3em;
-      width: 18em;
+/*      width: 18em;*/
     }
 
     #logo {
@@ -515,13 +601,13 @@ a:active, a:hover {
       margin-left: 18em;
     }
 
-    .product-content {
+/*    .product-content {
       margin-top: 10%;
-    }
+    }*/
 
-    #nav-menu-background {
+/*    #nav-menu-background {
       width: 18em;
-    }
+    }*/
 
     #product-images {
       height: 20em;
@@ -537,22 +623,13 @@ a:active, a:hover {
       text-align: center;
       height: 4em;
       padding: 1em;
-      width: 100%;
+      height: 100%;
       margin: auto;
       vertical-align: middle;
       z-index: 99999;
       }
 
-    #logo {
-      margin: auto;
-      padding: 0em;
-      margin-top: 0.5em;
-      width: auto;
-      height: 1.5rem;
-      z-index: 99999;
-    }
-
-    #nav-menu-background {
+/*    #nav-menu-background {
       height: 4em;
       padding: 0;
       width: 100%;
@@ -565,7 +642,7 @@ a:active, a:hover {
       filter: alpha(opacity=99);
       opacity: 0.99;
       z-index: 99999;
-    }
+    }*/
 
 
     li, .selected {
@@ -580,6 +657,7 @@ a:active, a:hover {
 
     img {
       margin: auto;
+      margin-top: 0.3rem;
     }
 
     #nav-menu ul {
@@ -637,6 +715,7 @@ a:active, a:hover {
     .custom-button {
       margin: 1em 0;
     }
+
   }
 
 /* #Map
@@ -753,7 +832,7 @@ a:active, a:hover {
   }
 
   .checkout h2 {
-    text-align: center;
+    /*text-align: center;*/
     float: right;
   }
 
@@ -764,7 +843,7 @@ a:active, a:hover {
   .compelete{
     float: right;
     text-align: center;
-    margin-right: 2.7em;
+    /*margin-right: 2.7em;*/
   }
 
   /*Cart Form Mobile End*/
@@ -781,8 +860,9 @@ a:active, a:hover {
       margin-left:0;
     }
 
-    .compelete{
+    .compelete, .checkout h2 {
       margin-right: 0;
+      float: none;
     }
 
     .cart_details {
@@ -792,5 +872,216 @@ a:active, a:hover {
     .checkout{
       margin-top: 3em;
     }
+
   }
+
+
+
+/* #Progress Bar
+================================================== */
+
+  .progressbar_container{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+  .progressbar_title{
+    font-size:1.5em;
+    font-style:italic;
+  }
+
+  .progressbar{
+      display: block;
+      margin: 0 auto;  /*margin-left/margin-right=auto*/
+  }
+
+
+
+
+/*============================================
+ Shopping Cart & Checkout
+ =============================================*/
+
+  .shipping {
+    /*margin: 10px auto;*/
+    /*width: 33%;*/
+    margin-left: 7%;
+  }
+
+
+  .payment {  
+    width: 50%;
+    padding: 20px 25px 60px 25px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 2%; 
+  }
+
+  .shipping label, .payment label{
+    float: left;
+    width: 100%;  
+  }
+
+
+  .shipping input, .shipping select, .payment input, .payment select{
+    width: 100%;
+    
+    outline: none;
+    color: #b2b2b2;
+    background-color: rgb(211,211,211); /* fallback */
+    background-color: rgba(211,211,211,0.1);
+    border: 1px solid #b2b2b2;
+      
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+  }
+
+  .shipping input, .payment input{
+    padding: 0.3em;
+  }
+
+  .shipping select, .payment select{
+    padding: 0.24em;
+  }
+
+  .shipping select{
+    border-radius: 1;
+  }
+
+  .shipping input:hover, .shipping select:hover, .payment input:hover, .payment select:hover {
+    color: #000000;
+    background-color: rgb(255,255,255); /* fallback */
+    background-color: rgba(211,211,211,1);
+  }
+
+  .shipping input:focus, .shipping select:focus, .payment input:focus, .payment select:focus{
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  .shipping span, .payment span {
+    color: #BC0D5D;
+  }
+  .requireBox{
+    margin-top: 2%;
+  }
+
+  .continue_button{
+    margin-right: 6%;
+    margin-top: 5%;
+    float: right;
+    text-align: center;
+  }
+
+  .orderbutton{
+    margin-right: 12%;
+  }
+
+  .conf_msg{
+    margin-top: 5%;
+  }
+
+  .confirmation{
+    margin-top: 15em;
+  }
+
+  .review{
+    margin-top: 5em;
+    padding: 2em;
+  }
+
+  .review ul{
+    border: 1px solid grey;
+    padding: 2em;
+    list-style-type: none;
+  }
+
+
+  /*Cart Form Mobile End*/
+  @media (max-width:600px){
+    .shipping, .payment, .orderbutton, .continue_button {
+      margin-left: 0;
+    }
+
+  }
+
+/*============================================
+ Event Page
+ =============================================*/
+ 
+  .event {
+    padding-top: 70px;
+  }
+   
+  .event-banner {
+    max-width: 100%;
+  }
+
+  .m-event-banner{
+    display:none;
+  }
+
+  .event-container {
+/*    width: 70%;*/
+    /*padding: 0 1em 30px;*/
+    /*border-left: 1px dotted rgba(88,88,77,0.5);*/
+  }
+
+  .event-content {
+    width: 100%;
+/*    padding: 0;
+    float: left;*/
+    /*outline: 2px dotted #ffffff;*/
+  }
+
+  .event-content h3{
+    font-size: 1.5em;
+  }
+
+  .event-content h4{
+    font-size: 1em;
+  }
+
+  .event-sidebar {
+    padding-left: 1em;
+  }
+
+  .event-sidebar span {
+    color: #ffba00;
+  }
+
+  .event-sidebar h3 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.2em;
+   /* color: #fff;*/
+  }
+
+  .event-sidebar ul {
+    list-style: none;
+    padding: 0 0 0 0em;
+    text-align: left;
+  }
+
+  .event-sidebar ul li {
+    display: list-item;
+    margin-bottom: 10%;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #b2b2b2;
+  }
+
+  #workshop_subtitle{
+    color: grey;
+    font-style: italic;
+  }
+
+
+ 
 

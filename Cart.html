@@ -47,20 +47,18 @@
   ================================================== -->    
     <header>
       <div id="nav-menu-background"></div>
-
       <nav id="nav-menu">
-        <div class="button-main button-no-margin" id="menu-icon">MENU</div>
-        <a href="About.html"><img id="logo" src="img/brand-logo@2x.png" href="About.html"></a>
+        <a href="#" class="menu-trigger"><img id="logo_mobile" src="img/brand-logo@2x.png" href="about.html"><br><i class="menuArrow fa fa-chevron-down"></i></a>
+        <a href="About.html"><img id="logo_web" src="img/brand-logo@2x.png" href="About.html"></a>
         <ul>
           <li><a href="About.html">ABOUT</a></li>
           <li><a href="ShopBikes.html">SHOP BIKES</a></li>
           <li><a href="BuildBikes.html">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
-          <li><a href="ContactUs.html" >CONTACT US</a></li>
-          <li><a href="Cart.html" class="selected">CART</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a class="selected" href="Cart.html">CART(1)</a></li>
         </ul>
       </nav>
-
     </header>
 
     <!-- Carts Info
@@ -69,7 +67,13 @@
     <section class="lastitem">
       <div>
 
-          <h1>Shopping Cart</h1>
+          <h1 class="progressbar_title">
+            <a href="home.html">home</a> &nbsp;»&nbsp;cart
+          </h1>
+
+          <!-- Progress Bar -->
+          <div class="progressbar_container">
+            <img src="img/progressbar.png" class="progressbar">
 
           <!-- Product Image-->
           <div class="cart_details grid-row">
@@ -96,8 +100,11 @@
             <div class="qty grid-col-1of10">
               <h3>Qty</h3>
               <div class="center">
-                <input for="qty">
-                </input>
+                <select for="qty">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
               </div>
             </div>
 
@@ -123,12 +130,12 @@
           <!-- Price Summary & CheckOut Button -->    
       
           <div class="checkout grid-row">
-             <h2 class="grid-col-3of10">Subtotal:<span class="sumprice">$99.95</span></h2>
+             <h2 class="compelete">Subtotal:<span class="sumprice">$99.95</span></h2>
           </div>
 
           <div class="checkout grid-row ">
-            <div class="button-main button-no-margin grid-col-2of10 compelete"> 
-               <a href="BuildBikes.html">Check Out</a>
+            <div class="compelete button-main button-no-margin grid-col-2of10"> 
+               <a href="shipment.html">Check Out</a>
             </div>      
           </div>
 
@@ -140,7 +147,7 @@
   <!-- JS
   ================================================== -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="javascripts/main.js"></script>
+  <script src="js/main.js"></script>
 
 <!-- End Document
 ================================================== -->

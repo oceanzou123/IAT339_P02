@@ -1,22 +1,13 @@
-// main.js
-function copyToClipboard(elementId) {
-
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-
-}
+$(document).ready(function() {
+  $('.menu-trigger').click(function() {
+    $('nav ul').slideToggle(500);
+     $(".menuArrow").removeClass("fa-chevron-down");
+     $(".menuArrow").addClass("fa-chevron-up");
+  });//end slide toggle
+  
+  $(window).resize(function() {   
+    if (  $(window).width() > 500 ) {     
+      $('nav ul').removeAttr('style');
+     }
+  });//end resize
+});//end ready

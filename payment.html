@@ -43,49 +43,82 @@
 
 </head>
 <body>
-    <!-- Navigation
+     <!-- Navigation
   ================================================== -->    
     <header>
       <div id="nav-menu-background"></div>
 
       <nav id="nav-menu">
         <div class="button-main button-no-margin" id="menu-icon">MENU</div>
-        <a href="Home.html"><img id="logo" src="img/brand-logo@2x.png" href="Home.html"></a>
+        <a href="About.html"><img id="logo" src="img/brand-logo@2x.png" href="About.html"></a>
         <ul>
-          <li><a href="Home.html" class="selected">HOME</a></li>
-          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="About.html">ABOUT</a></li>
           <li><a href="ShopBikes.html">SHOP BIKES</a></li>
           <li><a href="BuildBikes.html">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
-          <li><a href="ContactUs.html">CONTACT US</a></li>
-          <li><a href="Cart.html">CART</a></li>
+          <li><a href="ContactUs.html" >CONTACT US</a></li>
+          <li><a href="Cart.html" class="selected">CART</a></li>
         </ul>
       </nav>
 
     </header>
 
-    <!-- PRODUCT - THEBREAKWATER
-  ================================================== -->   
-    <div class="mainContent">
-      <section class="lastitem">
-        <div class="grid-row">
-          
-          <!-- Text -->
-          <div class="grid-col-4of10">
-            <div class="product-content">
-              <h1>The Breakwater</h1>
-              <p>The result of this vision is the single speed SC-01, a high quality, maintenance-free bicycle. Lightweight, stable and responsive, it is a pleasure to ride, and with its elegant and timeless design, it is a pleasure to the eye. It is made to last, with a titanium frame, fork and handlebar, Gates belt transmission, Brooks leather saddle and grips, and other high quality components. The SC-01 will be your urban affairs partner for many decades, without asking anything in return... well, maybe just a little bit of love.</p>
+    <!-- Carts Info
+  ================================================== -->
+  <div class="mainContent">
+    <section class="lastitem">
+      <div>
+
+          <h1 class="progressbar_title">
+            <a href="home.html">home</a> <a href="cart.html">&nbsp;»&nbsp;cart</a> <a href="shipment.html">&nbsp;»&nbsp;shipment</a> &nbsp;»&nbsp;payment
+          </h1>
+
+          <!-- Progress Bar -->
+          <div class="progressbar_container">
+            <img src="img/progressbar3.png" class="progressbar">
+          </div>
+
+          <!-- Product Image-->
+          <div class="grid-row">
+        
+            <!-- payment options -->      
+            <div class="grid-col-4of10 payment">
+              <label for="cardtype">Card Type<span>*</span></label>  
+              <select name="country">
+                <option value=null>Select your card type</option>
+                <option value=visa>VISA</option>
+                <option value=master>Mastercard</option>          
+                <option value=amex>American Express</option>
+              </select>
             </div>
+            <div class="grid-col-4of10 payment">
+              <label for="expirydate">Expiry Date<span>*</span></label>  
+              <input name=expirydate type=text placeholder="MM/YY" />     
+            </div>      
+            <div class="grid-col-4of10 payment">
+              <label for="cardnumber">Card Number<span>*</span></label>  
+              <input name=firstname type=text placeholder="Please put your credit card number here..."/>        
+            </div>
+            <div class="grid-col-4of10 payment">     
+              <label for="csv">Card Security Value Number<span>*</span></label>  
+              <input name=firstname type=text placeholder="888" />
+            </div>        
+            <div class="grid-col-4of10 payment">
+              <label><span>*</span> Required</label>
+            </div>
+            <!-- end of payment options -->
+          </div>   
+
+          <div class="grid-row">
+            <div class="button-main continue_button button-no-margin grid-col-2of10"> 
+               <a href="confirmation.html">Order</a>
+            </div>      
           </div>
 
-          <!-- Picture -->
-          <div class="grid-col-6of10">
-            <img src="img/bike1.png">
-          </div>
+      </div>
+    </section>
+  </div>
 
-        </div>
-      </section>
-    </div>
 
   <!-- JS
   ================================================== -->

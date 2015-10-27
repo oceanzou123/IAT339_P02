@@ -1,0 +1,166 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8" />
+    <title>Solacycle Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+    <!-- CSS
+  ================================================== -->
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/mainstylesheet.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+    <!-- Font Awesome
+  ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Font
+  ================================================== -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons
+  ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+
+</head>
+<body>
+     <!-- Navigation
+  ================================================== -->    
+    <header>
+      <div id="nav-menu-background"></div>
+
+      <nav id="nav-menu">
+        <div class="button-main button-no-margin" id="menu-icon">MENU</div>
+        <a href="About.html"><img id="logo" src="img/brand-logo@2x.png" href="About.html"></a>
+        <ul>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="ShopBikes.html">SHOP BIKES</a></li>
+          <li><a href="BuildBikes.html">BUILD BIKES</a></li>
+          <li><a href="Workshops.html">WORKSHOPS</a></li>
+          <li><a href="ContactUs.html" >CONTACT US</a></li>
+          <li><a href="Cart.html" class="selected">CART</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Carts Info
+  ================================================== -->
+  <div class="mainContent">
+    <section class="lastitem">
+      <div>
+
+          <!-- title -->
+          <h1 class="progressbar_title">
+            <a href="home.html">home</a> <a href="cart.html">&nbsp;»&nbsp;cart</a> &nbsp;»&nbsp;shipment
+          </h1>
+
+          <!-- Progress Bar -->
+          <div class="progressbar_container">
+            <img src="img/progressbar2.png" class="progressbar">
+          </div>
+
+          <!-- content container-->
+          <div class="grid-row cart">
+            <!-- shipping address -->     
+            <div class="grid-col-4of10 shipping">
+              <label for="firstname">First Name<span>*</span></label>  
+              <input name=firstname type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="lastname">Last Name<span>*</span></label>  
+              <input name=lastname type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="phone">Phone<span>*</span></label>  
+              <input name=phone type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="email">Email</label>  
+              <input name=email type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="address1">Address1<span>*</span></label>  
+              <input name=address1 type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="address2">Address2</label>  
+              <input name=address2 type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="city">City<span>*</span></label>  
+              <input name=city type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="postalcode">Postal Code<span>*</span></label>  
+              <input name=postalcode type=text />
+            </div>
+            <div class="grid-col-4of10 shipping">
+            <label for="country">Country<span>*</span></label>
+            <select name="country">
+              <option value=canada>Canada</option>
+            </select>
+            </div>
+            <div class="grid-col-4of10 shipping">
+              <label for="province">Province<span>*</span></label>  
+              <select name="country">
+                <option value=bc>BC</option>
+                <option value=ab>AB</option>          
+                <option value=mb>MB</option>
+                <option value=nb>NB</option>
+                <option value=nl>NL</option>
+                <option value=nt>NT</option>
+                <option value=ns>NS</option>
+                <option value=nu>NU</option>
+                <option value=on>ON</option>
+                <option value=pe>PE</option>
+                <option value=qc>QC</option>
+                <option value=sk>SK</option>
+                <option value=yl>YT</option>
+              </select>
+            </div>
+
+            <div class="grid-col-10of10 shipping requireBox">
+              <label><span>*</span> Required</label>
+            </div>
+            <!-- end of shipping address -->
+
+            <div class="grid-row">
+              <div class="button-main continue_button button-no-margin grid-col-2of10"> 
+                 <a href="payment.html">Continue</a>
+              </div>      
+            </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- JS
+  ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
