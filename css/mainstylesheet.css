@@ -47,8 +47,8 @@
 } 
 
 .menu-trigger {
-    display:none;
-    color:black;
+    display: none;
+    color: black;
 }
 
 
@@ -655,8 +655,8 @@ a:active, a:hover {
 
     .mainContent{
       margin-left: 0em;
-      padding: 2em;
-      /*padding-top: 4em;*/
+      padding: 1em;
+      padding-top: 4em;
     }
 
     img {
