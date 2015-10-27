@@ -295,10 +295,6 @@ font-size: 1rem;
 }
 
 
-.mainContent-styleguide {
-  padding: 0 4rem 0 4rem;
-}
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -331,9 +327,14 @@ font-size: 1rem;
 }
 
 
-/* Styling for the in-text link*/
-.selected{
+/* Styling for in-text links */
+.selected {
   color: #D15627; 
+}
+
+.selected-link:hover, .selected-link:focus, .selected-link:active {
+  color: #ED805F;
+  text-decoration: underline;
 }
 
 /* Styling for the form */

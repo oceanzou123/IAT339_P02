@@ -11,107 +11,144 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
 
-    <script src="https://use.typekit.net/rpj7hny.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
   </head>
 
   <body>
-    <div class="grid-row">
-
-      <!-- 
-        Here we hav added the class 'grid-row' to our nav tag to allow it to act as a grid of it's own
-      -->
-      <nav class="grid-col-2of10">
-    
-        <img id="logo" src="img/brand-logo@2x.png">
-
+    <!-- Navigation
+    ================================================== -->    
+    <header>
+      
+      <nav id="nav-menu">
+        <a href="#" class="menu-trigger"><img id="logo_mobile" src="img/brand-logo@2x.png" href="about.html"><br><i class="menuArrow fa fa-chevron-down"></i></a>
+        <a href="About.html"><img id="logo_web" src="img/brand-logo@2x.png" href="About.html"></a>
         <ul>
-            <li><a href="Style_guide.html">STYLE GUIDE</a>
-
-              <li class="sub_nav">
-                <a href="#visual_elements">Visual Elements</a>
-              </li>
-              <li class="sub_nav">
-                <a href="#interactive_elements">Interactive Elements</a>
-              </li>
-              <li class="sub_nav"> 
-                <a href="#text_elements">Text Elements</a>
-              </li>
-              <li class="sub_nav">
-                <a href="#combined_elements">Combined Elements</a>
-              </li>
-
- <!--            <li><a href="User-flows.html">USER FLOWS</a>
-
-              <li class="sub_nav">
-                <a href="#4k_display">4K Display</a>
-              </li>
-              <li class="sub_nav"> 
-                <a href="#mobile_device">Mobile Device</a>
-              </li>
-              <li class="sub_nav">
-                <a href="#smart_watch">Smart Watch</a>
-              </li> -->
-
-            <li class="selected"><a href="Citations.html">CITATIONS</a>
-          </ul>
-
+          <li><a href="StyleGuide.html">STYLE GUIDE</a></li>
+          <li><a href="Citations.html" class="selected">CITATIONS</a></li>
+          <li><a href="About.html">WEBSITE</a></li>
+        </ul>
       </nav>
+    </header>
 
+    <!-- Citations -->
 
-      <div class="grid-col-8of10 mainContent">
-        
-        <br><br>
+    <div class="mainContent">
+      <div class="grid-row">
+        <div class="grid-col-10of10">
 
-        <!-- FONTS ELEMENTS SECTION // -->
-        <section id="fonts">
+          <!-- FONTS ELEMENTS SECTION // -->
+          <section>
 
-          <h2>Font citations</h2>
+            <h1>Font Citations</h1>
 
-          <ul class="citations">
-            
-            <li>
-              <cite>P22 Type Foundry</cite>. Foundry. 2001. <strong>P22 Underground</strong> [Font]. Retrieved from <a href="https://typekit.com/fonts/p22-underground" target="_blank">https://typekit.com/fonts/p22-underground</a>
-            </li>
+            <ul class="citations">
+              
+              <li>
+                <cite>Steve Matteson</cite>. Designer. 2011. <strong>Open Sans</strong> [Font]. Retrieved from <a href="https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans" target="_blank" class="selected selected-link">https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans</a>
+              </li>
 
-            <li>
-              <cite>Jos Buivenga</cite>. Designer. 1994. <strong>Museo Slab</strong> [Font]. Retrieved from <a href="https://typekit.com/fonts/museo-slab" target="_blank">https://typekit.com/fonts/museo-slab</a>
-            </li>
-            
+              <li>
+                <cite>Jos Buivenga</cite>. Designer. 1994. <strong>Museo Sans</strong> [Font]. Retrieved from <a href="https://typekit.com/fonts/museo-sans" target="_blank" class="selected selected-link">https://typekit.com/fonts/museo-sans</a>
+              </li>
+              
 
-          </ul>
+            </ul>
 
-        </section>
+          </section>
 
-        <!-- IMAGES ELEMENTS SECTION // -->
-        <section id="images">
+          <!-- IMAGES ELEMENTS SECTION // -->
+          <section>
 
-          <h2>Images</h2>
+            <h1>Image Citations</h1>
 
-          <ul class="citations">
-            <li>
-              <cite>Creator</cite>. (Role). (Year). <strong>Title</strong> [Media]. Retrieved from <a href="#">[URL]</a>.
-            </li>
-          </ul>
+            <ul class="citations">
 
-        </section>
+              <li>
+                <cite>Evans Cycles</cite>. Photographer. 2015. <strong>Brooks Swift Saddle</strong> [Image]. Retrieved from <a href="http://www.evanscycles.com/products/brooks/swift-saddle-ec007595" target="_blank" class="selected selected-link">http://www.evanscycles.com/products/brooks/swift-saddle-ec007595</a>
+              </li>
 
-        <!-- OTHER ELEMENTS SECTION // -->
-        <section id="other">
+              <li>
+                <cite>Evans Cycles</cite>. Photographer. 2015. <strong>Campagnolo Hyperon Ultra 2 Carbon Tubular Wheelset</strong> [Image]. Retrieved from <a href="http://www.evanscycles.com/products/campagnolo/hyperon-ultra-2-carbon-tubular-wheelset-ec031003" target="_blank" class="selected selected-link">http://www.evanscycles.com/products/campagnolo/hyperon-ultra-2-carbon-tubular-wheelset-ec031003</a>
+              </li>
 
-          <h2>Icons</h2>
+              <li>
+                <cite>Evans Cycles</cite>. Photographer. 2015. <strong>HOY Cammo 2014 Front Wheel</strong> [Image]. Retrieved from <a href="http://www.evanscycles.com/products/hoy/cammo-2014-front-wheel-ec106947" target="_blank" class="selected selected-link">http://www.evanscycles.com/products/hoy/cammo-2014-front-wheel-ec106947</a>
+              </li>
 
-          <ul class="citations">
-            <li>
-              <cite>Fontawsome</cite>. Geremia Taglialatela. 2013. <strong>Icons</strong> [Icons]. Retrieved from <a href="https://fortawesome.github.io/Font-Awesome/">https://fortawesome.github.io/Font-Awesome/</a>.
-            </li>
-          </ul>
+              <li>
+                <cite>Evans Cycles</cite>. Photographer. 2015. <strong>HOY Meadowbank 2014 Track Front Wheel</strong> [Image]. Retrieved from <a href="http://www.evanscycles.com/products/hoy/meadowbank-2014-track-front-wheel-ec106951" target="_blank" class="selected selected-link">http://www.evanscycles.com/products/hoy/meadowbank-2014-track-front-wheel-ec106951</a>
+              </li>
 
-        </section>
+              <li>
+                <cite>Mika Amaro</cite>. Photographer. 2015. <strong>Leder Accessories - Griffe</strong> [Image]. Retrieved from <a href="http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=42" target="_blank" class="selected selected-link">http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=42</a>
+              </li>
 
+              <li>
+                <cite>Mika Amaro</cite>. Photographer. 2015. <strong>Leder Accessories - Sattel</strong> [Image]. Retrieved from <a href="http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=45" target="_blank" class="selected selected-link">http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=45</a>
+              </li>
+
+              <li>
+                <cite>Mika Amaro</cite>. Photographer. 2015. <strong>Single Speed Bike Indy White - 8 Speed</strong> [Image]. Retrieved from <a href="http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=47_49" target="_blank" class="selected selected-link">http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=47_49</a>
+              </li>
+
+              <li>
+                <cite>Mika Amaro</cite>. Photographer. 2015. <strong>Single Speed Bike Inky Blue Gates Carbon Drive</strong> [Image]. Retrieved from <a href="http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=48_52" target="_blank" class="selected selected-link">http://www.mika-amaro.com/shop/index.php?main_page=index&cPath=48_52</a>
+              </li>
+
+              <li>
+                <cite>Nua Bikes</cite>. Photographer. 2015. <strong>SC-01</strong> [Image]. Retrieved from <a href="http://www.nuabikes.com/" target="_blank" class="selected selected-link">http://www.nuabikes.com/</a>
+              </li>
+
+              <li>
+                <cite>Pure City Cycles</cite>. Photographer. 2015. <strong>Vine Side 3S</strong> [Image]. Retrieved from <a href="http://purecitycycles.com/collections/pure-city-classic-bikes/products/the-vine?variant=755264813" target="_blank" class="selected selected-link">http://purecitycycles.com/collections/pure-city-classic-bikes/products/the-vine?variant=755264813</a>
+              </li>
+
+              <li>
+                <cite>Pure City Cycles</cite>. Photographer. 2015. <strong>Vine 3rd 3S</strong> [Image]. Retrieved from <a href="http://purecitycycles.com/collections/pure-city-classic-bikes/products/the-vine?variant=755264813" target="_blank" class="selected selected-link">http://purecitycycles.com/collections/pure-city-classic-bikes/products/the-vine?variant=755264813</a>
+              </li>
+
+              <li>
+                <cite>Tokyobike New York</cite>. Photographer. 2015. <strong>Classic Sport (CS) - Mustard</strong> [Image]. Retrieved from <a href="http://www.tokyobikenyc.com/classic-sport-cs/" target="_blank" class="selected selected-link">http://www.tokyobikenyc.com/classic-sport-cs/</a>
+              </li>
+
+              <li>
+                <cite>Tokyobike New York</cite>. Photographer. 2015. <strong>Classic Sport (CS) - Vincent Blue</strong> [Image]. Retrieved from <a href="http://www.tokyobikenyc.com/classic-sport-cs/" target="_blank" class="selected selected-link">http://www.tokyobikenyc.com/classic-sport-cs/</a>
+              </li>
+
+              <li>
+                <cite>Tokyobike New York</cite>. Photographer. 2015. <strong>Classic Sport (CS) - White</strong> [Image]. Retrieved from <a href="http://www.tokyobikenyc.com/classic-sport-cs/" target="_blank" class="selected selected-link">http://www.tokyobikenyc.com/classic-sport-cs/</a>
+              </li>
+
+              <li>
+                <cite>Virtue Bikes</cite>. Photographer. 2015. <strong>Dual Bolt Grips Black</strong> [Image]. Retrieved from <a href="http://www.virtuebike.com/category/catalog/components/grips" target="_blank" class="selected selected-link">http://www.virtuebike.com/category/catalog/components/grips</a>
+              </li>
+
+              <li>
+                <cite>Virtue Bikes</cite>. Photographer. 2015. <strong>Flanged Grips</strong> [Image]. Retrieved from <a href="http://www.virtuebike.com/category/catalog/components/grips" target="_blank" class="selected selected-link">http://www.virtuebike.com/category/catalog/components/grips</a>
+              </li>
+
+              <li>
+                <cite>Virtue Bikes</cite>. Photographer. 2015. <strong>Virtue Stitch Grips Brown</strong> [Image]. Retrieved from <a href="http://www.virtuebike.com/category/catalog/components/grips" target="_blank" class="selected selected-link">http://www.virtuebike.com/category/catalog/components/grips</a>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <!-- OTHER ELEMENTS SECTION // -->
+          <section>
+
+            <h1>Icon Citations</h1>
+
+            <ul class="citations">
+              <li>
+                <cite>Fontawsome</cite>. Geremia Taglialatela. 2013. <strong>Icons</strong> [Icons]. Retrieved from <a href="https://fortawesome.github.io/Font-Awesome/" class="selected selected-link">https://fortawesome.github.io/Font-Awesome/</a>.
+              </li>
+            </ul>
+
+          </section>
+
+        </div>
       </div>
-
     </div>
 
   </body>

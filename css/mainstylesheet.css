@@ -85,10 +85,6 @@
   #logo_mobile{
     width: 13em;
   }
-
-
-  /*cart mobile*/
-
 }
 
   
@@ -778,25 +774,17 @@ a:active, a:hover {
   /*The title of each element*/
   .price{
     float:left;
-    /*margin-left:7.5%;*/
-    text-align: center;
+    margin-left:7.5%;
     position:relative;
     height:20em;
-    text-align: center;
-  }
-
-  .price h3{
-/*    padding-left: 25%;
-    padding-right: 25%;*/
   }
 
   /*Styling for the Quality*/
   .qty{
     float:left;
-/*    margin-left:7.5%;*/
+    margin-left:7.5%;
     position:relative;
     height:20em;
-    text-align: center;
   }
 
   /*Styling for the Quality*/
@@ -817,19 +805,17 @@ a:active, a:hover {
   /*Styling for the Price*/
   .total{
     float:left;
-/*s*/
+    margin-left:7.5%;
     position:relative;
     height:20em;
-    text-align: center;
   }
 
   /*Remove Button*/
   .remove{
     position:relative;  
     height:20em;
-/*    margin-left: 7.5%;*/
+    margin-left: 7.5%;
     color:grey;
-    text-align: center;
   }
 
   .remove i{
@@ -860,34 +846,8 @@ a:active, a:hover {
     /*margin-right: 2.7em;*/
   }
 
-  .compelete a{
-    color: white;
-  }
-
   /*Cart Form Mobile End*/
-  @media (max-width:65em){
-
-    .cart_details .price h3, .cart_details .qty h3, .cart_details .remove h3{
-      border-bottom:0;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .qty, .remove {
-      margin-top: 2rem;
-    }
-
-    .checkout h2{
-      border-top:2px solid #aaa;
-      padding-top: 2rem;
-    }
-
-    .item2 {
-      border-top: 2px solid #aaa;
-      padding-top: 2rem;
-      margin-top: 3rem;
-    }
+  @media (max-width:600px){
 
     .center{
       position:initial;
@@ -947,6 +907,7 @@ a:active, a:hover {
     /*width: 33%;*/
     margin-left: 7%;
   }
+
 
   .payment {  
     width: 50%;
@@ -1040,7 +1001,7 @@ a:active, a:hover {
 
 
   /*Cart Form Mobile End*/
-  @media (max-width:65em){
+  @media (max-width:600px){
     .shipping, .payment, .orderbutton, .continue_button {
       margin-left: 0;
     }
