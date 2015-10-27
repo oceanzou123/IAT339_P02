@@ -2,8 +2,9 @@ $(document).ready(function() {
 
   $('.menu-trigger').click(function() {
     $('nav ul').slideToggle(500);
-     $(".menuArrow").removeClass("fa-chevron-down");
-     $(".menuArrow").addClass("fa-chevron-up");
+     // $(".menuArrow").removeClass("fa-chevron-down");
+     // $(".menuArrow").addClass("fa-chevron-up");
+     $(".menuArrow").toggleClass("fa-chevron-up fa-chevron-down");
   });//end slide toggle
   
   $(window).resize(function() {   
