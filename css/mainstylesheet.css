@@ -23,28 +23,10 @@
 }
 
 .mainContent section h1:first-child{
-  margin-top: 4.3rem;
+  margin-top: 1.5em;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  margin: 1em 0;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
 
-.button:hover, .button:focus {
-  background-color: #D15627;
-  color: #fff;
-}
-
-.button_build{
-  margin-left: 1rem;
-} 
 
 .menu-trigger {
     display: none;
@@ -85,6 +67,11 @@
   #logo_mobile{
     width: 13em;
   }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
   
@@ -107,6 +94,26 @@
   border-color: #D15627;
   color: #D15627;
 }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #D15627;
+  margin: 1em 0;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:hover, .button:focus, .button:active {
+  background-color: #ED805F;
+  color: #fff;
+}
+
+.button_build{
+  margin-left: 1rem;
+} 
 
 .button-duplicate {
   margin: 0em 2em 1em 0;
@@ -310,7 +317,7 @@ body {
 }
 
 section {
-  padding: 5% 0;
+  padding: 2em 0;
   border-bottom: 0.1em solid #EFEFEF;
 }
 
@@ -600,18 +607,6 @@ a:active, a:hover {
     .mainContent{
       margin-left: 18em;
     }
-
-/*    .product-content {
-      margin-top: 10%;
-    }*/
-
-/*    #nav-menu-background {
-      width: 18em;
-    }*/
-
-    #product-images {
-      height: 20em;
-    }
   }
 
 
@@ -714,6 +709,10 @@ a:active, a:hover {
 
     .custom-button {
       margin: 1em 0;
+    }
+
+    .product-images, .product-images img {
+      padding: 0em;
     }
 
   }
