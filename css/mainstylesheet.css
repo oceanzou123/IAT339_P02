@@ -31,6 +31,7 @@
   padding: 0.5em 0.75em;
   color: #FFF;
   background-color: #333;
+  margin: 1em 0;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
@@ -261,8 +262,8 @@ input[type="submit"]:hover, .button-form:hover {
 
   /* Styling for the logo */
   #logo_web {
-    padding-top: 10em;
-    padding-bottom: 3em;
+    padding-top: 6em;
+    padding-bottom: 2em;
     width: 13em;
   }
 
@@ -379,9 +380,9 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-.product-content {
-  padding-top: 5em;
-}
+/*.product-content {
+  padding-top: 5rem;
+}*/
 
 .lastitem {
   border-style: none;
@@ -588,7 +589,7 @@ a:active, a:hover {
 
     #nav-menu {
       padding-left: 3em;
-      width: 18em;
+/*      width: 18em;*/
     }
 
     #logo {
@@ -600,9 +601,9 @@ a:active, a:hover {
       margin-left: 18em;
     }
 
-    .product-content {
+/*    .product-content {
       margin-top: 10%;
-    }
+    }*/
 
 /*    #nav-menu-background {
       width: 18em;
