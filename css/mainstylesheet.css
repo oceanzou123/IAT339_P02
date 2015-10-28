@@ -20,7 +20,6 @@
 
 
 
-
 /* #1 Navigation Menu
 ================================================== */
 
@@ -1116,10 +1115,8 @@ input[type="submit"]:hover, .button-form:hover {
     color: white;
   }
 
-  .back_button{
-    margin-right: 6%;
-    margin-top: 5%;
-    text-align: center;
+  .back_to_button{
+    margin-top: 7%;
   }
 
   .continue_button a{
@@ -1142,6 +1139,10 @@ input[type="submit"]:hover, .button-form:hover {
    padding-top: 4rem;
   }
 
+  .review div div ul li{
+    margin-top: 0.8rem;
+  }
+
   /*change the top spacing for main content in confirmation page*/
   @media (max-width:65em){
     .review{
@@ -1150,8 +1151,7 @@ input[type="submit"]:hover, .button-form:hover {
   }
 
   .review ul{
-    border: 1px solid grey;
-    padding: 2em;
+    padding: 0;
     list-style-type: none;
   }
 
