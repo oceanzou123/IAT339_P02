@@ -39,6 +39,18 @@
   width: 100%;
 }
 
+/* Grids for the review page */
+.grid-25 {
+  float: left;
+  width: 50%;
+  padding: 0em 1em 0em 1em;
+}
+
+.grid-25:first-child,
+.grid-25:nth-child(3) {
+  padding-left: 0;
+}
+
 
 /*
 	Here we are clearing floated items to ensure that
@@ -49,16 +61,6 @@
 	display: block;
 	clear: both;
 }
-
-
-/* 
-  Grid for staying a certain percentage even though browser
-  is resized  
-*/
-.4grid {
-  width: 40%;
-}
-
 
 
 /*
@@ -116,6 +118,9 @@
     width: 100%;
   }
 
+  .grid-25 {
+    width: 25%;
+  }
 }
 
 

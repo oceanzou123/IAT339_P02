@@ -7,10 +7,11 @@
   #4 Contact Form
   #5 Bike Stats
   #6 Product Listing
+  #7 Photo Gallery for Product Image
   #8 Main Content
-  #9 Custom Bike
+  #9 Custom Bike & Reviews
   #10 Browser Resize
-  #11 Contact Us Page
+  #11 Map
   #12 Cart
   #13 Progress Bar
   #14 Shopping Cart & Checkout
@@ -167,6 +168,17 @@ a:active, a:hover {
   text-decoration: none;
 }
 
+table {
+  border-style: none;
+  text-align: center; 
+  width: 70%;
+  margin: 0 auto;
+}
+
+td {
+  padding: 1em;
+}
+
 .lastitem {
   border-style: none;
 }
@@ -255,7 +267,7 @@ label {
 }
 
 input, textarea, .button-form {
-  width: 100%;
+  width: 75%;
   padding: 0.5em;
   border: none;
   line-height: 1.5em;
@@ -290,100 +302,91 @@ input[type="submit"]:hover, .button-form:hover {
 /* #5 Bike Stats
 ================================================== */
 
-  .bike-stats {
-    display: inline-block;
-    height: 0.25em;
-    width: auto;
-    background-color: #D15627;
-    margin-bottom: 2em;
-  }
+.bike-stats {
+  display: inline-block;
+  height: 0.25em;
+  width: auto;
+  background-color: #D15627;
+  margin-bottom: 2em;
+}
 
-  /* Background bar for bike stats */
-  .grey-bar-30 {
-    background-color: #EFEFEF;
-    width: 30%;
-  }
+/* Background bar for bike stats */
+.grey-bar-30 {
+  background-color: #EFEFEF;
+  width: 30%;
+}
 
-  .grey-bar-40 {
-    background-color: #EFEFEF;
-    width: 40%;
-  }
+.grey-bar-40 {
+  background-color: #EFEFEF;
+  width: 40%;
+}
 
-  .grey-bar-70 {
-    background-color: #EFEFEF;
-    width: 70%;
-  }
+.grey-bar-70 {
+  background-color: #EFEFEF;
+  width: 70%;
+}
 
-  .grey-bar-80 {
-    background-color: #EFEFEF;
-    width: 80%;
-  }
-
-
-  /* Stats for The Breakwater bike */
-  .the-breakwater-comfort {
-    width: 20%;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-    opacity: 0.30;
-  }
-
-  .the-breakwater-speed {
-    width: 70%;
-  }
-
-  .the-breakwater-performance {
-    width: 60%;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-    filter: alpha(opacity=65);
-    opacity: 0.65;
-  }
+.grey-bar-80 {
+  background-color: #EFEFEF;
+  width: 80%;
+}
 
 
-  /* Stats for The Fawnler bike */
-  .the-fawnler-comfort {
-    width: 70%;
-  }
+/* Stats for The Breakwater bike */
+.the-breakwater-comfort {
+  width: 20%;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.30;
+}
 
-  .the-fawnler-speed {
-    width: 20%;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-    opacity: 0.30;
-  }
+.the-breakwater-speed {
+  width: 70%;
+}
 
-  .the-fawnler-performance {
-    width: 30%; 
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-    filter: alpha(opacity=65);
-    opacity: 0.65;
-  }
-
-
-  /* Stats for The Loifer bike */
-  .the-loifer-comfort {
-    width: 60%;
-  }
-
-  .the-loifer-speed {
-    width: 60%;
-  }
-
-  .the-loifer-performance {
-    width: 60%;
-  }
+.the-breakwater-performance {
+  width: 60%;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+}
 
 
-  table {
-    border-style: none;
-    text-align: center; 
-    width: 70%;
-    margin: 0 auto;
-  }
+/* Stats for The Fawnler bike */
+.the-fawnler-comfort {
+  width: 70%;
+}
 
-  td {
-    padding: 1em;
-  }
+.the-fawnler-speed {
+  width: 20%;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.30;
+}
+
+.the-fawnler-performance {
+  width: 30%; 
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+}
+
+
+/* Stats for The Loifer bike */
+.the-loifer-comfort {
+  width: 60%;
+}
+
+.the-loifer-speed {
+  width: 60%;
+}
+
+.the-loifer-performance {
+  width: 60%;
+}
+
+
+  
 
 
 
@@ -478,11 +481,13 @@ input[type="submit"]:hover, .button-form:hover {
 
 
 
-/* #8 Custom Bike
+
+
+/* #8 Custom Bike & Reviews
 ================================================== */
 
 /* Custom bike steps progress bar */
-.custombikes {
+.custombikes, .reviews {
   width: 100%;
   text-align: left;
 }
@@ -492,11 +497,7 @@ input[type="submit"]:hover, .button-form:hover {
 }
 
 .custombikes td:first-child {
-  padding-right: 0em;
-}
-
-table.custombikes {
-  table-layout: fixed;
+  padding-left: 0em;
 }
 
 .custombikes td {
@@ -508,6 +509,19 @@ table.custombikes {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
   filter: alpha(opacity=40);
   opacity: 0.40;
+}
+
+.reviews {
+  margin-top: 2em;
+  border-bottom: 0.1em solid #CCC;
+}
+
+#first.reviews {
+  margin-top: 0em;
+}
+
+.grid-25 h4 {
+  margin-top: 0.75em;
 }
 
 .step-selected {
@@ -765,6 +779,9 @@ table.custombikes {
     text-align: center;
   }
 
+  .grid-25 h4 {
+    margin-top: -0.5em;
+  }
 }
 
 
