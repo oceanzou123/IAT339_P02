@@ -764,6 +764,7 @@ table.custombikes {
     width: 100%;
     text-align: center;
   }
+
 }
 
 
@@ -797,6 +798,13 @@ table.custombikes {
     width: auto;
     padding: 5rem;
   }
+  @media (max-width: 65em) {
+
+    .GoogleMap{
+      padding: 0;
+      margin-top:3rem;
+    }
+  } 
 
 /* #12 Cart
 ================================================== */
