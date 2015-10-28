@@ -503,7 +503,7 @@ input[type="submit"]:hover, .button-form:hover {
   margin: 0 auto;
 }
 
-.home-page h1, h3 {
+.home-page h1, .home-page h3 {
   color: #FFF;
 }
 
