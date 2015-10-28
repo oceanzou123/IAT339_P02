@@ -499,10 +499,17 @@ input[type="submit"]:hover, .button-form:hover {
 
 .home-page {
   margin-top: 5.5em;
+  display: block;
+  margin: 0 auto;
 }
 
 .home-page h1, h3 {
   color: #FFF;
+}
+
+.container {
+  height: auto;
+  width: auto;
 }
 
 .mainContent section h1:first-child{
@@ -816,6 +823,27 @@ input[type="submit"]:hover, .button-form:hover {
 
   .grid-25 h4 {
     margin-top: -0.5em;
+  }
+
+  .background, .background img {
+    position: static;
+    width: 100%;
+  }
+
+  .home-page {
+    margin-top: 0;
+  }
+
+  .home-page h1 {
+    color: #000;
+  }
+
+  .home-page h3 {
+    color: #CCC;
+  }
+
+  section.home {
+    padding: 0;
   }
 }
 
