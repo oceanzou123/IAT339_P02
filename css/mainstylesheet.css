@@ -61,7 +61,7 @@
   }
 
   .mainContent section h1{
-    font-size: 1.2rem;
+    font-size: 1.5em;
     /*text-align: center;*/
   }
 
@@ -680,7 +680,6 @@ a:active, a:hover {
     .mainContent{
       margin-left: 0em;
       padding: 1em;
-      padding-top: 4em;
     }
 
     img {
@@ -740,12 +739,28 @@ a:active, a:hover {
       order: 3;
     }
 
+    #shopbikes-order1 {
+      order: 2;
+    }
+
+    #shopbikes-order2 {
+      order: 3;
+    }
+
+    #shopbikes-order3 {
+      order: 1;
+    }
+
     .custom-button {
       margin: 1em 0;
     }
 
     .product-images, .product-images img {
       padding: 0em;
+    }
+
+    .button-duplicate {
+      margin-top: 2em;
     }
 
   }
