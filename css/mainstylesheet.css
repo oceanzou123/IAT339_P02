@@ -515,6 +515,10 @@ input[type="submit"]:hover, .button-form:hover {
   border-bottom: 0.1em solid #CCC;
 }
 
+.reviewbox{
+  margin-top: 3rem;
+}
+
 #first.reviews {
   margin-top: 0em;
 }
