@@ -37,7 +37,7 @@
 
 @media (max-width: 65em) {
 
-/*  product listing page, change the order of product image appear in mobile*/
+  /*  product listing page, change the order of product image appear in mobile*/
   .parent{
   display:flex;
   flex-flow: column;
@@ -806,17 +806,25 @@ a:active, a:hover {
   /*The title of each element*/
   .price{
     float:left;
-    margin-left:7.5%;
+    /*margin-left:7.5%;*/
+    text-align: center;
     position:relative;
     height:20em;
+    text-align: center;
+  }
+
+  .price h3{
+/*    padding-left: 25%;
+    padding-right: 25%;*/
   }
 
   /*Styling for the Quality*/
   .qty{
     float:left;
-    margin-left:7.5%;
+/*    margin-left:7.5%;*/
     position:relative;
     height:20em;
+    text-align: center;
   }
 
   /*Styling for the Quality*/
@@ -837,17 +845,19 @@ a:active, a:hover {
   /*Styling for the Price*/
   .total{
     float:left;
-    margin-left:7.5%;
+/*s*/
     position:relative;
     height:20em;
+    text-align: center;
   }
 
   /*Remove Button*/
   .remove{
     position:relative;  
     height:20em;
-    margin-left: 7.5%;
+/*    margin-left: 7.5%;*/
     color:grey;
+    text-align: center;
   }
 
   .remove i{
@@ -878,8 +888,34 @@ a:active, a:hover {
     /*margin-right: 2.7em;*/
   }
 
+  .compelete a{
+    color: white;
+  }
+
   /*Cart Form Mobile End*/
-  @media (max-width:600px){
+  @media (max-width:65em){
+
+    .cart_details .price h3, .cart_details .qty h3, .cart_details .remove h3{
+      border-bottom:0;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .qty, .remove {
+      margin-top: 2rem;
+    }
+
+    .checkout h2{
+      border-top:2px solid #aaa;
+      padding-top: 2rem;
+    }
+
+    .item2 {
+      border-top: 2px solid #aaa;
+      padding-top: 2rem;
+      margin-top: 3rem;
+    }
 
     .center{
       position:initial;
@@ -909,6 +945,8 @@ a:active, a:hover {
 
 
 
+
+
 /* #Progress Bar
 ================================================== */
 
@@ -935,8 +973,8 @@ a:active, a:hover {
  =============================================*/
 
   .shipping {
-    /*margin: 10px auto;*/
-    /*width: 33%;*/
+    margin: 10px auto;
+    width: 33%;
     margin-left: 7%;
   }
 
@@ -1008,6 +1046,16 @@ a:active, a:hover {
     text-align: center;
   }
 
+  .back_button{
+    margin-right: 6%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .continue_button a{
+      color: white;
+  }
+      
   .orderbutton{
     margin-right: 12%;
   }
