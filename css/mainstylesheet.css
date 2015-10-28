@@ -499,13 +499,12 @@ a:active, a:hover {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    padding: 2em;
   }
 
   .product-images img {
     width: 100%;
     padding: 2em;
-
+    left: 0;
     position: absolute;
     z-index: 1;
     background-color: #FFF;
@@ -530,13 +529,14 @@ a:active, a:hover {
 
   .product-images img:first-child {
     left: 0;
+    position: relative;
+
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
-    position: relative;
   }
 
-  .thumbnail-photos a {
+  .not-clicked {
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
     filter: alpha(opacity=65);
     opacity: 0.65;
@@ -545,7 +545,7 @@ a:active, a:hover {
   .thumbnail-photos a:hover, 
   .thumbnail-photos a:focus, 
   .thumbnail-photos a:active,
-  .thumbnail-photos a:target {
+  .clicked {
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
