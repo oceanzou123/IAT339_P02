@@ -44,110 +44,110 @@
     margin-top: 1em;
   }
 
-/* Styling for nav menu */
-nav {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-}
+  /* Styling for nav menu */
+  nav {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
 
-nav>ul{
-  list-style: none; 
-  padding-left: 0;
-}
+  nav>ul{
+    list-style: none; 
+    padding-left: 0;
+  }
 
-li, .selected {
-  margin-top: 1.5em;
-}
+  li, .selected {
+    margin-top: 1.5em;
+  }
 
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+  }
 
-.menuArrow {
-  color: #CCC;
-}
+  .menuArrow {
+    color: #CCC;
+  }
 
-/* Styling for the logo */
-#logo_web {
-  padding-top: 6em;
-  padding-bottom: 2em;
-  width: 13em;
-}
+  /* Styling for the logo */
+  #logo_web {
+    padding-top: 6em;
+    padding-bottom: 2em;
+    width: 13em;
+  }
 
-.menu-trigger {
-  display: none;
-  color: black;
-}
+  .menu-trigger {
+    display: none;
+    color: black;
+  }
 
 
 
 /* #2 Typography
 ================================================== */
 
-img {
-  max-width: 100%;
-  display: inline-block;
-}
+  img {
+    max-width: 100%;
+    display: inline-block;
+  }
 
-body {
-  padding: 0rem;
-  font:16pt;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
+  body {
+    padding: 0rem;
+    font:16pt;
+    font-family: 'Open Sans';
+    font-weight: 300;
+  }
 
-section {
-  padding: 2em 0;
-  border-bottom: 0.1em solid #EFEFEF;
-}
+  section {
+    padding: 2em 0;
+    border-bottom: 0.1em solid #EFEFEF;
+  }
 
 
-h1{
-  font-family: "museo_sans500",sans-serif;
-  font-style: none;
-  font-weight: 500;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-}
+  h1{
+    font-family: "museo_sans500",sans-serif;
+    font-style: none;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
 
-h2{
-  font-family: "museo_sans500",sans-serif;
-  font-style: none;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
+  h2{
+    font-family: "museo_sans500",sans-serif;
+    font-style: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 
-h3{
-  font-family: "museo_sans500",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  margin-bottom: 1em;
-  font-size: 1rem;
-  color: #545454;
-}
+  h3{
+    font-family: "museo_sans500",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    color: #545454;
+  }
 
-h4{
-  font-family: "museo_sans500",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  margin-top: -1em;
-  margin-bottom: 1em;
-  font-size: 1.2rem;
-  color: #D15627;
-  font-variant: small-caps;
-  letter-spacing: 0.1em;
-}
+  h4{
+    font-family: "museo_sans500",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    color: #D15627;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+  }
 
-h5{
-  font-family: "museo_sans500",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  font-size: 1.2rem;
-  font-variant: small-caps;
-  letter-spacing: 0.1em;
-}
+  h5{
+    font-family: "museo_sans500",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+  }
 
 
 p{
@@ -202,26 +202,8 @@ td {
 }
 
 
-
   /* #3 Buttons
 ================================================== */
-.button-main {
-  display: inline-block;
-  border: 0.1em;
-  border-style: solid;
-  border-color: #545454;
-  padding: 0.5em;
-  margin: 2em 0;
-  text-decoration: none;
-  text-align: center;
-  -webkit-transition: border-color 0.5s ease-out;
-  transition: border-color 0.5s ease-out;
-}
-
-.button-main:hover, .button-main:focus {
-  border-color: #D15627;
-  color: #D15627;
-}
 
 .button {
   display: inline-block;
@@ -252,606 +234,584 @@ td {
 }
 
 
-
 /* #4 Contact Form
 ================================================== */
-#contact, label, input[name="submit"] {
-  position: relative;
-}
-label, input, textarea, .button-form {
-  box-sizing: border-box;
-}
-label {
-  display: block;
-}
+  #contact, label, input[name="submit"] {
+    position: relative;
+  }
+  label, input, textarea, .button-form {
+    box-sizing: border-box;
+  }
+  label {
+    display: block;
+  }
 
-input, textarea, .button-form {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-  line-height: 1.5em;
-}
+  input, textarea, .button-form {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    line-height: 1.5em;
+  }
 
-textarea {
-    height: 10em;
-}
+  textarea {
+      height: 10em;
+  }
 
-input[type="text"], input[type="email"], textarea {
-  margin: 0 0 1em;
-  border: 1px solid #ccc;
-  outline: none;
-}
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+  }
 
-input[type="submit"], .button-form {
-  padding: 0.5em 0.75em;
-  text-decoration: none;
-  border-style: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  background: #D15627;
-  color: #fff;
-}
+  input[type="submit"], .button-form {
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    border-style: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    background: #D15627;
+    color: #fff;
+  }
 
-input[type="submit"]:hover, .button-form:hover {
-  background-color: #ED805F;
-}
+  input[type="submit"]:hover, .button-form:hover {
+    background-color: #ED805F;
+  }
 
 
 
 /* #5 Bike Stats
 ================================================== */
 
-.bike-stats {
-  display: inline-block;
-  height: 0.25em;
-  width: auto;
-  background-color: #D15627;
-  margin-bottom: 2em;
-}
+  .bike-stats {
+    display: inline-block;
+    height: 0.25em;
+    width: auto;
+    background-color: #D15627;
+    margin-bottom: 2em;
+  }
 
-/* Background bar for bike stats */
-.grey-bar-30 {
-  background-color: #EFEFEF;
-  width: 30%;
-}
+  /* Background bar for bike stats */
+  .grey-bar-30 {
+    background-color: #EFEFEF;
+    width: 30%;
+  }
 
-.grey-bar-40 {
-  background-color: #EFEFEF;
-  width: 40%;
-}
+  .grey-bar-40 {
+    background-color: #EFEFEF;
+    width: 40%;
+  }
 
-.grey-bar-70 {
-  background-color: #EFEFEF;
-  width: 70%;
-}
+  .grey-bar-70 {
+    background-color: #EFEFEF;
+    width: 70%;
+  }
 
-.grey-bar-80 {
-  background-color: #EFEFEF;
-  width: 80%;
-}
-
-
-/* Stats for The Breakwater bike */
-.the-breakwater-comfort {
-  width: 20%;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.30;
-}
-
-.the-breakwater-speed {
-  width: 70%;
-}
-
-.the-breakwater-performance {
-  width: 60%;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
-  opacity: 0.65;
-}
+  .grey-bar-80 {
+    background-color: #EFEFEF;
+    width: 80%;
+  }
 
 
-/* Stats for The Fawnler bike */
-.the-fawnler-comfort {
-  width: 70%;
-}
+  /* Stats for The Breakwater bike */
+  .the-breakwater-comfort {
+    width: 20%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.30;
+  }
 
-.the-fawnler-speed {
-  width: 20%;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.30;
-}
+  .the-breakwater-speed {
+    width: 70%;
+  }
 
-.the-fawnler-performance {
-  width: 30%; 
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
-  opacity: 0.65;
-}
-
-
-/* Stats for The Loifer bike */
-.the-loifer-comfort {
-  width: 60%;
-}
-
-.the-loifer-speed {
-  width: 60%;
-}
-
-.the-loifer-performance {
-  width: 60%;
-}
+  .the-breakwater-performance {
+    width: 60%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
 
 
-  
+  /* Stats for The Fawnler bike */
+  .the-fawnler-comfort {
+    width: 70%;
+  }
+
+  .the-fawnler-speed {
+    width: 20%;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.30;
+  }
+
+  .the-fawnler-performance {
+    width: 30%; 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
 
 
+  /* Stats for The Loifer bike */
+  .the-loifer-comfort {
+    width: 60%;
+  }
+
+  .the-loifer-speed {
+    width: 60%;
+  }
+
+  .the-loifer-performance {
+    width: 60%;
+  }
 
 
 /* #6 Photo Gallery for Product Image
 ================================================== */
-.product-images {
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-}
+  .product-images {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
 
-.product-images img {
-  width: 100%;
-  padding: 2em;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  background-color: #FFF;
+  .product-images img {
+    width: 100%;
+    padding: 2em;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFF;
 
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
 
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
 
-.product-images img:target {
-  left: 0;
-  z-index: 9;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+  .product-images img:target {
+    left: 0;
+    z-index: 9;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
 
-.product-images img:first-child {
-  left: 0;
-  position: relative;
+  .product-images img:first-child {
+    left: 0;
+    position: relative;
 
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
 
-.not-clicked {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  filter: alpha(opacity=65);
-  opacity: 0.65;
-}
+  .not-clicked {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.65;
+  }
 
-.thumbnail-photos a:hover, 
-.thumbnail-photos a:focus, 
-.thumbnail-photos a:active,
-.clicked {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  color: #D15627;
-}
+  .thumbnail-photos a:hover, 
+  .thumbnail-photos a:focus, 
+  .thumbnail-photos a:active,
+  .clicked {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    color: #D15627;
+  }
 
-/* Styling for the custom parts on buildbikes page */
-.custom-parts {
-  margin: 0;
-  margin-bottom: 2em;
-  width: 100%;
-}
-
+  /* Styling for the custom parts on buildbikes page */
+  .custom-parts {
+    margin: 0;
+    margin-bottom: 2em;
+    width: 100%;
+  }
 
 
 /* #7 Main Content
 ================================================== */
 
-.mainContent{
-  margin-left: 20em;
-  padding: 0 4rem 0 4rem;
-}
+  .mainContent{
+    margin-left: 20em;
+    padding: 0 4rem 0 4rem;
+  }
 
-/*.background{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}*/
+  .background {
+    position: fixed;
+    max-height: auto;
+    max-width: auto;
+    top: -10%;
+    right: -40%;
+    height: 150%;
+    width: 150%;
+    z-index: -1;
+    background-color: #F7F8F8;
+  }
 
-.background {
-  position: fixed;
-  max-height: auto;
-  max-width: auto;
-  top: -10%;
-  right: -40%;
-  height: 150%;
-  width: 150%;
-  /*bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;*/
-  z-index: -1;
-  background-color: #F7F8F8;
-}
+  .background img {
+    position: absolute;
+    width: 100%;
+  }
 
-.background img {
-  position: absolute;
-  width: 100%;
-  /*right: 0;
-  bottom: 0;*/
-}
+  .home-page {
+    margin-top: 5.5em;
+  }
 
-.home-page {
-  margin-top: 5.5em;
-}
+  .home-page h1, .home-page h3 {
+    color: #FFF;
+  }
 
-.home-page h1, .home-page h3 {
-  color: #FFF;
-}
+  .container {
+    height: auto;
+    width: auto;
+  }
 
-.container {
-  height: auto;
-  width: auto;
-}
-
-.mainContent section h1:first-child{
-  margin-top: 1.5em;
-}
-
-
+  .mainContent section h1:first-child{
+    margin-top: 1.5em;
+  }
 
 
 
 /* #8 Custom Bike & Reviews
 ================================================== */
 
-/* Custom bike steps progress bar */
-.custombikes, .reviews {
-  width: 100%;
-  text-align: left;
-}
+  /* Custom bike steps progress bar */
+  .custombikes, .reviews {
+    width: 100%;
+    text-align: left;
+  }
 
-.custombikes-img {
-  max-width: 4em;
-}
+  .custombikes-img {
+    max-width: 4em;
+  }
 
-.custombikes td:first-child {
-  padding-left: 0em;
-}
+  .custombikes td:first-child {
+    padding-left: 0em;
+  }
 
-.custombikes td {
-  padding: 1em 0em 0.5em 0em;
-  width: 25%;
-}
+  .custombikes td {
+    padding: 1em 0em 0.5em 0em;
+    width: 25%;
+  }
 
-.custom-progressbar {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  opacity: 0.40;
-}
+  .custom-progressbar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.40;
+  }
 
-.reviews {
-  margin-top: 2em;
-  border-bottom: 0.1em solid #CCC;
-}
+  .reviews {
+    margin-top: 2em;
+    border-bottom: 0.1em solid #CCC;
+  }
 
-.reviewbox{
-  margin-top: 3rem;
-}
+  .reviewbox{
+    margin-top: 3rem;
+  }
 
-#first.reviews {
-  margin-top: 0em;
-}
+  #first.reviews {
+    margin-top: 0em;
+  }
 
-.grid-25 h4 {
-  margin-top: 0.75em;
-}
+  .grid-25 h4 {
+    margin-top: 0.75em;
+  }
 
-.step-selected {
-  color: #D15627;
-}
+  .step-selected {
+    color: #D15627;
+  }
 
-.progress-bar-10 {
-  width: 10%;
-}
+  .progress-bar-10 {
+    width: 10%;
+  }
 
-.progress-bar-30 {
-  width: 30%;
-}
+  .progress-bar-30 {
+    width: 30%;
+  }
 
-.progress-bar-60 {
-  width: 60%;
-}
+  .progress-bar-60 {
+    width: 60%;
+  }
 
-.progress-bar-85 {
-  width: 85%;
-}
+  .progress-bar-85 {
+    width: 85%;
+  }
 
-.grey-bar-90 {
-  background-color: #EFEFEF;
-  width: 90%;
-}
+  .grey-bar-90 {
+    background-color: #EFEFEF;
+    width: 90%;
+  }
 
-.grey-bar-70 {
-  background-color: #EFEFEF;
-  width: 70%;
-}
+  .grey-bar-70 {
+    background-color: #EFEFEF;
+    width: 70%;
+  }
 
-.grey-bar-40 {
-  background-color: #EFEFEF;
-  width: 40%;
-}
+  .grey-bar-40 {
+    background-color: #EFEFEF;
+    width: 40%;
+  }
 
-.grey-bar-15 {
-  background-color: #EFEFEF;
-  width: 15%;
-}
+  .grey-bar-15 {
+    background-color: #EFEFEF;
+    width: 15%;
+  }
 
-.checkmark {
-  padding-left: 0.5em;
-  color: #ED805F;
-}
+  .checkmark {
+    padding-left: 0.5em;
+    color: #ED805F;
+  }
 
-/* Custom bike buttons */
-.custom-button {
-  margin: 0;
-}
+  /* Custom bike buttons */
+  .custom-button {
+    margin: 0;
+  }
 
-.align-right {
-  text-align: right;
-}
+  .align-right {
+    text-align: right;
+  }
 
-.align-center {
-  text-align: center;
-}
+  .align-center {
+    text-align: center;
+  }
 
 
 /* #10 Browser Resize
 ================================================== */
 
-@media (max-width: 90em) {
+  @media (max-width: 90em) {
 
-  #nav-menu {
-    padding-left: 3em;
-    width: 18em;
-  }
-
-  #logo {
-    padding-top: 8em;
-    padding-bottom: 2em;
-  }
-
-  .mainContent{
-    margin-left: 18em;
-    padding: 0em 1em 0em 1em;
-  }
-}
-
-
-@media (max-width: 65em) {
-
-  #nav-menu {
-    position: relative;
-    display: block;
-    text-align: center;
-    height: 4em;
-    padding: 0.5em;
-    height: 100%;
-    margin: auto;
-    vertical-align: middle;
-    z-index: 99999;
+    #nav-menu {
+      padding-left: 3em;
+      width: 18em;
     }
 
-  li, .selected {
-    margin-top: 2em;
+    #logo {
+      padding-top: 8em;
+      padding-bottom: 2em;
+    }
+
+    .mainContent{
+      margin-left: 18em;
+      padding: 0em 1em 0em 1em;
+    }
   }
 
-  .mainContent{
-    margin-left: 0em;
-    padding: 1em;
-  }
 
-  img {
-    margin: auto;
-    margin-top: 0.3rem;
-  }
+  @media (max-width: 65em) {
 
-  #nav-menu ul {
-    display: none;
-  }
+    #nav-menu {
+      position: relative;
+      display: block;
+      text-align: center;
+      height: 4em;
+      padding: 0.5em;
+      height: 100%;
+      margin: auto;
+      vertical-align: middle;
+      z-index: 99999;
+      }
 
-  #menu-icon {
-    display: block;
-    float: left;
-  }
+    li, .selected {
+      margin-top: 2em;
+    }
 
-  .product-content {
-    margin-top: 0%;
-  }
+    .mainContent{
+      margin-left: 0em;
+      padding: 1em;
+    }
 
-  input, textarea, .button-form {
-  width: 100%;
-  }
+    img {
+      margin: auto;
+      margin-top: 0.3rem;
+    }
 
-  .padding-left-extra {
-    padding: 2em 0em 0em 0em;
-  }
+    #nav-menu ul {
+      display: none;
+    }
 
-  .bike-stats {
-    margin-bottom: 1em;
-  }
+    #menu-icon {
+      display: block;
+      float: left;
+    }
 
-  .custom-button {
-    margin: 0;
+    .product-content {
+      margin-top: 0%;
+    }
+
+    input, textarea, .button-form {
     width: 100%;
-  }
+    }
 
-  .align-right {
-    text-align: center;
-  }
+    .padding-left-extra {
+      padding: 2em 0em 0em 0em;
+    }
 
-  .wrapper {
-    display: flex;
+    .bike-stats {
+      margin-bottom: 1em;
+    }
+
+    .custom-button {
+      margin: 0;
+      width: 100%;
+    }
+
+    .align-right {
+      text-align: center;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+    }
+
+    /* order changes */
+
+    #order1 {
+      order: 2;
+    }
+
+    #order2 {
+      order: 1;
+    }
+
+    #order3 {
+      order: 3;
+    }
+
+    #shopbikes-order1 {
+      order: 2;
+    }
+
+    #shopbikes-order2 {
+      order: 3;
+    }
+
+    #shopbikes-order3 {
+      order: 1;
+    }
+
+    #custombikes-order1 {
+      order: 1;
+    }
+
+    #custombikes-order2 {
+      order: 3;
+    }
+
+    #custombikes-order3 {
+      order: 2;
+    }
+
+    .custom-button {
+      margin: 1em 0;
+    }
+
+    .product-images, .product-images img, td {
+      padding: 0.5em;
+    }
+
+    .button-duplicate {
+      margin-top: 2em;
+    }
+
+    /* Custom bike changes */
+
+    .custombikes {
+      text-align: center;
+    }
+
+    .checkmark {
+      padding-right: 0.5em;
+    }
+
+    .custombikes h5 {
+      margin-bottom: 0.5em;
+    }
+
+    /*  product listing page, change the order of product image appear in mobile*/
+    .parent{
+    display:flex;
     flex-flow: column;
-    width: 100%;
-  }
+    }
+    .a{
+      order:2;
+    }
+    .b{order:1;
+    }
 
-  /* order changes */
+    .menu-trigger {
+      display:block;
+    }
 
-  #order1 {
-    order: 2;
-  }
+    .background,.nav-menu{
+      position: static;
+    }
 
-  #order2 {
-    order: 1;
-  }
+    .mainContent section h1{
+      font-size: 1.5em;
+      /*text-align: center;*/
+    }
 
-  #order3 {
-    order: 3;
-  }
+    header{
+      -webkit-box-shadow: 0px 1px 3px 0px #CCC;
+      -moz-box-shadow: 0px 1px 3px 0px #CCC;
+      box-shadow: 0px 1px 3px 0px #CCC;
+    }
 
-  #shopbikes-order1 {
-    order: 2;
-  }
+    #logo_web {
+      display: none;
+    }
 
-  #shopbikes-order2 {
-    order: 3;
-  }
+    #logo_mobile{
+      width: 10em;
+    }
 
-  #shopbikes-order3 {
-    order: 1;
-  }
+    .button {
+      width: 100%;
+      text-align: center;
+    }
 
-  #custombikes-order1 {
-    order: 1;
-  }
+    .grid-25 h4 {
+      margin-top: -0.5em;
+    }
 
-  #custombikes-order2 {
-    order: 3;
-  }
+    .background, .background img {
+      position: static;
+      width: 100%;
+    }
 
-  #custombikes-order3 {
-    order: 2;
-  }
+    .home-page {
+      margin-top: 0;
+    }
 
-  .custom-button {
-    margin: 1em 0;
-  }
+    .home-page h1 {
+      color: #000;
+    }
 
-  .product-images, .product-images img, td {
-    padding: 0.5em;
-  }
+    .home-page h3 {
+      color: #CCC;
+    }
 
-  .button-duplicate {
-    margin-top: 2em;
-  }
+    section.home {
+      padding: 0;
+    }
 
-  /* Custom bike changes */
+    .contact-form {
+      width: 100%;
+    }
 
-  .custombikes {
-    text-align: center;
+    .event-sidebar li {
+      margin-top: 0em;
+    }
   }
-
-  .checkmark {
-    padding-right: 0.5em;
-  }
-
-  .custombikes h5 {
-    margin-bottom: 0.5em;
-  }
-
-  /*  product listing page, change the order of product image appear in mobile*/
-  .parent{
-  display:flex;
-  flex-flow: column;
-  }
-  .a{
-    order:2;
-  }
-  .b{order:1;
-  }
-
-  .menu-trigger {
-    display:block;
-  }
-
-  .background,.nav-menu{
-    position: static;
-  }
-
-  .mainContent section h1{
-    font-size: 1.5em;
-    /*text-align: center;*/
-  }
-
-  header{
-    -webkit-box-shadow: 0px 1px 3px 0px #CCC;
-    -moz-box-shadow: 0px 1px 3px 0px #CCC;
-    box-shadow: 0px 1px 3px 0px #CCC;
-  }
-
-  #logo_web {
-    display: none;
-  }
-
-  #logo_mobile{
-    width: 10em;
-  }
-
-  .button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .grid-25 h4 {
-    margin-top: -0.5em;
-  }
-
-  .background, .background img {
-    position: static;
-    width: 100%;
-  }
-
-  .home-page {
-    margin-top: 0;
-  }
-
-  .home-page h1 {
-    color: #000;
-  }
-
-  .home-page h3 {
-    color: #CCC;
-  }
-
-  section.home {
-    padding: 0;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .event-sidebar li {
-    margin-top: 0em;
-  }
-}
 
 
 
@@ -878,7 +838,6 @@ input[type="submit"]:hover, .button-form:hover {
   }
 
   .GoogleMap{
-    /*width:1000px;*/
     overflow:hidden;
     height:500px;
     width: auto;
@@ -938,22 +897,15 @@ input[type="submit"]:hover, .button-form:hover {
   /*The title of each element*/
   .price{
     float:left;
-    /*margin-left:7.5%;*/
     text-align: center;
     position:relative;
     height:20em;
     text-align: center;
   }
 
-  .price h3{
-/*    padding-left: 25%;
-    padding-right: 25%;*/
-  }
-
   /*Styling for the Quality*/
   .qty{
     float:left;
-/*    margin-left:7.5%;*/
     position:relative;
     height:20em;
     text-align: center;
@@ -977,7 +929,6 @@ input[type="submit"]:hover, .button-form:hover {
   /*Styling for the Price*/
   .total{
     float:left;
-/*s*/
     position:relative;
     height:20em;
     text-align: center;
@@ -987,7 +938,6 @@ input[type="submit"]:hover, .button-form:hover {
   .remove{
     position:relative;  
     height:20em;
-/*    margin-left: 7.5%;*/
     color:grey;
     text-align: center;
   }
@@ -1006,7 +956,6 @@ input[type="submit"]:hover, .button-form:hover {
   }
 
   .checkout h2 {
-    /*text-align: center;*/
     float: right;
   }
 
@@ -1017,7 +966,6 @@ input[type="submit"]:hover, .button-form:hover {
   .compelete{
     float: right;
     text-align: center;
-    /*margin-right: 2.7em;*/
   }
 
   a.compelete {
@@ -1081,8 +1029,6 @@ input[type="submit"]:hover, .button-form:hover {
 
 
 
-
-
 /* #13 Progress Bar
 ================================================== */
 
@@ -1098,7 +1044,7 @@ input[type="submit"]:hover, .button-form:hover {
 
   .progressbar{
       display: block;
-      margin: 0 auto;  /*margin-left/margin-right=auto*/
+      margin: 0 auto;
   }
 
 
@@ -1272,16 +1218,10 @@ input[type="submit"]:hover, .button-form:hover {
   }
 
   .event-container {
-/*    width: 70%;*/
-    /*padding: 0 1em 30px;*/
-    /*border-left: 1px dotted rgba(88,88,77,0.5);*/
   }
 
   .event-content {
     width: 100%;
-/*    padding: 0;
-    float: left;*/
-    /*outline: 2px dotted #ffffff;*/
   }
 
   .event-content h3{
@@ -1306,7 +1246,6 @@ input[type="submit"]:hover, .button-form:hover {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 1.2em;
-   /* color: #fff;*/
   }
 
   .event-sidebar ul {
@@ -1317,7 +1256,6 @@ input[type="submit"]:hover, .button-form:hover {
 
   .event-sidebar ul li {
     display: list-item;
-/*    margin-bottom: 10%;*/
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 0.9em;
