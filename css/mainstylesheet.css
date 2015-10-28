@@ -150,88 +150,88 @@
   }
 
 
-p{
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.5em;
-}
+  p{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
 
-a {
-  color: #545454;
-  text-decoration: none; 
-}
+  a {
+    color: #545454;
+    text-decoration: none; 
+  }
 
-a:active, a:hover {
-  color: #D15627; 
-  text-decoration: none;
-}
+  a:active, a:hover {
+    color: #D15627; 
+    text-decoration: none;
+  }
 
-table {
-  border-style: none;
-  text-align: center; 
-  width: 70%;
-  margin: 0 auto;
-}
+  table {
+    border-style: none;
+    text-align: center; 
+    width: 70%;
+    margin: 0 auto;
+  }
 
-td {
-  padding: 1em;
-}
+  td {
+    padding: 1em;
+  }
 
-.lastitem {
-  border-style: none;
-}
+  .lastitem {
+    border-style: none;
+  }
 
-.margin-top-extra {
-  padding-top: 2em;
-}
+  .margin-top-extra {
+    padding-top: 2em;
+  }
 
-.padding-left-extra {
-  padding-left: 4em;
-}
+  .padding-left-extra {
+    padding-left: 4em;
+  }
 
-/* Styling for the in-text link*/
-.selected {
-  color: #D15627; 
-  text-decoration: none;
-}
+  /* Styling for the in-text link*/
+  .selected {
+    color: #D15627; 
+    text-decoration: none;
+  }
 
-.extra-button-padding {
-  padding-right: 0.5em;
-  padding-bottom: 1em;
-}
+  .extra-button-padding {
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+  }
 
 
   /* #3 Buttons
 ================================================== */
 
-.button {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #D15627;
-  margin: 1em 0;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
+  .button {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #FFF;
+    background-color: #D15627;
+    margin: 1em 0;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+  }
 
-.button:hover, .button:focus, .button:active {
-  background-color: #ED805F;
-  color: #fff;
-}
+  .button:hover, .button:focus, .button:active {
+    background-color: #ED805F;
+    color: #fff;
+  }
 
-.button_build{
-  margin-left: 1rem;
-} 
+  .button_build{
+    margin-left: 1rem;
+  } 
 
-.button-duplicate {
-  margin: 0em 2em 1em 0;
-}
+  .button-duplicate {
+    margin: 0em 2em 1em 0;
+  }
 
-.button-no-margin {
-  margin-top: 0;
-}
+  .button-no-margin {
+    margin-top: 0;
+  }
 
 
 /* #4 Contact Form
@@ -506,23 +506,23 @@ td {
     opacity: 0.40;
   }
 
-.custombikes-wrapper h5, .custombikes-wrapper h3 {
-  margin-bottom: 0em;
-}
+  .custombikes-wrapper h5, .custombikes-wrapper h3 {
+    margin-bottom: 0em;
+  }
 
-.custombikes-wrapper h3 {
-  margin-top: 3em;
-  margin-bottom: 1em;
-}
+  .custombikes-wrapper h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
 
-.custombikes-wrapper p {
-  margin-top: 0.5em;
-}
+  .custombikes-wrapper p {
+    margin-top: 0.5em;
+  }
 
-.reviews {
-  margin-top: 2em;
-  border-bottom: 0.1em solid #CCC;
-}
+  .reviews {
+    margin-top: 2em;
+    border-bottom: 0.1em solid #CCC;
+  }
 
   .reviewbox{
     margin-top: 3rem;
@@ -556,14 +556,14 @@ td {
     width: 85%;
   }
 
-.progress-bar-100 {
-  width: 100%;
-}
+  .progress-bar-100 {
+    width: 100%;
+  }
 
-.grey-bar-90 {
-  background-color: #EFEFEF;
-  width: 90%;
-}
+  .grey-bar-90 {
+    background-color: #EFEFEF;
+    width: 90%;
+  }
 
   .grey-bar-70 {
     background-color: #EFEFEF;
@@ -745,13 +745,13 @@ td {
       text-align: center;
     }
 
-  .checkmark {
-    padding: 0em 1em 0em 1em;
-  }
+    .checkmark {
+      padding: 0em 1em 0em 1em;
+    }
 
-  .custombikes h5 {
-    margin-bottom: 0.5em;
-  }
+    .custombikes h5 {
+      margin-bottom: 0.5em;
+    }
 
     /*  product listing page, change the order of product image appear in mobile*/
     .parent{
@@ -1052,7 +1052,7 @@ td {
   .progressbar_container{
     margin-top: 2em;
     margin-bottom: 3em;
-}
+  }
 
   .progressbar_title{
     font-size:1.5em;
