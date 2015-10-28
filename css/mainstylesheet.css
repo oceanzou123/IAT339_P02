@@ -1014,7 +1014,7 @@ input[type="submit"]:hover, .button-form:hover {
     /*margin-right: 2.7em;*/
   }
 
-  .compelete a{
+  a.compelete {
     color: white;
   }
 
