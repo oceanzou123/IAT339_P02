@@ -1090,6 +1090,10 @@ table.custombikes {
     text-align: center;
   }
 
+  .back_to_button a{
+    color: white;
+  }
+
   .back_button{
     margin-right: 6%;
     margin-top: 5%;
@@ -1113,8 +1117,14 @@ table.custombikes {
   }
 
   .review{
-    margin-top: 5em;
-    padding: 2em;
+   padding-top: 4rem;
+  }
+
+  /*change the top spacing for main content in confirmation page*/
+  @media (max-width:65em){
+    .review{
+      padding-top: 1rem;
+    }
   }
 
   .review ul{
