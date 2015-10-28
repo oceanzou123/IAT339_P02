@@ -255,11 +255,6 @@ td {
 
 /* #4 Contact Form
 ================================================== */
-
-.contact-form {
-  width: 75%;
-}
-
 #contact, label, input[name="submit"] {
   position: relative;
 }
@@ -1186,6 +1181,17 @@ input[type="submit"]:hover, .button-form:hover {
     text-align: center;
   }
 
+  .back_button{
+    margin-right: 6%;
+    margin-top: 5%;
+    margin-left:7%;
+    text-align: center;
+  }
+
+  .back_button a{
+    color: white;
+  }
+
   .back_to_button a{
     color: white;
   }
@@ -1196,6 +1202,17 @@ input[type="submit"]:hover, .button-form:hover {
 
   .continue_button a{
       color: white;
+  }
+
+  @media (max-width: 65em) {
+
+    .back_button{
+      margin-left: 0;
+    }
+
+    .continue_button{
+      margin-right: 0;
+    }
   }
       
   .orderbutton{
