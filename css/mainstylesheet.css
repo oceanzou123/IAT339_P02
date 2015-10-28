@@ -467,11 +467,42 @@ input[type="submit"]:hover, .button-form:hover {
   padding: 0 4rem 0 4rem;
 }
 
-.background{
+/*.background{
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: -1;
+}*/
+
+.background {
+  position: fixed;
+  max-height: auto;
+  max-width: auto;
+  top: -10%;
+  right: -40%;
+  height: 150%;
+  width: 150%;
+  /*bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;*/
+  z-index: -1;
+  background-color: #F7F8F8;
+}
+
+.background img {
+  position: absolute;
+  width: 100%;
+  /*right: 0;
+  bottom: 0;*/
+}
+
+.home-page {
+  margin-top: 5.5em;
+}
+
+.home-page h1, h3 {
+  color: #FFF;
 }
 
 .mainContent section h1:first-child{
@@ -593,6 +624,7 @@ input[type="submit"]:hover, .button-form:hover {
 
   #nav-menu {
     padding-left: 3em;
+    width: 18em;
   }
 
   #logo {
