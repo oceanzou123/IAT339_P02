@@ -255,6 +255,11 @@ td {
 
 /* #4 Contact Form
 ================================================== */
+
+.contact-form {
+  width: 75%;
+}
+
 #contact, label, input[name="submit"] {
   position: relative;
 }
@@ -499,8 +504,6 @@ input[type="submit"]:hover, .button-form:hover {
 
 .home-page {
   margin-top: 5.5em;
-  display: block;
-  margin: 0 auto;
 }
 
 .home-page h1, .home-page h3 {
@@ -844,6 +847,14 @@ input[type="submit"]:hover, .button-form:hover {
 
   section.home {
     padding: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .event-sidebar li {
+    margin-top: 0em;
   }
 }
 
