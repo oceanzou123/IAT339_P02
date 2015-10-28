@@ -7,11 +7,10 @@
   #4 Contact Form
   #5 Bike Stats
   #6 Product Listing
-  #7 Photo Gallery for Product Image
   #8 Main Content
   #9 Custom Bike
   #10 Browser Resize
-  #11 Map
+  #11 Contact Us Page
   #12 Cart
   #13 Progress Bar
   #14 Shopping Cart & Checkout
@@ -256,7 +255,7 @@ label {
 }
 
 input, textarea, .button-form {
-  width: 75%;
+  width: 100%;
   padding: 0.5em;
   border: none;
   line-height: 1.5em;
@@ -769,20 +768,35 @@ table.custombikes {
 
 
 
-/* #11 Map
+/* #11 Contact Us Page
 ================================================== */
-  .map {
-    width: 100%;
-    height: 30em;
-    border: 0; 
-    border-style: none;
+  .contact_container{
+    display: block;
+    margin-top: 2rem;
   }
 
-  .extra-padding {
-    padding-left: 3rem;
-    padding-top: 1rem;
+  .contact{
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
   }
 
+  .followUs{
+    margin-top: 3rem;
+  }
+
+  .social_media{
+    margin-left: 2rem;
+
+  }
+
+  .GoogleMap{
+    /*width:1000px;*/
+    overflow:hidden;
+    height:500px;
+    width: auto;
+    padding: 5rem;
+  }
 
 /* #12 Cart
 ================================================== */
@@ -912,7 +926,11 @@ table.custombikes {
   }
 
   /*Cart Form Mobile End*/
-  @media (max-width:65em){
+  @media (max-width:65em){   
+
+    .button_build{
+      margin-left: 0;
+    }
 
     .cart_details .price h3, .cart_details .qty h3, .cart_details .remove h3{
       border-bottom:0;
@@ -1167,7 +1185,7 @@ table.custombikes {
 
   .event-sidebar ul li {
     display: list-item;
-    margin-bottom: 10%;
+/*    margin-bottom: 10%;*/
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 0.9em;
