@@ -56,11 +56,20 @@
     text-decoration: none;
   }
 
+  .menuArrow {
+    color: #CCC;
+  }
+
 
   section code {
     background-color: #EEE;
     padding: 0.5em 0.75em;
     display: block;
+
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
   }
 
   li, .selected {
@@ -70,6 +79,11 @@
   ul.citations {
     margin-left: 0.25em;
     padding-left: 0.25em;
+
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
   }
 
   ul.citations li {
@@ -83,6 +97,7 @@
     font-weight: normal;
     font-style: italic;
   }
+  
 
   cite {
     font-style: normal;
@@ -557,7 +572,7 @@
       display: block;
       text-align: center;
       height: 4em;
-      padding: 1em;
+      padding: 0.5em;
       height: 100%;
       margin: auto;
       vertical-align: middle;
@@ -666,6 +681,6 @@
   }
 
   #logo_mobile{
-    width: 13em;
+    width: 10em;
   }
 }
