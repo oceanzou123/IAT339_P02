@@ -46,8 +46,6 @@
     <!-- Navigation
   ================================================== -->    
     <header>
-      <div id="nav-menu-background"></div>
-
       <nav id="nav-menu">
         <a href="#" class="menu-trigger"><img id="logo_mobile" src="img/brand-logo@2x.png" href="about.html"><br><i class="menuArrow fa fa-chevron-down"></i></a>
         <a href="About.html"><img id="logo_web" src="img/brand-logo@2x.png" href="About.html"></a>
@@ -68,83 +66,92 @@
       <section class="lastitem">
         <div class="grid-row product-content">
 
-          <!-- Bike progress bar -->
-          <div class="grid-col-10of10">
-
-          </div>
-          <!-- Middle Column Bike Details -->
-          <div class="grid-col-4of10">
-            <h1>Build your own bike</h1>
-            <p>Follow the 4 step process and select which parts you would like on your cool new bike. Have fun!</p>
+          <div class="wrapper">
 
             <!-- Header for bike steps -->
-            <table class="custombikes">
-              <tr>
-                <td>
-                  <img src="img/icon-step1-frame.png">
-                  <h5 class="step-selected">frames</h5>
-                </td>
-                <td class="custom-progressbar">
-                  <img src="img/icon-step2-seat.png">
-                  <h5>seats</h5>
-                </td>
-                <td class="custom-progressbar">
-                  <img src="img/icon-step3-handles.png">
-                  <h5>handles</h5>
-                </td>
-                <td class="custom-progressbar">
-                  <img src="img/icon-step4-tires.png">
-                  <h5>tires</h5>
-                </td>
-              </tr>
-            </table>
+            <div class="grid-col-10of10 4grid" id="custombikes-order1">
 
-            <!-- Frames -->
-            <div class="grid-col-10of10">
-              <h2>Frames</h2>
-              <p>What frame suits you?</p>
-              <table class="custom-parts">
-                <tr class="thumbnail-photos">
+              <h1>Build your own bike</h1>
+              <p>Follow the 4 step process and select which parts you would like on your cool new bike. Have fun!</p>
+
+              <table class="custombikes">
+                <tr>
                   <td>
-                    <a href="#frame1" class="clicked">
-                      <img src="img/bike-default.jpg" class="clicked">
-                      <h5>ace blue</h5>
-                    </a>
+                    <img src="img/icon-step1-frame.png" class="custombikes-img">
+                    <h5 class="step-selected">frames</h5>
                   </td>
-                  <td>
-                    <a href="#frame2" class="not-clicked">
-                      <img src="img/bike-thebreakwater-whiteframe.jpg" class="not-clicked">
-                      <h5>sleek white</h5>
-                    </a>
+                  <td class="custom-progressbar">
+                    <img src="img/icon-step2-seat.png" class="custombikes-img">
+                    <h5>seats</h5>
                   </td>
-                  <td>
-                    <a href="#frame3" class="not-clicked">
-                      <img src="img/bike-thebreakwater-yellowframe.jpg" class="not-clicked">
-                      <h5>mustard yellow</h5>
-                    </a>
+                  <td class="custom-progressbar">
+                    <img src="img/icon-step3-handles.png" class="custombikes-img">
+                    <h5>handles</h5>
+                  </td>
+                  <td class="custom-progressbar">
+                    <img src="img/icon-step4-tires.png" class="custombikes-img">
+                    <h5>tires</h5>
                   </td>
                 </tr>
               </table>
+
+              <div class="bike-stats progress-bar-10"></div><div class="bike-stats grey-bar-90"></div>
             </div>
 
-            <div class="grid-col-8of10 margin-top-extra">
-              <h3>Total Price: $175.00</h3>
-            </div>
+            <!-- Middle Column Bike Details -->
+            <div class="grid-col-4of10" id="custombikes-order2">
 
-            <!-- Proceed -->
-            <div class="grid-col-2of10 align-right">
-              <a href="BuildBikes-Seats.html"><div class="button custom-button">Next</div></a>
-            </div>
-
-          </div>
-
-          <!-- Picture -->
-          <div class="grid-col-6of10">
-              <div class="product-images">
-                <img id="frame1" src="img/bike-default.jpg" />
-                <img id="frame2" src="img/bike-thebreakwater-whiteframe.jpg" />
-                <img id="frame3" src="img/bike-thebreakwater-yellowframe.jpg" />
+              <!-- Frames -->
+              <div class="grid-col-10of10">
+                <h2>Frames</h2>
+                <p>What frame suits you?</p>
+                <table class="custom-parts">
+                  <tr class="thumbnail-photos">
+                    <td>
+                      <a href="#frame1" class="clicked">
+                        <img src="img/bike-default.jpg" class="clicked">
+                        <h5>$175.00</h5>
+                        <h5>cobalt ivy blue</h5>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#frame2" class="not-clicked">
+                        <img src="img/bike-thebreakwater-whiteframe.jpg" class="not-clicked">
+                        <h5>$185.00</h5>
+                        <h5>ivory white</h5>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#frame3" class="not-clicked">
+                        <img src="img/bike-thebreakwater-yellowframe.jpg" class="not-clicked">
+                        <h5>$200.00</h5>
+                        <h5>mustard yellow</h5>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </div>
+
+              <div class="grid-col-8of10 margin-top-extra">
+                <h3>Total Price: $175.00</h3>
+              </div>
+
+              <!-- Proceed -->
+              <div class="grid-col-2of10 align-right">
+                <a href="BuildBikes-Seats.html"><div class="button custom-button">Next</div></a>
+              </div>
+
+            </div>
+
+            <!-- Picture -->
+            <div class="grid-col-6of10" id="custombikes-order3">
+                <div class="product-images">
+                  <img id="frame1" src="img/bike-default.jpg" />
+                  <img id="frame2" src="img/bike-thebreakwater-whiteframe.jpg" />
+                  <img id="frame3" src="img/bike-thebreakwater-yellowframe.jpg" />
+                </div>
+            </div>
+
           </div>
         </div>
       </section>

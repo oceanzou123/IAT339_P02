@@ -51,6 +51,15 @@
 }
 
 
+/* 
+  Grid for staying a certain percentage even though browser
+  is resized  
+*/
+.4grid {
+  width: 40%;
+}
+
+
 
 /*
 	Using further @media queries, we specify that at a width of

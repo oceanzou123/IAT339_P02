@@ -46,21 +46,18 @@
     <!-- Navigation
   ================================================== -->    
     <header>
-      <div id="nav-menu-background"></div>
-
       <nav id="nav-menu">
-        <div class="button-main button-no-margin" id="menu-icon">MENU</div>
+        <a href="#" class="menu-trigger"><img id="logo_mobile" src="img/brand-logo@2x.png" href="about.html"><br><i class="menuArrow fa fa-chevron-down"></i></a>
         <a href="About.html"><img id="logo_web" src="img/brand-logo@2x.png" href="About.html"></a>
         <ul>
           <li><a href="About.html">ABOUT</a></li>
           <li><a href="ShopBikes.html">SHOP BIKES</a></li>
-          <li><a href="BuildBikes.html" class="selected">BUILD BIKES</a></li>
+          <li><a class="selected" href="BuildBikes.html">BUILD BIKES</a></li>
           <li><a href="Workshops.html">WORKSHOPS</a></li>
           <li><a href="ContactUs.html">CONTACT US</a></li>
-          <li><a href="Cart.html">CART</a></li>
+          <li><a href="Cart.html">CART(2)</a></li>
         </ul>
       </nav>
-
     </header>
 
     <!-- BIKE DETAILS PAGE
@@ -68,91 +65,103 @@
     <div class="mainContent">
       <section class="lastitem">
         <div class="grid-row product-content">
-          <!-- Middle Column Bike Details -->
-          <div class="grid-col-4of10">
-            <h1>Build your own bike</h1>
-            <p>Follow the 4 step process and select which parts you would like on your cool new bike. Have fun!</p>
+
+          <div class="wrapper">
 
             <!-- Header for bike steps -->
-            <table class="custombikes">
-              <tr>
-                <td class="custom-progressbar">
-                  <a href="BuildBikes.html">
-                    <img src="img/icon-step1-frame.png">
-                    <h5>frames</h5>
-                  </a>
-                </td>
-                <td>
-                  <img src="img/icon-step2-seat.png">
-                  <h5 class="step-selected">seats</h5>
-                </td>
-                <td class="custom-progressbar">
-                  <img src="img/icon-step3-handles.png">
-                  <h5>handles</h5>
-                </td>
-                <td class="custom-progressbar">
-                  <img src="img/icon-step4-tires.png">
-                  <h5>tires</h5>
-                </td>
-              </tr>
-            </table>
-            
-            <!-- Seats -->
-            <div class="grid-col-10of10">
-              <h2>Seats</h2>
-              <p>What would you like to sit on?</p>
-              <table class="custom-parts">
-                <tr class="thumbnail-photos">
+            <div class="grid-col-10of10 4grid" id="custombikes-order1">
+              <h1>Build your own bike</h1>
+              <p>Follow the 4 step process and select which parts you would like on your cool new bike. Have fun!</p>
+
+              <table class="custombikes">
+                <tr>
                   <td>
-                    <a href="#seat1" class="clicked">
-                      <img src="img/bike-blackseat-thumbnail.jpg" class="clicked">
-                      <h5>$15.00</h5>
-                      <h5>black saddle leather</h5>
+                    <a href="BuildBikes.html">
+                      <img src="img/icon-step1-frame.png" class="custombikes-img">
+                      <h5>frames<i class="fa fa-check checkmark"></i></h5>
                     </a>
                   </td>
                   <td>
-                    <a href="#seat2" class="not-clicked">
-                      <img src="img/bike-brownseat-thumbnail.jpg" class="not-clicked">
-                      <h5>$25.00</h5>
-                      <h5>sand brown leather</h5>
+                    <a href="BuildBikes-Seats.html">
+                      <img src="img/icon-step2-seat.png" class="custombikes-img">
+                      <h5 class="step-selected">seats</h5>
                     </a>
                   </td>
-                  <td>
-                    <a href="#seat3" class="not-clicked">
-                      <img src="img/bike-sanguineseat-thumbnail.jpg" class="not-clicked">
-                      <h5>$40.00</h5>
-                      <h5>sanguine fine leather</h5>
-                    </a>
+                  <td class="custom-progressbar">
+                    <img src="img/icon-step3-handles.png" class="custombikes-img">
+                    <h5>handles</h5>
+                  </td>
+                  <td class="custom-progressbar">
+                    <img src="img/icon-step4-tires.png" class="custombikes-img">
+                    <h5>tires</h5>
                   </td>
                 </tr>
               </table>
+
+              <div class="bike-stats progress-bar-30"></div><div class="bike-stats grey-bar-70"></div>
             </div>
 
-            <div class="wrapper">
-              <!-- Back -->
-              <div class="grid-col-2of10" id="order1">
-                <a href="BuildBikes.html"><div class="button custom-button">Back</div></a>
+            <!-- Middle Column Bike Details -->
+            <div class="grid-col-4of10" id="custombikes-order2">
+              
+              <!-- Seats -->
+              <div class="grid-col-10of10">
+                <h2>Seats</h2>
+                <p>What would you like to sit on?</p>
+                <table class="custom-parts">
+                  <tr class="thumbnail-photos">
+                    <td>
+                      <a href="#seat1" class="clicked">
+                        <img src="img/bike-blackseat-thumbnail.jpg" class="clicked">
+                        <h5>$15.00</h5>
+                        <h5>black saddle leather</h5>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#seat2" class="not-clicked">
+                        <img src="img/bike-brownseat-thumbnail.jpg" class="not-clicked">
+                        <h5>$25.00</h5>
+                        <h5>sand brown leather</h5>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#seat3" class="not-clicked">
+                        <img src="img/bike-sanguineseat-thumbnail.jpg" class="not-clicked">
+                        <h5>$40.00</h5>
+                        <h5>sanguine fine leather</h5>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </div>
 
-              <!-- Price -->
-              <div class="grid-col-6of10 margin-top-extra align-center" id="order2">
-                <h3>Total Price: $200.00</h3>
-              </div>
+              <div class="wrapper">
+                <!-- Back -->
+                <div class="grid-col-2of10" id="order1">
+                  <a href="BuildBikes.html"><div class="button custom-button">Back</div></a>
+                </div>
 
-              <!-- Proceed -->
-              <div class="grid-col-2of10 align-right" id="order3">
-                <a href="BuildBikes-Handles.html"><div class="button custom-button">Next</div></a>
+                <!-- Price -->
+                <div class="grid-col-6of10 margin-top-extra align-center" id="order2">
+                  <h3>Total Price: $200.00</h3>
+                </div>
+
+                <!-- Proceed -->
+                <div class="grid-col-2of10 align-right" id="order3">
+                  <a href="BuildBikes-Handles.html"><div class="button custom-button">Next</div></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Picture -->
-          <div class="grid-col-6of10">
-              <div class="product-images">
-                <img id="seat1" src="img/bike-blackseat.jpg" />
-                <img id="seat2" src="img/bike-default.jpg" />
-                <img id="seat3" src="img/bike-sanguineseat.jpg" />
-              </div>
+            <!-- Picture -->
+            <div class="grid-col-6of10" id="custombikes-order3">
+                <div class="product-images">
+                  <img id="seat1" src="img/bike-blackseat.jpg" />
+                  <img id="seat2" src="img/bike-default.jpg" />
+                  <img id="seat3" src="img/bike-sanguineseat.jpg" />
+                </div>
+            </div>
+
           </div>
         </div>
       </section>

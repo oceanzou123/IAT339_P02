@@ -1,238 +1,43 @@
 
 /* Table of Content
 ==================================================
-  #1 Basic
-  #2 Navigation
-  #3 Typography
-  #4
-  #5
-  #6
-  #7
-  #8
-  #9
-  #10
-  #11 */
-
-/* Change from ocean
-==================================================*/
-.background{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-.mainContent section h1:first-child{
-  margin-top: 1.5em;
-}
+  #1 Navigation Menu
+  #2 Typography
+  #3 Buttons
+  #4 Contact Form
+  #5 Bike Stats
+  #6 Product Listing
+  #7 Photo Gallery for Product Image
+  #8 Main Content
+  #9 Custom Bike
+  #10 Browser Resize
+  #11 Map
+  #12 Cart
+  #13 Progress Bar
+  #14 Shopping Cart & Checkout
+  #15 Event Page */
 
 
 
-.menu-trigger {
-    display: none;
-    color: black;
-}
 
 
-
-@media (max-width: 65em) {
-
-  /*  product listing page, change the order of product image appear in mobile*/
-  .parent{
-  display:flex;
-  flex-flow: column;
-  }
-  .a{
-    order:2;
-  }
-  .b{order:1;
-  }
-
-  .menu-trigger {
-    display:block;
-  }
-
-  .background,.nav-menu{
-    position: static;
-  }
-
-  .mainContent section h1:first-child{
-    margin-top: 0;
-  }
-
-  .mainContent section h1{
-    font-size: 1.5em;
-    /*text-align: center;*/
-  }
-
-  header{
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
-  }
-
-  #logo_web {
-    display: none;
-  }
-
-  #logo_mobile{
-    width: 13em;
-  }
-
-  .button {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-  
-/* #Buttons
+/* #1 Navigation Menu
 ================================================== */
-.button-main {
+
+/* Nav menu fixed */
+#nav-menu {
+  position: fixed;
   display: inline-block;
-  border: 0.1em;
-  border-style: solid;
-  border-color: #545454;
-  padding: 0.5em;
-  margin: 2em 0;
-  text-decoration: none;
-  text-align: center;
-  -webkit-transition: border-color 0.5s ease-out;
-  transition: border-color 0.5s ease-out;
-}
-
-.button-main:hover, .button-main:focus {
-  border-color: #D15627;
-  color: #D15627;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #D15627;
-  margin: 1em 0;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-}
-
-.button:hover, .button:focus, .button:active {
-  background-color: #ED805F;
-  color: #fff;
-}
-
-.button_build{
-  margin-left: 1rem;
-} 
-
-.button-duplicate {
-  margin: 0em 2em 1em 0;
-}
-
-.button-no-margin {
-  margin-top: 0;
-}
-
-/* #Contact Form
-================================================== */
-#contact, label, input[name="submit"] {
-  position: relative;
-}
-label, input, textarea, .button-form {
-  box-sizing: border-box;
-}
-label {
-  display: block;
-}
-
-input, textarea, .button-form {
-  width: 75%;
-  padding: 0.5em;
-  border: none;
-  line-height: 1.5em;
-}
-
-textarea {
-    height: 10em;
-}
-
-input[type="text"], input[type="email"], textarea {
-  margin: 0 0 1em;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-input[type="submit"], .button-form {
-  padding: 0.5em 0.75em;
-  text-decoration: none;
-  border-style: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-  background: #D15627;
-  color: #fff;
-}
-
-input[type="submit"]:hover, .button-form:hover {
-  background-color: #ED805F;
-}
-
-
-
-/* #Product Listing
-================================================== */
-
-/* Styling for product lists */
-.caption {
-  position: relative;
-  padding: 0em 2em 0em 2em;
-  margin: 0 auto;
+  padding-left: 4em;
   width: 20em;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+
+  background-color: #FFF;
+  height: 100%;
 }
 
-.product-caption {
-  position: relative;
-  display: block;
-  text-align: center;
-  font-style: normal;
-  margin: 0 auto;
-}
-
-/* Animation for pictures */
-
-.product-container {
-  position: relative;
-  width: 20em;
-  height: 12em;
-  padding: 0em 2em 0em 2em;
-  margin: 0 auto;
-}
-
-.product-container img {
-  position:absolute;
-  left:0;
-  width: 100%;
-  height: auto;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-.product-container img.top:hover {
-  opacity:0;
-}
-
-
-/* #Navigation Menu
-================================================== */
-
-/*  header {
-    width: 100%;
-    position: fixed;
-  }
-*/
-  /* Styling for the sub navigation */
+/* Styling for the sub navigation */
   .sub-nav{
     font-size: 0.9em;
     margin-left: 7%;
@@ -240,79 +45,44 @@ input[type="submit"]:hover, .button-form:hover {
     margin-top: 1em;
   }
 
-  /* Nav menu fixed */
-  #nav-menu {
-    position: fixed;
-    display: inline-block;
-    padding-left: 4em;
-    width: 20em;
-    letter-spacing: 0.1em;
-    font-size: 0.9em;
+/* Styling for nav menu */
+nav {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
 
-    background-color: #FFF;
-    height: 100%;
-/*      padding: 0 2em;
-      width: 20em;
-      position: fixed;
-      border-right: 0.1em;
-      border-color: #EFEFEF;
-      border-right-style: solid;*/
-  }
+nav>ul{
+  list-style: none; 
+  padding-left: 0;
+}
 
-  /* Styling for nav menu */
-  nav {
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-  }
+li, .selected {
+  margin-top: 1.5em;
+}
 
-  nav>ul{
-    list-style: none; 
-    padding-left: 0;
-  }
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
 
-  li, .selected {
-    margin-top: 1.5em;
-  }
+.menuArrow {
+  color: #CCC;
+}
 
-  nav a:hover, nav a:focus {
-    text-decoration: none;
-  }
+/* Styling for the logo */
+#logo_web {
+  padding-top: 6em;
+  padding-bottom: 2em;
+  width: 13em;
+}
 
-  /* Styling for the logo */
-  #logo_web {
-    padding-top: 6em;
-    padding-bottom: 2em;
-    width: 13em;
-  }
-
-  /* Styling for menu icon */
-  #menu-icon {
-    display: none;
-  }
-
-/*  #nav-menu-background {
-      background-color: #FFF;
-      height: 100%;
-      padding: 0 2em;
-      width: 20em;
-      position: fixed;
-      border-right: 0.1em;
-      border-color: #EFEFEF;
-      border-right-style: solid;
-  }*/
-
-
-
-/* #Main Content
-================================================== */
-
-.mainContent{
-  margin-left: 20em;
-  padding: 0 4rem 0 4rem;
+.menu-trigger {
+  display: none;
+  color: black;
 }
 
 
-/* #Typography
+
+/* #2 Typography
 ================================================== */
 
 img {
@@ -398,10 +168,6 @@ a:active, a:hover {
   text-decoration: none;
 }
 
-/*.product-content {
-  padding-top: 5rem;
-}*/
-
 .lastitem {
   border-style: none;
 }
@@ -426,7 +192,103 @@ a:active, a:hover {
 }
 
 
-/* #Bike Stats
+
+  /* #3 Buttons
+================================================== */
+.button-main {
+  display: inline-block;
+  border: 0.1em;
+  border-style: solid;
+  border-color: #545454;
+  padding: 0.5em;
+  margin: 2em 0;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+}
+
+.button-main:hover, .button-main:focus {
+  border-color: #D15627;
+  color: #D15627;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #D15627;
+  margin: 1em 0;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button:hover, .button:focus, .button:active {
+  background-color: #ED805F;
+  color: #fff;
+}
+
+.button_build{
+  margin-left: 1rem;
+} 
+
+.button-duplicate {
+  margin: 0em 2em 1em 0;
+}
+
+.button-no-margin {
+  margin-top: 0;
+}
+
+
+
+/* #4 Contact Form
+================================================== */
+#contact, label, input[name="submit"] {
+  position: relative;
+}
+label, input, textarea, .button-form {
+  box-sizing: border-box;
+}
+label {
+  display: block;
+}
+
+input, textarea, .button-form {
+  width: 75%;
+  padding: 0.5em;
+  border: none;
+  line-height: 1.5em;
+}
+
+textarea {
+    height: 10em;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="submit"], .button-form {
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  border-style: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  background: #D15627;
+  color: #fff;
+}
+
+input[type="submit"]:hover, .button-form:hover {
+  background-color: #ED805F;
+}
+
+
+
+/* #5 Bike Stats
 ================================================== */
 
   .bike-stats {
@@ -525,78 +387,122 @@ a:active, a:hover {
   }
 
 
-/* #Photo Gallery for Product Image
+
+
+/* #6 Photo Gallery for Product Image
 ================================================== */
-  .product-images {
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-  }
+.product-images {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
 
-  .product-images img {
-    width: 100%;
-    padding: 2em;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    background-color: #FFF;
+.product-images img {
+  width: 100%;
+  padding: 2em;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #FFF;
 
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
 
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-  }
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
 
-  .product-images img:target {
-    left: 0;
-    z-index: 9;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+.product-images img:target {
+  left: 0;
+  z-index: 9;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
 
-  .product-images img:first-child {
-    left: 0;
-    position: relative;
+.product-images img:first-child {
+  left: 0;
+  position: relative;
 
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-  }
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
 
-  .not-clicked {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-    filter: alpha(opacity=65);
-    opacity: 0.65;
-  }
+.not-clicked {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+}
 
-  .thumbnail-photos a:hover, 
-  .thumbnail-photos a:focus, 
-  .thumbnail-photos a:active,
-  .clicked {
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-    color: #D15627;
-  }
+.thumbnail-photos a:hover, 
+.thumbnail-photos a:focus, 
+.thumbnail-photos a:active,
+.clicked {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  color: #D15627;
+}
 
-  /* Styling for the custom parts on buildbikes page */
-  .custom-parts {
-    margin: 0;
-    margin-bottom: 2em;
-    width: 100%;
-  }
+/* Styling for the custom parts on buildbikes page */
+.custom-parts {
+  margin: 0;
+  margin-bottom: 2em;
+  width: 100%;
+}
 
 
-/* #Custom bike
+
+/* #7 Main Content
 ================================================== */
+
+.mainContent{
+  margin-left: 20em;
+  padding: 0 4rem 0 4rem;
+}
+
+.background{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.mainContent section h1:first-child{
+  margin-top: 1.5em;
+}
+
+
+
+/* #8 Custom Bike
+================================================== */
+
+/* Custom bike steps progress bar */
 .custombikes {
   width: 100%;
+  text-align: left;
+}
+
+.custombikes-img {
+  max-width: 4em;
+}
+
+.custombikes td:first-child {
+  padding-right: 0em;
+}
+
+table.custombikes {
+  table-layout: fixed;
+}
+
+.custombikes td {
+  padding: 1em 0em 0.5em 0em;
+  width: 25%;
 }
 
 .custom-progressbar {
@@ -609,6 +515,48 @@ a:active, a:hover {
   color: #D15627;
 }
 
+.progress-bar-10 {
+  width: 10%;
+}
+
+.progress-bar-30 {
+  width: 30%;
+}
+
+.progress-bar-60 {
+  width: 60%;
+}
+
+.progress-bar-85 {
+  width: 85%;
+}
+
+.grey-bar-90 {
+  background-color: #EFEFEF;
+  width: 90%;
+}
+
+.grey-bar-70 {
+  background-color: #EFEFEF;
+  width: 70%;
+}
+
+.grey-bar-40 {
+  background-color: #EFEFEF;
+  width: 40%;
+}
+
+.grey-bar-15 {
+  background-color: #EFEFEF;
+  width: 15%;
+}
+
+.checkmark {
+  padding-left: 0.5em;
+  color: #ED805F;
+}
+
+/* Custom bike buttons */
 .custom-button {
   margin: 0;
 }
@@ -622,150 +570,206 @@ a:active, a:hover {
 }
 
 
-/* #Browser Resize
+/* #10 Browser Resize
 ================================================== */
 
-  @media (max-width: 90em) {
+@media (max-width: 90em) {
 
-    #nav-menu {
-      padding-left: 3em;
-/*      width: 18em;*/
-    }
-
-    #logo {
-      padding-top: 8em;
-      padding-bottom: 2em;
-    }
-
-    .mainContent{
-      margin-left: 18em;
-    }
+  #nav-menu {
+    padding-left: 3em;
   }
 
+  #logo {
+    padding-top: 8em;
+    padding-bottom: 2em;
+  }
 
-  @media (max-width: 65em) {
-
-    #nav-menu {
-      position: relative;
-      display: block;
-      text-align: center;
-      height: 4em;
-      padding: 1em;
-      height: 100%;
-      margin: auto;
-      vertical-align: middle;
-      z-index: 99999;
-      }
-
-/*    #nav-menu-background {
-      height: 4em;
-      padding: 0;
-      width: 100%;
-      position: fixed;
-      border-right-style: none;
-      border-bottom: 0.1em;
-      border-bottom-style: solid;
-      border-color: #EFEFEF;
-      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
-      filter: alpha(opacity=99);
-      opacity: 0.99;
-      z-index: 99999;
-    }*/
+  .mainContent{
+    margin-left: 18em;
+    padding: 0em 1em 0em 1em;
+  }
+}
 
 
-    li, .selected {
-      margin-top: 2em;
+@media (max-width: 65em) {
+
+  #nav-menu {
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 4em;
+    padding: 0.5em;
+    height: 100%;
+    margin: auto;
+    vertical-align: middle;
+    z-index: 99999;
     }
 
-    .mainContent{
-      margin-left: 0em;
-      padding: 1em;
-    }
+  li, .selected {
+    margin-top: 2em;
+  }
 
-    img {
-      margin: auto;
-      margin-top: 0.3rem;
-    }
+  .mainContent{
+    margin-left: 0em;
+    padding: 1em;
+  }
 
-    #nav-menu ul {
-      display: none;
-    }
+  img {
+    margin: auto;
+    margin-top: 0.3rem;
+  }
 
-    #menu-icon {
-      display: block;
-      float: left;
-    }
+  #nav-menu ul {
+    display: none;
+  }
 
-    .product-content {
-      margin-top: 0%;
-    }
+  #menu-icon {
+    display: block;
+    float: left;
+  }
 
-    input, textarea, .button-form {
+  .product-content {
+    margin-top: 0%;
+  }
+
+  input, textarea, .button-form {
+  width: 100%;
+  }
+
+  .padding-left-extra {
+    padding: 2em 0em 0em 0em;
+  }
+
+  .bike-stats {
+    margin-bottom: 1em;
+  }
+
+  .custom-button {
+    margin: 0;
     width: 100%;
-    }
-
-    .padding-left-extra {
-      padding: 2em 0em 0em 0em;
-    }
-
-    .bike-stats {
-      margin-bottom: 1em;
-    }
-
-    .custom-button {
-      margin: 0;
-      width: 100%;
-    }
-
-    .align-right {
-      text-align: center;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-flow: column;
-      width: 100%;
-    }
-
-    #order1 {
-      order: 2;
-    }
-
-    #order2 {
-      order: 1;
-    }
-
-    #order3 {
-      order: 3;
-    }
-
-    #shopbikes-order1 {
-      order: 2;
-    }
-
-    #shopbikes-order2 {
-      order: 3;
-    }
-
-    #shopbikes-order3 {
-      order: 1;
-    }
-
-    .custom-button {
-      margin: 1em 0;
-    }
-
-    .product-images, .product-images img {
-      padding: 0em;
-    }
-
-    .button-duplicate {
-      margin-top: 2em;
-    }
-
   }
 
-/* #Map
+  .align-right {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  /* order changes */
+
+  #order1 {
+    order: 2;
+  }
+
+  #order2 {
+    order: 1;
+  }
+
+  #order3 {
+    order: 3;
+  }
+
+  #shopbikes-order1 {
+    order: 2;
+  }
+
+  #shopbikes-order2 {
+    order: 3;
+  }
+
+  #shopbikes-order3 {
+    order: 1;
+  }
+
+  #custombikes-order1 {
+    order: 1;
+  }
+
+  #custombikes-order2 {
+    order: 3;
+  }
+
+  #custombikes-order3 {
+    order: 2;
+  }
+
+  .custom-button {
+    margin: 1em 0;
+  }
+
+  .product-images, .product-images img, td {
+    padding: 0.5em;
+  }
+
+  .button-duplicate {
+    margin-top: 2em;
+  }
+
+  /* Custom bike changes */
+
+  .custombikes {
+    text-align: center;
+  }
+
+  .checkmark {
+    padding-right: 0.5em;
+  }
+
+  .custombikes h5 {
+    margin-bottom: 0.5em;
+  }
+
+  /*  product listing page, change the order of product image appear in mobile*/
+  .parent{
+  display:flex;
+  flex-flow: column;
+  }
+  .a{
+    order:2;
+  }
+  .b{order:1;
+  }
+
+  .menu-trigger {
+    display:block;
+  }
+
+  .background,.nav-menu{
+    position: static;
+  }
+
+  .mainContent section h1{
+    font-size: 1.5em;
+    /*text-align: center;*/
+  }
+
+  header{
+    -webkit-box-shadow: 0px 1px 3px 0px #CCC;
+    -moz-box-shadow: 0px 1px 3px 0px #CCC;
+    box-shadow: 0px 1px 3px 0px #CCC;
+  }
+
+  #logo_web {
+    display: none;
+  }
+
+  #logo_mobile{
+    width: 10em;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+/* #11 Map
 ================================================== */
   .map {
     width: 100%;
@@ -780,7 +784,7 @@ a:active, a:hover {
   }
 
 
-/* #Cart
+/* #12 Cart
 ================================================== */
 
   /*spacing and alignment for each element*/
@@ -962,7 +966,7 @@ a:active, a:hover {
 
 
 
-/* #Progress Bar
+/* #13 Progress Bar
 ================================================== */
 
   .progressbar_container{
@@ -983,8 +987,7 @@ a:active, a:hover {
 
 
 
-/*============================================
- Shopping Cart & Checkout
+/* #14 Shopping Cart & Checkout
  =============================================*/
 
   .shipping {
@@ -1103,8 +1106,7 @@ a:active, a:hover {
 
   }
 
-/*============================================
- Event Page
+/* #15 Event Page
  =============================================*/
  
   .event {
