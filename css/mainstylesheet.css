@@ -24,17 +24,17 @@
 ================================================== */
 
 /* Nav menu fixed */
-#nav-menu {
-  position: fixed;
-  display: inline-block;
-  padding-left: 4em;
-  width: 20em;
-  letter-spacing: 0.1em;
-  font-size: 0.9em;
+  #nav-menu {
+    position: fixed;
+    display: inline-block;
+    padding-left: 4em;
+    width: 20em;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
 
-  background-color: #FFF;
-  height: 100%;
-}
+    background-color: #FFF;
+    height: 100%;
+  }
 
 /* Styling for the sub navigation */
   .sub-nav{
@@ -736,7 +736,7 @@
     }
 
     .button-duplicate {
-      margin-top: 2em;
+      margin: 2em 0em 1em 0em;
     }
 
     /* Custom bike changes */
